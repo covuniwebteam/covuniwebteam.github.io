@@ -5,6 +5,15 @@
     <script type="text/javascript" src="http://netdna.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
     <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="styles.css" rel="stylesheet" type="text/css">
+    <style>
+      .section-kis {
+      background-color: #dd312c;
+      }
+      .col-centered {
+      float: none;
+      margin: 0 auto;
+      }
+    </style>
   </head><body>
     <div class="section">
       <div class="container">
@@ -211,32 +220,23 @@
         <div class="row"></div>
       </div>
     </div>
+    <div class="section section-kis">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-centered">
+            <iframe id="unistats-widget-frame" title="Unistats KIS Widget" src="http://widget.unistats.ac.uk/Widget/10001726/31/horizontal/small/en-gb/Full%20Time" scrolling="no" style="overflow: hidden; border: 0px none transparent; width: 615px; height: 150px;"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
     <div class="section">
       <div class="container">
         <div class="row"></div>
       </div>
     </div>
-    <div class="section">
-      <div class="container">
-        <div class="row">
-          <div class="kis-widget" data-institution="<UKPRN>" data-course="<KISCOURSEID>" data-kismode="<KISMODE>" data-orientation="<ORIENTATION>" data-language="<LANGUAGE>"></div>
-        </div>
-      </div>
-    </div>
     <div class="cover">
       <div class="cover-image"></div>
     </div>
-    <script>
-      (function (d) {
-              "use strict";
-              var widgetScript = d.createElement('script');
-              widgetScript.id = 'unistats-widget-script';
-              widgetScript.src = 'http:///js/unistats.widget.js';
-              var scriptTags = d.getElementsByTagName('script')[0];
-              if (d.getElementById('unistats-widget-script')) { return; }
-              scriptTags.parentNode.insertBefore(widgetScript, scriptTags);
-              } (document));
-    </script>
   
 
 </body></html>
