@@ -1,11 +1,28 @@
 HTML 5 Snippet 
 The following JavaScript must be added to the web page hosting the widget: 
+
+FILESYSTEM-HOSTED:
+
 <script> 
 (function (d) { 
 "use strict"; 
 var widgetScript = d.createElement('script'); 
 widgetScript.id = 'unistats-widget-script'; 
-widgetScript.src = '//<WidgetUrl>/js/unistats.widget.js'; 
+widgetScript.src = 'http://<WidgetUrl>/js/unistats.widget.js'; 
+var scriptTags = d.getElementsByTagName('script')[0]; 
+if (d.getElementById('unistats-widget-script')) { return; } 
+scriptTags.parentNode.insertBefore(widgetScript, scriptTags); 
+} (document)); 
+</script>
+
+WEB-HOSTED:
+
+<script> 
+(function (d) { 
+"use strict"; 
+var widgetScript = d.createElement('script'); 
+widgetScript.id = 'unistats-widget-script'; 
+widgetScript.src = 'http://<WidgetUrl>/js/unistats.widget.js'; 
 var scriptTags = d.getElementsByTagName('script')[0]; 
 if (d.getElementById('unistats-widget-script')) { return; } 
 scriptTags.parentNode.insertBefore(widgetScript, scriptTags); 
@@ -13,10 +30,16 @@ scriptTags.parentNode.insertBefore(widgetScript, scriptTags);
 </script> 
 
 This JavaScript snippet should be placed at the bottom of the page, above the closing 'body' tag of the hosting page. 
+
 Note: If you are not testing this using a web page hosted on a web server (e.g. you are using an HTML file on your file system) you will need to change the '//<WidgetUrl>/js/unistats.widget.js' above to 'http://<WidgetUrl>/js/unistats.widget.js'. 
+
 The widget itself can then be embedded in the web page with the following snippet: 
+
 <div class="kis-widget" 
 data-institution="<UKPRN>" 
 data-course="<KISCOURSEID>" 
 data-kismode="<KISMODE>" data-orientation="<ORIENTATION>" 
-data-language="<LANGUAGE>"></div>
+data-language="<LANGUAGE>">
+</div>
+
+<iframe id="unistats-widget-frame" name="unistats-widget-frame" scrolling="no" src="http://widget.unistats.ac.uk/Widget/10001726/31/horizontal/small/en-gb/Full%20Time" style="overflow: hidden; border: 0px none transparent; width: 615px; height: 150px;" title="Unistats KIS Widget"></iframe>
