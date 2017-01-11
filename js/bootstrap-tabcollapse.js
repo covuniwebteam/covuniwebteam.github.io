@@ -55,8 +55,8 @@
         var view = this;
         this.$tabs.trigger($.Event('show-tabs.bs.tabcollapse'));
 
-        var $panelHeadings = this.$accordion.find('.js-tabcollapse-panel-heading').detach();
 
+        var $panelHeadings = this.$accordion.find('.js-tabcollapse-panel-heading').detach();
         $panelHeadings.each(function() {
             var $panelHeading = $(this),
             $parentLi = $panelHeading.data('bs.tabcollapse.parentLi');
@@ -100,7 +100,7 @@
                 $el.attr({
                     'data-toggle': $el.attr('data-toggle-was'),
                     'data-toggle-was': '',
-                    'data-parent': '',
+//                    'data-parent': '',
                     href: href
                 });
             });
@@ -138,7 +138,7 @@
                 $el.attr({
                     'data-toggle-was': $el.attr('data-toggle'),
                     'data-toggle': 'collapse',
-                    'data-parent': '#' + parentId,
+//                    'data-parent': '#' + parentId,
                     href: href
                 });
             });
@@ -152,7 +152,7 @@
         $heading.attr({
             'data-toggle': 'tab',
             'href': href,
-            'data-parent': ''
+//            'data-parent': ''
         });
         return $heading;
     };
@@ -161,7 +161,7 @@
         $heading.addClass('js-tabcollapse-panel-heading ' + (active ? '' : 'collapsed'));
         $heading.attr({
             'data-toggle': 'collapse',
-            'data-parent': '#' + parentId,
+//            'data-parent': '#' + parentId,
             'href': '#' + groupId
         });
         return $heading;
