@@ -12,6 +12,19 @@
 
 
   <style>
+      ul.modules-list li {
+      list-style-type: none;    
+      }
+      ul.modules-list a:before {  
+      font-family: 'FontAwesome';
+      margin:0 5px 0 -15px;
+      }
+      .modules-list-in a:before {
+      content: '\f067';
+      }
+      .modules-list-out a:before {
+      content: '\f068';
+      }
      .jumbotron {
         background: none;
       }
@@ -39,6 +52,9 @@
       border-top: 1px dotted dimgrey;
       /*background-color: dimgrey;
       color: white;*/
+    }
+    .section-related {
+      border-top: 1px dotted dimgrey;
     }
      .section-kis {
       border-top: 1px dotted dimgrey;
@@ -79,6 +95,9 @@
      }
      .hide-reveal {
      font-size: 24px;
+     }
+     .hide-reveal-modules {
+     font-size: 1em;
      }
      .icon-adjust {
      margin-left: 10px;
@@ -155,9 +174,6 @@
       padding: 0;
     }
     .well {
-      margin: 0;
-      padding-left: 0;
-      padding-right: 0;
     }
      @media (min-width: 768px){
       .navbar-nav {
@@ -241,7 +257,7 @@
       <div class="absolute-wrapper">
         <div id="course-title">
           <div class="">
-            <h1>Course title (BSc)</h1>
+            <h1>Biological and Forensic Sciences (BSc)</h1>
           </div>
         </div>
         <div id="media-button">
@@ -463,12 +479,12 @@
           </div><!-- end of row -->
         </div><!-- end of container -->
       </div><!-- end of section -->
-      <div class="section section-media">
+     <div class="section section-media" style="display: none;">
         <div class="container">
           <div class="row">
             <div class="col-sm-6">
-              <h2>Course video</h2>
-                <p>Course video description, lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam lobortis porta leo, in suscipit est condimentum ac.</p>
+              <h2>Misc media container</h2>
+                <p>Video/image description, lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam lobortis porta leo, in suscipit est condimentum ac.</p>
             </div><!-- end of column -->
             <div class="col-sm-6">
               <div class="embed-responsive embed-responsive-16by9">
@@ -518,39 +534,7 @@
             </div>
           </div><!-- end of row -->
           <div class="row">
-            <div class="btn-group-vertical-custom">            
-              <a class="btn btn-custom btn-text-left hide-reveal" data-target="#why-choose" data-toggle="collapse"><span style="text-align:left;">Why choose this course?</span><i style="float:right;" class="fa fa-plus" aria-hidden="true"></i></a>
-              <div class="collapse container" id="why-choose">
-                <div class="row">
-                  <div class="col-xs-12">
-                    <p>If you are fascinated with human biology and the scientific investigation of crime, our degree will enable you to learn all about human physiology, biochemistry, molecular biology/genetics, microbiology and how each of these disciplines can be applied in forensic science.</p>
-                  </div>
-                  <div class="col-xs-12 col-sm-4">
-                    <h3>Facilties</h3>
-                    <p>You’ll be based in our new state-of-the-art £37 million Science and Health Building, which provides an outstanding learning and research environment, which features a video-linked ‘crime scene’ house, outstanding analytical laboratory facilities and the largest Class II containment teaching laboratory in Europe, specifically designed to accommodate microbiology, cell culture, molecular biology/genetics, biochemistry and forensic science.</p>
-                  </div>
-                  <div class="col-xs-12 col-sm-4">
-                    <h3>&nbsp;</h3>
-                    <img src="image/hls-building.jpg" class="img-responsive" />
-                  </div>
-                  <div class="col-xs-12 col-sm-4">                        
-                    <h3>Staff</h3>
-                    <p>You’ll be taught by our experienced staff, many of whom bring professional or research expertise to their teaching. They have held roles as quality assurance managers in major pharmaceuticals companies, such as GSK and British Biotech, as forensic scientists in the Forensic Science Service or as analytical scientists in government laboratories. They continue to provide consultancy and expert commentary in areas of safety and efficacy testing for the BBC, most recently on illegal skin bleaching products on sale in the UK.</p>
-                   </div>       
-                   <div class="col-xs-12 col-sm-4">                               
-                    <h3>Reputation</h3>
-                    <p>Coventry has an excellent reputation for evidence-based scientific research; our faculty possess expertise and have published in biochemistry, cell biology, genomic and molecular biology, microbiology, pharmacology and physiology. In your final year, you have the opportunity to collaborate on a research project, which in the past has led to students winning prizes at the Forensic Institute Research Network (FIRN) Midlands regional conference, attend the international Forensic Research and Teaching (FORREST) conference and publish articles in academic journals.</p>
-                  </div>        
-                  <div class="col-xs-12 col-sm-4">                                
-                    <h3>Practical experience</h3>
-                    <p>Throughout your studies, you will find that the course is underpinned with practical experience. Laboratory sessions will help to develop the practical skills needed for a career in a variety of biology and forensic roles. You will learn key experimental techniques and develop essential experimental, data handling, reporting and broader scientific skills, such as literature researching, information technology, bioinformatics, data processing and the use of statistics.</p>
-                  </div>        
-                  <div class="col-xs-12 col-sm-4">                                
-                    <h3>Placements</h3>
-                    <p>You’ll have the opportunity to undertake short and long-term placements. Previously students have worked on revolutionary technologies for Cambridge Scientific Solutions, such as the removal of biofilm formations which foul beer lines in pubs, or the formulation of drug products for transdermal patch applications for Nemaura Pharmaceuticals.</p>
-                  </div>
-                </div>        
-              </div>
+            <div class="btn-group-vertical-custom">
               <a class="btn btn-custom btn-text-left hide-reveal" data-target="#modules" data-toggle="collapse"><span style="text-align:left;">Modules</span><i style="float:right;" class="fa fa-plus" aria-hidden="true"></i></a>
               <div class="collapse container" id="modules">
                 <div class="row">
@@ -572,52 +556,90 @@
                             Year 3
                           </a>
                         </li>
-                        <li>
-                          <a data-toggle="tab" href="#modules-tab4">
-                            Optional Year
-                          </a>
-                        </li>
                       </ul>
                     </div>     
                     <div class="tab-content" id="modules-body">
                       <div class="tab-pane active" id="modules-tab1">
                         <div class="row">
-                          <div class="col-xs-12">
-                            <h4>Year 1</h4>
-                          </div>
                           <div class="col-xs-12 col-sm-6">
-                            <ul>
-                              <li>Human Physiology in Health and Disease</li>
-                              <li>Biochemistry and Microbiology</li>
-                              <li>Cell and Molecular Biology</li>
-                              <li>Introduction to Forensic Science</li>
-                              <li>Skills in Biomolecular Sciences 1 and 2</li>
-                            </ul>
+                            <div class="row">
+                              <div class="col-xs-12">
+                                <h4>Year 1 modules</h4>
+                              </div>
+                              <div class="col-xs-12">
+                                <ul class="modules-list">
+                                  <li><a class="hide-reveal-modules fa-plus" data-target="#year1-module-1" data-toggle="collapse">Human Physiology in Health and Disease</a>
+                                  <div class="collapse container" id="year1-module-1">
+                                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+                                  </li>
+                                  <li><a class="hide-reveal-modules fa-plus" data-target="#year1-module-2" data-toggle="collapse">Biochemistry and Microbiology</a>
+                                  <div class="collapse container" id="year1-module-2">
+                                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+                                  </li>
+                                  <li><a class="hide-reveal-modules fa-plus" data-target="#year1-module-3" data-toggle="collapse">Cell and Molecular Biology</a>
+                                  <div class="collapse container" id="year1-module-3">
+                                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+                                  </li>
+                                  <li><a class="hide-reveal-modules fa-plus" data-target="#year1-module-4" data-toggle="collapse">Introduction to Forensic Science</a>
+                                  <div class="collapse container" id="year1-module-4">
+                                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+                                  </li>
+                                  <li><a class="hide-reveal-modules fa-plus" data-target="#year1-module-5" data-toggle="collapse">Skills in Biomolecular Sciences 1 and 2</a>
+                                  <div class="collapse container" id="year1-module-5">
+                                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+                                  </li>
+                                </ul>
+                              </div><!-- end of column -->
+                            </div><!-- end of row -->
                           </div><!-- end of column -->
                           <div class="col-xs-12 col-sm-6">
+                            <h4>Overview</h4>
                             <p>The first year modules will introduce you to basic scientific principles, such as hypotheses development and testing, laboratory procedures and protocols, health and safety and data presentation and analysis across the range of bioscience disciplines studied. The essential bioscience principles begin from the molecular level building up to cellular processes and extending to organism physiology systems.</p>
                           </div><!-- end of column -->
                         </div> <!-- end of row -->
                       </div> <!-- end of tab-pane --> 
                       <div class="tab-pane" id="modules-tab2">
                         <div class="row">
-                          <div class="col-xs-12">
-                            <h4>Year 2</h4>
-                          </div>
-                          <div class="col-xs-12 col-sm-6">                    
-                            <ul>
-                              <li>Molecular Genetics</li>
-                              <li>Cell Biology</li>
-                              <li>Principles of Forensic Science</li>
-                              <li>Contemporary Skills for Biomolecular Sciences 1 and 2</li>
-                            </ul>
-                            <h4>Optional modules (1 from the following):</h4>
-                            <ul>
-                              <li>Systemic Physiology</li>
-                              <li>Infection and Immunity</li>
-                            </ul>
-                          </div><!-- end of column -->
                           <div class="col-xs-12 col-sm-6">
+                            <div class="row">
+                              <div class="col-xs-12">
+                                <h4>Year 2 modules</h4>
+                              </div>
+                              <div class="col-xs-12">                    
+                                <ul class="modules-list">
+                                  <li><a class="hide-reveal-modules fa-plus" data-target="#year2-module-1" data-toggle="collapse">Molecular Genetics</a>
+                                  <div class="collapse container" id="year2-module-1">
+                                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+                                  </li>
+                                  <li><a class="hide-reveal-modules fa-plus" data-target="#year2-module-2" data-toggle="collapse">Cell Biology</a>
+                                  <div class="collapse container" id="year2-module-2">
+                                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+                                  </li>
+                                  <li><a class="hide-reveal-modules fa-plus" data-target="#year2-module-3" data-toggle="collapse">Principles of Forensic Science</a>
+                                  <div class="collapse container" id="year2-module-3">
+                                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+                                  </li>
+                                  <li><a class="hide-reveal-modules fa-plus" data-target="#year2-module-4" data-toggle="collapse">Contemporary Skills for Biomolecular Sciences 1 and 2</a>
+                                  <div class="collapse container" id="year2-module-4">
+                                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div> 
+                                  </li>
+                                </ul>
+                                <h4>Optional modules (1 from the following):</h4>
+                                <ul class="modules-list">
+                                  <li><a class="hide-reveal-modules fa-plus" data-target="#year2-module-5" data-toggle="collapse">Systemic Physiology</a>
+                                  <div class="collapse container" id="year2-module-5">
+                                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>    
+                                  </li>
+                                  <li><a class="hide-reveal-modules fa-plus" data-target="#year2-module-6" data-toggle="collapse">Infection and Immunity</a>
+                                  <div class="collapse container" id="year2-module-6">
+                                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>      
+                                  </li>
+                                </ul>
+                              </div><!-- end of column -->
+                            </div>
+                          </div>
+                          <div class="col-xs-12 col-sm-6">
+                            <h4>Overview</h4>
                             <p>As the course progresses, you have the choice to follow themes of either human physiology or microbiology. You can develop your interest in human physiology – studying whole body systems such as cardio-pulmonary, respiratory, reproductive, neurological and/or renal systems – or follow a more microbiological route, by studying prokaryotic and eukaryotic cells, viruses, phagocytes, immune responses and epidemiology.
                             </p>
                           </div><!-- end of column -->
@@ -625,52 +647,107 @@
                       </div> <!-- end of tab-pane -->
                       <div class="tab-pane" id="modules-tab3">
                         <div class="row">
-                          <div class="col-xs-12">
-                            <h4>Year 3</h4>
-                          </div>
-                          <div class="col-xs-12 col-sm-6">                    
-                            <ul>
-                              <li>Research Design for the Biomolecular Sciences</li>
-                              <li>Independent Project in Biomolecular Sciences</li>
-                              <li>Advanced Forensic Science</li>
-                              <li>Forensic Identification</li>
-                            </ul>
-                            <h4>Optional modules (1 from the following):</h4>
-                            <ul>
-                              <li>Clinical Physiology</li>
-                              <li>Medical Microbiology</li>
-                            </ul>
-                            <h4>Optional modules (1 from the following):</h4>
-                            <ul>
-                              <li>Cancer Biology</li>
-                              <li>Applied Human Genetics</li>
-                            </ul>
-                          </div><!-- end of column -->
                           <div class="col-xs-12 col-sm-6">
+                            <div class="row">
+                              <div class="col-xs-12">
+                                <h4>Year 3 modules</h4>
+                              </div>
+                              <div class="col-xs-12">                    
+                                <ul class="modules-list">
+                                  <li><a class="hide-reveal-modules fa-plus" data-target="#year3-module-1" data-toggle="collapse">Research Design for the Biomolecular Sciences</a>
+                                  <div class="collapse container" id="year3-module-1">
+                                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>                                 
+                                  </li>
+                                  <li><a class="hide-reveal-modules fa-plus" data-target="#year3-module-2" data-toggle="collapse">Independent Project in Biomolecular Sciences</a>
+                                  <div class="collapse container" id="year3-module-2">
+                                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>  
+                                  </li>
+                                  <li><a class="hide-reveal-modules fa-plus" data-target="#year3-module-3" data-toggle="collapse">Advanced Forensic Science</a>
+                                  <div class="collapse container" id="year3-module-3">
+                                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>  
+                                  </li>
+                                  <li><a class="hide-reveal-modules fa-plus" data-target="#year3-module-4" data-toggle="collapse">Forensic Identification</a>
+                                  <div class="collapse container" id="year3-module-4">
+                                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>  
+                                  </li>
+                                </ul>
+                                <h4>Optional modules (1 from the following):</h4>
+                                <ul class="modules-list">
+                                  <li><a class="hide-reveal-modules fa-plus" data-target="#year3-module-5" data-toggle="collapse">Clinical Physiology</a>
+                                  <div class="collapse container" id="year3-module-5">
+                                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>  
+                                  </li>
+                                  <li><a class="hide-reveal-modules fa-plus" data-target="#year3-module-6" data-toggle="collapse">Medical Microbiology</a>
+                                  <div class="collapse container" id="year3-module-6">
+                                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>  
+                                  </li>
+                                </ul>
+                                <h4>Optional modules (1 from the following):</h4>
+                                <ul class="modules-list">
+                                  <li><a class="hide-reveal-modules fa-plus" data-target="#year3-module-7" data-toggle="collapse">Cancer Biology</a>
+                                  <div class="collapse container" id="year3-module-7">
+                                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>  
+                                  </li>
+                                  <li><a class="hide-reveal-modules fa-plus" data-target="#year3-module-8" data-toggle="collapse">Applied Human Genetics</a>
+                                  <div class="collapse container" id="year3-module-8">
+                                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>  
+                                  </li>
+                                </ul>
+                              </div><!-- end of column -->
+                            </div>
+                          </div>
+                          <div class="col-xs-12 col-sm-6">
+                            <h4>Overview</h4>
                             <p>In your final year, you can continue the microbiology specialisation by extending the second year module ‘Infection and Immunity’ to the third year module ‘Medical Microbiology’. For human physiology, you would extend the second year specialist module ‘Systemic Physiology’ to the third year module ‘Clinical Physiology’.</p>
                             <p>You can further customise your degree by selecting either the ‘Cancer Biology’ module or the ‘Applied Human Genetics’ module.</p>
                           </div><!-- end of column -->
                         </div> <!-- end of row -->
                       </div> <!-- end of tab-pane -->
-                      <div class="tab-pane" id="modules-tab4">
-                        <div class="row">
-                          <div class="col-xs-12">
-                            <h4>Optional Year</h4>
-                          </div>
-                          <div class="col-xs-12 col-sm-6">                    
-                            <ul>
-                              <li>Professional Experience Sandwich Year</li>
-                              <li>Study Abroad</li>
-                              <li>Professional Training (placement)</li>
-                            </ul>
-                          </div><!-- end of column -->
-                        </div> <!-- end of row -->
-                      </div> <!-- end of tab-pane --> 
                     </div> <!-- end of module tab-content-->
-                    <p>Please note that the modules listed above are correct at the time of going to print. However, changes may occur and we strongly advise you to contact us before applying to study at Coventry University and check the most up-to-date position on our website. This document is not intended to form part of any contract between Coventry University and yourself and should not be relied upon when making an application to study here. A compulsory Add+vantage module must also be completed in each year of study, please see below for more information on our Add+vantage scheme.</p>
+                    <h4>Optional enhancement year</h4>                
+                    <ul>
+                      <li>Professional Experience Sandwich Year</li>
+                      <li>Study Abroad</li>
+                      <li>Professional Training (placement)</li>
+                    </ul>
+                    <p><a href="#">Download a complete breakdown of this course's modules (pdf 500kb)</a></p>
+                    <p><em>Please note that the modules listed above are correct at the time of going to print. However, changes may occur and we strongly advise you to contact us before applying to study at Coventry University and check the most up-to-date position on our website. This document is not intended to form part of any contract between Coventry University and yourself and should not be relied upon when making an application to study here. A compulsory Add+vantage module must also be completed in each year of study, please see the <a href="#">Career prospects tab</a> for more information on our Add+vantage scheme.</em></p>
                   </div><!-- end of column --> 
+                </div><!-- end of row -->         
+              </div><!-- end of container -->            
+              <a class="btn btn-custom btn-text-left hide-reveal" data-target="#why-choose" data-toggle="collapse"><span style="text-align:left;">Why choose this course?</span><i style="float:right;" class="fa fa-plus" aria-hidden="true"></i></a>
+              <div class="collapse container" id="why-choose">
+                <div class="row">
+                  <div class="col-xs-12">
+                    <p>If you are fascinated with human biology and the scientific investigation of crime, our degree will enable you to learn all about human physiology, biochemistry, molecular biology/genetics, microbiology and how each of these disciplines can be applied in forensic science.</p>
+                  </div>
+                  <div class="col-xs-12 col-sm-4">
+                    <h3>Facilties</h3>
+                    <p>You’ll be based in our new state-of-the-art £37 million Science and Health Building, which provides an outstanding learning and research environment, which features a video-linked ‘crime scene’ house, outstanding analytical laboratory facilities and the largest Class II containment teaching laboratory in Europe, specifically designed to accommodate microbiology, cell culture, molecular biology/genetics, biochemistry and forensic science.</p>
+                  </div>
+                  <div class="col-xs-12 col-sm-4">
+                    <h3>&nbsp;</h3>
+                    <img class="img-responsive" src="http://placehold.it/400x300?text=IMAGE">
+                  </div>
+                  <div class="col-xs-12 col-sm-4">                        
+                    <h3>Staff</h3>
+                    <p>You’ll be taught by our experienced staff, many of whom bring professional or research expertise to their teaching. They have held roles as quality assurance managers in major pharmaceuticals companies, such as GSK and British Biotech, as forensic scientists in the Forensic Science Service or as analytical scientists in government laboratories. They continue to provide consultancy and expert commentary in areas of safety and efficacy testing for the BBC, most recently on illegal skin bleaching products on sale in the UK.</p>
+                   </div>       
+                   <div class="col-xs-12 col-sm-4">                               
+                    <h3>Reputation</h3>
+                    <p>Coventry has an excellent reputation for evidence-based scientific research; our faculty possess expertise and have published in biochemistry, cell biology, genomic and molecular biology, microbiology, pharmacology and physiology. In your final year, you have the opportunity to collaborate on a research project, which in the past has led to students winning prizes at the Forensic Institute Research Network (FIRN) Midlands regional conference, attend the international Forensic Research and Teaching (FORREST) conference and publish articles in academic journals.</p>
+                  </div>        
+                  <div class="col-xs-12 col-sm-4">                                
+                    <h3>Practical experience</h3>
+                    <p>Throughout your studies, you will find that the course is underpinned with practical experience. Laboratory sessions will help to develop the practical skills needed for a career in a variety of biology and forensic roles. You will learn key experimental techniques and develop essential experimental, data handling, reporting and broader scientific skills, such as literature researching, information technology, bioinformatics, data processing and the use of statistics.</p>
+                  </div>        
+                  <div class="col-xs-12 col-sm-4">                                
+                    <h3>Placements</h3>
+                    <p>You’ll have the opportunity to undertake short and long-term placements. Previously students have worked on revolutionary technologies for Cambridge Scientific Solutions, such as the removal of biofilm formations which foul beer lines in pubs, or the formulation of drug products for transdermal patch applications for Nemaura Pharmaceuticals.</p>
+                  </div>
                 </div>        
-              </div>              
+              </div>
+              
               <a class="btn btn-custom btn-text-left hide-reveal" data-target="#benefits" data-toggle="collapse"><span style="text-align:left;">Benefits</span><i style="float:right;" class="fa fa-plus" aria-hidden="true"></i></a>
               <div class="collapse container" id="benefits">
                 <ul>
@@ -698,45 +775,45 @@
               <a class="btn btn-custom btn-text-left hide-reveal" data-target="#accreditation" data-toggle="collapse"><span style="text-align:left;">Professional membership and accreditation</span><i style="float:right;" class="fa fa-plus" aria-hidden="true"></i></a>
               <div class="collapse container" id="accreditation">
                 <div class="row">
-                  <div class="col-xs-12 col-sm-6">               
+                  <div class="col-xs-12">               
                     <p>Student Membership of the Chartered Society of Forensic Sciences (CSFS) is provided free-of-charge for all final year students. Many of our staff are professionally recognised as accredited Biomedical Scientists by the Institute of Biomedical Science (IBMS); Chartered Chemists by the Royal Society of Chemistry (RSC), Chartered Biologists by the Royal Society of Biology (RSB) and are professional members of the Chartered Society of Forensic Sciences (CSFS).</p>
                   </div><!-- end of column -->
-                  <div class="col-xs-12 col-sm-6">
+                  <div class="col-xs-12">
                     <div class="row">
-                      <div class="col-xs-3">
+                      <div class="col-xs-3 col-sm-2">
                         <img src="image/placehold-logo.png" class="img-responsive"/>
                       </div>
-                      <div class="col-xs-3">
+                      <div class="col-xs-3 col-sm-2">
                         <img src="image/placehold-logo.png" class="img-responsive"/>
                       </div>
-                      <div class="col-xs-3">
+                      <div class="col-xs-3 col-sm-2">
                         <img src="image/placehold-logo.png" class="img-responsive"/>
                       </div>
-                      <div class="col-xs-3">
+                      <div class="col-xs-3 col-sm-2">
                         <img src="image/placehold-logo.png" class="img-responsive"/>
                       </div>
-                      <div class="col-xs-3">
+                      <div class="col-xs-3 col-sm-2">
                         <img src="image/placehold-logo.png" class="img-responsive"/>
                       </div>
-                      <div class="col-xs-3">
+                      <div class="col-xs-3 col-sm-2">
                         <img src="image/placehold-logo.png" class="img-responsive"/>
                       </div>
-                      <div class="col-xs-3">
+                      <div class="col-xs-3 col-sm-2">
                         <img src="image/placehold-logo.png" class="img-responsive"/>
                       </div>
-                      <div class="col-xs-3">
+                      <div class="col-xs-3 col-sm-2">
                         <img src="image/placehold-logo.png" class="img-responsive"/>
                       </div>
-                      <div class="col-xs-3">
+                      <div class="col-xs-3 col-sm-2">
                         <img src="image/placehold-logo.png" class="img-responsive"/>
                       </div>
-                      <div class="col-xs-3">
+                      <div class="col-xs-3 col-sm-2">
                         <img src="image/placehold-logo.png" class="img-responsive"/>
                       </div>
-                      <div class="col-xs-3">
+                      <div class="col-xs-3 col-sm-2">
                         <img src="image/placehold-logo.png" class="img-responsive"/>
                       </div>
-                      <div class="col-xs-3">
+                      <div class="col-xs-3 col-sm-2">
                         <img src="image/placehold-logo.png" class="img-responsive"/>
                       </div>  
                     </div><!-- end of row -->                                           
@@ -808,27 +885,27 @@
     <div class="tab-pane fade" id="career">
       <div class="section">
         <div class="container">
-          <div class="row">
-            <div class="col-xs-12">
-              <h2>Career prospects</h2>
-            </div><!-- end of column -->
-            <div class="col-xs-12">
-              <p>This degree equips students to take up roles in private sector forensic laboratory service providers or as police Crime Scene Investigators (CSIs), although further training would be required, in the form of the CSI Learning Programme at the College of Policing, Harperley Hall. Alternatively, you could pursue roles in fraud, customs and excise or as private investigators.</p>
-              <p>The biological modules ensure that you can also access non-forensic careers, including pharmaceutical or food quality testing laboratories, medical and laboratory equipment sales and in more general scientific writing and/or teaching professions. This is an important element of our course design, since employment opportunities in forensics are limited and students need to be well prepared for a wide range of employment options.</p>
-              <img class="img-responsive" src="http://placehold.it/940x313?text=IMAGE" />
-            </div>
-            <div class="col-xs-12">
-              <h3>Previous graduates of this course</h3>
-              <p>Previous graduates of this course have secured laboratory positions with forensic providers in both Government and private sector organisations, while others have secured posts in biology labs with companies such as The Binding Site and Severn Trent Water.</p>
-              <p>Graduates not wishing to work in laboratory based occupations have previously secured posts in scientific equipment and medical sales, where they can apply their scientific training to real-world problem solving. A number have also gone on to work in managerial positions where their numeracy and analytical skills have been of benefit, for example, as a workflow planning manager for a building supplies company in Cambridgeshire or team leader of the DNA reference samples team of Key Forensic Services Ltd.</p>
-            </div>
-            <div class="col-xs-12">
-              <h3>Add+Vantage</h3>
-              <p>The focus on preparing students for successful futures sets Coventry apart as a university. The key: developing and enhancing students' employability, and delivering a serious competitive advantage in the jobs market. At Coventry, that starts right from the beginning.</p>
-              <p>The Add+vantage modules teach a range of work experience and extra-curricular activities that are taken each year, and which broaden students knowledge and skills within a work focused environment. There is a very broad range of Add+vantage free-choice subject areas, and they are arranged in themes.</p>
-              <p><a href="#">Click here for further details.</a></p>
-            </div><!-- end of column -->
-          </div><!-- end of row -->
+              <div class="row">
+                <div class="col-xs-12">
+                  <h2>Career prospects</h2>
+                </div><!-- end of column -->
+                <div class="col-xs-12">
+                  <p>This degree equips students to take up roles in private sector forensic laboratory service providers or as police Crime Scene Investigators (CSIs), although further training would be required, in the form of the CSI Learning Programme at the College of Policing, Harperley Hall. Alternatively, you could pursue roles in fraud, customs and excise or as private investigators.</p>
+                  <p>The biological modules ensure that you can also access non-forensic careers, including pharmaceutical or food quality testing laboratories, medical and laboratory equipment sales and in more general scientific writing and/or teaching professions. This is an important element of our course design, since employment opportunities in forensics are limited and students need to be well prepared for a wide range of employment options.</p>
+                  <img class="img-responsive" src="http://placehold.it/940x313?text=IMAGE" />
+                </div>
+                <div class="col-xs-12">
+                  <h3>Our alumni</h3>
+                  <p>Previous graduates of this course have secured laboratory positions with forensic providers in both Government and private sector organisations, while others have secured posts in biology labs with companies such as The Binding Site and Severn Trent Water.</p>
+                  <p>Graduates not wishing to work in laboratory based occupations have previously secured posts in scientific equipment and medical sales, where they can apply their scientific training to real-world problem solving. A number have also gone on to work in managerial positions where their numeracy and analytical skills have been of benefit, for example, as a workflow planning manager for a building supplies company in Cambridgeshire or team leader of the DNA reference samples team of Key Forensic Services Ltd.</p>
+                </div>
+                <div class="col-xs-12">
+                  <h3>Add+Vantage</h3>
+                  <p>The focus on preparing students for successful futures sets Coventry apart as a university. The key: developing and enhancing students' employability, and delivering a serious competitive advantage in the jobs market. At Coventry, that starts right from the beginning.</p>
+                  <p>The Add+vantage modules teach a range of work experience and extra-curricular activities that are taken each year, and which broaden students knowledge and skills within a work focused environment. There is a very broad range of Add+vantage free-choice subject areas, and they are arranged in themes.</p>
+                  <p><a href="#">Click here for further details.</a></p>
+                </div><!-- end of column -->
+              </div><!-- end of row -->
         </div><!-- end of container -->
       </div><!-- end of section -->
     </div><!-- end of tab-pane -->
@@ -836,36 +913,63 @@
       <div class="section">
         <div class="container">
           <div class="row">
-            <div class="col-xs-12">
-              <h2>Fees and funding</h2>
+            <div class="col-xs-12 col-sm-8 col-md-9">
+              <div class="row">
+                <div class="col-xs-12">
+                  <h2>Fees and funding</h2>
+                </div><!-- end of column -->
+                <div class="col-xs-12">
+                  <h3>No hidden extras</h3>
+                  <h4>Included in the fees</h4>
+                  <ul>
+                    <li>Specified core reading material;</li>
+                    <li>Any mandatory UK residential field trips;</li>
+                    <li>Any mandatory UK site visits and trips;</li>
+                    <li>1,000 sides of black and white laser prints;</li>
+                    <li>Tuition fee waiver for placement and study abroad year;</li>
+                    <li>Student membership of The Chartered Society of Forensic Science for final year students;</li>
+                    <li>Costs of any mandatory UK day visits;</li>
+                    <li>Laboratory coat and safety spectacles provided for use;</li>
+                    <li>Scene of Crime outfit and basic fingerprint kit;</li>
+                    <li>Free copy of SPSS statistics software;</li>
+                    <li>Disclosure and Barring Service Certificate (formally CRB Disclosure) for those undertaking placements with children</li>
+                  </ul>
+                  <h4>Additional costs not included in the fees</h4>
+                  <ul>
+                    <li>Refundable deposit for turning point handset;</li>
+                    <li>Any optional overseas field trips or visits: £400+ per trip.</li>
+                    <li style="list-style: none; display: inline">
+                      <p>This will be updated with more specific information on the books and equipment you will receive as soon as it becomes available.</p>
+                      <p>Find out more about No Hidden Extras.</p>
+                    </li>
+                  </ul>
+                  <h3>Scholarships</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                    </p>
+                </div><!-- end of column -->
+              </div><!-- end of row -->
+            </div>
+            <div class="col-xs-12 col-sm-4 col-md-3">
+              <div class="row">
+                <div class="col-xs-12">
+                  <div class="well">
+                    <h3>Related content</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                  </div>
+                </div><!-- end of column -->
+              </div><!-- end of row -->
             </div><!-- end of column -->
-            <div class="col-xs-12">
-              <h3>No hidden extras</h3>
-              <p>Included in the fees</p>
-              <ul>
-                <li>Specified core reading material;</li>
-                <li>Any mandatory UK residential field trips;</li>
-                <li>Any mandatory UK site visits and trips;</li>
-                <li>1,000 sides of black and white laser prints;</li>
-                <li>Tuition fee waiver for placement and study abroad year;</li>
-                <li>Student membership of The Chartered Society of Forensic Science for final year students;</li>
-                <li>Costs of any mandatory UK day visits;</li>
-                <li>Laboratory coat and safety spectacles provided for use;</li>
-                <li>Scene of Crime outfit and basic fingerprint kit;</li>
-                <li>Free copy of SPSS statistics software;</li>
-                <li>Disclosure and Barring Service Certificate (formally CRB Disclosure) for those undertaking placements with children</li>
-              </ul>
-              <h3>Additional costs not included in the fees</h3>
-              <ul>
-                <li>Refundable deposit for turning point handset;</li>
-                <li>Any optional overseas field trips or visits: £400+ per trip.</li>
-                <li style="list-style: none; display: inline">
-                  <p>This will be updated with more specific information on the books and equipment you will receive as soon as it becomes available.</p>
-                  <p>Find out more about No Hidden Extras.</p>
-                </li>
-              </ul>
+            <div class="col-xs-12 col-sm-4 col-md-3">
+              <div class="row">
+                <div class="col-xs-12">
+                  <div class="well">
+                    <h3>Related content</h3>
+                    <img class="img-responsive" src="http://placehold.it/400x300?text=IMAGE">
+                  </div>
+                </div><!-- end of column -->
+              </div><!-- end of row -->
             </div><!-- end of column -->
-          </div><!-- end of row -->
+          </div><!-- end of row -->    
         </div><!-- end of container -->
       </div><!-- end of section -->
     </div><!-- end of tab-pane -->
@@ -891,15 +995,36 @@
       <div class="row">
         <div class="col-lg-8 col-centered">
           <div class="hidden-xs">
-            <iframe id="unistats-widget-frame" name="unistats-widget-frame" scrolling="no" src="http://widget.unistats.ac.uk/Widget/10001726/31/horizontal/small/en-gb/Full%20Time" style="overflow: hidden; border: 0px none transparent; width: 615px; height: 150px;" title="Unistats KIS Widget"></iframe>
+            <iframe id="unistats-widget-frame" name="unistats-widget-frame" scrolling="no" src="http://widget.unistats.ac.uk/Widget/10001726/22/horizontal/small/en-gb/Full%20Time" style="overflow: hidden; border: 0px none transparent; width: 615px; height: 150px;" title="Unistats KIS Widget"></iframe>
           </div>
           <div class="visible-xs">
-            <iframe id="unistats-widget-frame" name="unistats-widget-frame" scrolling="no" src="http://widget.unistats.ac.uk/Widget/10001726/31/vertical/small/en-gb/Full%20Time" style="overflow: hidden; border: 0px none transparent; width: 190px; height: 500px;" title="Unistats KIS Widget"></iframe>
+            <iframe id="unistats-widget-frame" name="unistats-widget-frame" scrolling="no" src="http://widget.unistats.ac.uk/Widget/10001726/22/vertical/small/en-gb/Full%20Time" style="overflow: hidden; border: 0px none transparent; width: 190px; height: 500px;" title="Unistats KIS Widget"></iframe>
           </div>
         </div>
       </div>
     </div>
-  </div>
+  </div><!-- end of section -->
+  <div class="section section-related">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <h2>Related courses</h2>
+        </div>      
+        <div class="col-xs-12 col-sm-4">
+          <h4><a href="#">Course title 1</a></h4>
+          <p><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</a></p>
+        </div>
+        <div class="col-xs-12 col-sm-4">
+          <h4><a href="#">Course title 2</a></h4>
+          <p><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</a></p>
+        </div>
+        <div class="col-xs-12 col-sm-4">
+          <h4><a href="#">Course title 3</a></h4>
+          <p><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</a></p>
+        </div>
+      </div>
+    </div>
+  </div><!-- end of section -->
 <script>
 $('#myTab').tabCollapse();
 $('.hide-reveal').click(function () {
@@ -910,6 +1035,16 @@ $('.hide-reveal').click(function () {
   else {
   $(':nth-child(2)', this).removeClass('fa-minus');
   $(':nth-child(2)', this).addClass('fa-plus');
+  }
+  });
+$('.modules-list a').click(function () {
+  if ($(this).hasClass('fa-plus') ) {
+  $(this).removeClass('fa-plus');
+  $(this).addClass('fa-minus');    
+  }
+  else {
+  $(this).removeClass('fa-minus');  
+  $(this).addClass('fa-plus');
   }
   });
 </script>
