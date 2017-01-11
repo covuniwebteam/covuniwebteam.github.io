@@ -36,11 +36,13 @@
       right: 3%;
      }
     .section-media {
-      background-color: dimgrey;
-      color: white;
+      border-top: 1px dotted dimgrey;
+      /*background-color: dimgrey;
+      color: white;*/
     }
      .section-kis {
-     background-color: #dd312c;
+      border-top: 1px dotted dimgrey;
+     /*background-color: #dd312c;*/
      }
      .panel-title > a {
       display: block;
@@ -297,11 +299,6 @@
     <div class="tab-pane active fade in" id="overview">
       <div class="section">
         <div class="container">
-          <div class="row">
-            <div class="col-xs-12">
-              <h2>Overview</h2>
-            </div><!-- end of column -->
-          </div><!-- end of row -->
           <div class="row" id="keyInfo-desktop-nav">
             <ul class="nav nav-tabs">
               <li class="active">
@@ -454,6 +451,11 @@
           </div> <!-- end of keyInfo tab-content-->
           <div class="row">
             <div class="col-xs-12">
+              <h2>Overview</h2>
+            </div><!-- end of column -->
+          </div><!-- end of row -->
+          <div class="row">
+            <div class="col-xs-12">
               <p>This exciting course blends the study of human biology with the rigorous techniques used in forensic laboratories, including analysis of blood, fibres, fingerprints, drugs, documents, DNA and fire/explosives residue. Ideal if you are fascinated by the scientific investigation of crime.</p>
               <p>We adopt a ‘Crime Scene to Court’ approach to their teaching, which really helps you to understand forensics, in particular the need to methodically collect samples, analyse them and present the results to the standard required by the courts.</p>
               <p>You can also engage in multiple placement opportunities, the chance to conduct research alongside our experienced staff or the many professional organisations we have links with – such as Leicester Royal Infirmary, Key Forensic Services Ltd, Nemaura Pharmaceuticals Ltd and West Midlands Police.</p>             
@@ -516,22 +518,160 @@
             </div>
           </div><!-- end of row -->
           <div class="row">
-            <div class="btn-group-vertical-custom">
-              <a class="btn btn-custom btn-text-left hide-reveal" data-target="#why-choose" data-toggle="collapse"><span style="text-align:left;">Why choose this course?</span><span style="float:right;">+</span></a>
+            <div class="btn-group-vertical-custom">            
+              <a class="btn btn-custom btn-text-left hide-reveal" data-target="#why-choose" data-toggle="collapse"><span style="text-align:left;">Why choose this course?</span><i style="float:right;" class="fa fa-plus" aria-hidden="true"></i></a>
               <div class="collapse container" id="why-choose">
-                <p>If you are fascinated with human biology and the scientific investigation of crime, our degree will enable you to learn all about human physiology, biochemistry, molecular biology/genetics, microbiology and how each of these disciplines can be applied in forensic science.</p>
-                <h3>Facilties</h3>
-                <p>You’ll be based in our new state-of-the-art £37 million Science and Health Building, which provides an outstanding learning and research environment, which features a video-linked ‘crime scene’ house, outstanding analytical laboratory facilities and the largest Class II containment teaching laboratory in Europe, specifically designed to accommodate microbiology, cell culture, molecular biology/genetics, biochemistry and forensic science.</p>
-                <h3>Staff</h3>
-                <p>You’ll be taught by our experienced staff, many of whom bring professional or research expertise to their teaching. They have held roles as quality assurance managers in major pharmaceuticals companies, such as GSK and British Biotech, as forensic scientists in the Forensic Science Service or as analytical scientists in government laboratories. They continue to provide consultancy and expert commentary in areas of safety and efficacy testing for the BBC, most recently on illegal skin bleaching products on sale in the UK.</p>
-                <h3>Reputation</h3>
-                <p>Coventry has an excellent reputation for evidence-based scientific research; our faculty possess expertise and have published in biochemistry, cell biology, genomic and molecular biology, microbiology, pharmacology and physiology. In your final year, you have the opportunity to collaborate on a research project, which in the past has led to students winning prizes at the Forensic Institute Research Network (FIRN) Midlands regional conference, attend the international Forensic Research and Teaching (FORREST) conference and publish articles in academic journals.</p>
-                <h3>Practical experience</h3>
-                <p>Throughout your studies, you will find that the course is underpinned with practical experience. Laboratory sessions will help to develop the practical skills needed for a career in a variety of biology and forensic roles. You will learn key experimental techniques and develop essential experimental, data handling, reporting and broader scientific skills, such as literature researching, information technology, bioinformatics, data processing and the use of statistics.</p>
-                <h3>Placements</h3>
-                <p>You’ll have the opportunity to undertake short and long-term placements. Previously students have worked on revolutionary technologies for Cambridge Scientific Solutions, such as the removal of biofilm formations which foul beer lines in pubs, or the formulation of drug products for transdermal patch applications for Nemaura Pharmaceuticals.</p>          
+                <div class="row">
+                  <div class="col-xs-12">
+                    <p>If you are fascinated with human biology and the scientific investigation of crime, our degree will enable you to learn all about human physiology, biochemistry, molecular biology/genetics, microbiology and how each of these disciplines can be applied in forensic science.</p>
+                  </div>
+                  <div class="col-xs-12 col-sm-4">
+                    <h3>Facilties</h3>
+                    <p>You’ll be based in our new state-of-the-art £37 million Science and Health Building, which provides an outstanding learning and research environment, which features a video-linked ‘crime scene’ house, outstanding analytical laboratory facilities and the largest Class II containment teaching laboratory in Europe, specifically designed to accommodate microbiology, cell culture, molecular biology/genetics, biochemistry and forensic science.</p>
+                  </div>
+                  <div class="col-xs-12 col-sm-4">
+                    <h3>&nbsp;</h3>
+                    <img src="image/hls-building.jpg" class="img-responsive" />
+                  </div>
+                  <div class="col-xs-12 col-sm-4">                        
+                    <h3>Staff</h3>
+                    <p>You’ll be taught by our experienced staff, many of whom bring professional or research expertise to their teaching. They have held roles as quality assurance managers in major pharmaceuticals companies, such as GSK and British Biotech, as forensic scientists in the Forensic Science Service or as analytical scientists in government laboratories. They continue to provide consultancy and expert commentary in areas of safety and efficacy testing for the BBC, most recently on illegal skin bleaching products on sale in the UK.</p>
+                   </div>       
+                   <div class="col-xs-12 col-sm-4">                               
+                    <h3>Reputation</h3>
+                    <p>Coventry has an excellent reputation for evidence-based scientific research; our faculty possess expertise and have published in biochemistry, cell biology, genomic and molecular biology, microbiology, pharmacology and physiology. In your final year, you have the opportunity to collaborate on a research project, which in the past has led to students winning prizes at the Forensic Institute Research Network (FIRN) Midlands regional conference, attend the international Forensic Research and Teaching (FORREST) conference and publish articles in academic journals.</p>
+                  </div>        
+                  <div class="col-xs-12 col-sm-4">                                
+                    <h3>Practical experience</h3>
+                    <p>Throughout your studies, you will find that the course is underpinned with practical experience. Laboratory sessions will help to develop the practical skills needed for a career in a variety of biology and forensic roles. You will learn key experimental techniques and develop essential experimental, data handling, reporting and broader scientific skills, such as literature researching, information technology, bioinformatics, data processing and the use of statistics.</p>
+                  </div>        
+                  <div class="col-xs-12 col-sm-4">                                
+                    <h3>Placements</h3>
+                    <p>You’ll have the opportunity to undertake short and long-term placements. Previously students have worked on revolutionary technologies for Cambridge Scientific Solutions, such as the removal of biofilm formations which foul beer lines in pubs, or the formulation of drug products for transdermal patch applications for Nemaura Pharmaceuticals.</p>
+                  </div>
+                </div>        
               </div>
-              <a class="btn btn-custom btn-text-left hide-reveal" data-target="#benefits" data-toggle="collapse"><span style="text-align:left;">Benefits</span><span style="float:right;">+</span></a>
+              <a class="btn btn-custom btn-text-left hide-reveal" data-target="#modules" data-toggle="collapse"><span style="text-align:left;">Modules</span><i style="float:right;" class="fa fa-plus" aria-hidden="true"></i></a>
+              <div class="collapse container" id="modules">
+                <div class="row">
+                  <div class="col-xs-12">
+                    <div class="row" id="modules-nav">
+                      <ul class="nav nav-tabs">
+                        <li class="active">
+                          <a data-toggle="tab" href="#modules-tab1">
+                            Year 1
+                          </a>
+                        </li>
+                        <li>
+                          <a data-toggle="tab" href="#modules-tab2">
+                            Year 2
+                          </a>
+                        </li>
+                        <li>
+                          <a data-toggle="tab" href="#modules-tab3">
+                            Year 3
+                          </a>
+                        </li>
+                        <li>
+                          <a data-toggle="tab" href="#modules-tab4">
+                            Optional Year
+                          </a>
+                        </li>
+                      </ul>
+                    </div>     
+                    <div class="tab-content" id="modules-body">
+                      <div class="tab-pane active" id="modules-tab1">
+                        <div class="row">
+                          <div class="col-xs-12">
+                            <h4>Year 1</h4>
+                          </div>
+                          <div class="col-xs-12 col-sm-6">
+                            <ul>
+                              <li>Human Physiology in Health and Disease</li>
+                              <li>Biochemistry and Microbiology</li>
+                              <li>Cell and Molecular Biology</li>
+                              <li>Introduction to Forensic Science</li>
+                              <li>Skills in Biomolecular Sciences 1 and 2</li>
+                            </ul>
+                          </div><!-- end of column -->
+                          <div class="col-xs-12 col-sm-6">
+                            <p>The first year modules will introduce you to basic scientific principles, such as hypotheses development and testing, laboratory procedures and protocols, health and safety and data presentation and analysis across the range of bioscience disciplines studied. The essential bioscience principles begin from the molecular level building up to cellular processes and extending to organism physiology systems.</p>
+                          </div><!-- end of column -->
+                        </div> <!-- end of row -->
+                      </div> <!-- end of tab-pane --> 
+                      <div class="tab-pane" id="modules-tab2">
+                        <div class="row">
+                          <div class="col-xs-12">
+                            <h4>Year 2</h4>
+                          </div>
+                          <div class="col-xs-12 col-sm-6">                    
+                            <ul>
+                              <li>Molecular Genetics</li>
+                              <li>Cell Biology</li>
+                              <li>Principles of Forensic Science</li>
+                              <li>Contemporary Skills for Biomolecular Sciences 1 and 2</li>
+                            </ul>
+                            <h4>Optional modules (1 from the following):</h4>
+                            <ul>
+                              <li>Systemic Physiology</li>
+                              <li>Infection and Immunity</li>
+                            </ul>
+                          </div><!-- end of column -->
+                          <div class="col-xs-12 col-sm-6">
+                            <p>As the course progresses, you have the choice to follow themes of either human physiology or microbiology. You can develop your interest in human physiology – studying whole body systems such as cardio-pulmonary, respiratory, reproductive, neurological and/or renal systems – or follow a more microbiological route, by studying prokaryotic and eukaryotic cells, viruses, phagocytes, immune responses and epidemiology.
+                            </p>
+                          </div><!-- end of column -->
+                        </div> <!-- end of row -->
+                      </div> <!-- end of tab-pane -->
+                      <div class="tab-pane" id="modules-tab3">
+                        <div class="row">
+                          <div class="col-xs-12">
+                            <h4>Year 3</h4>
+                          </div>
+                          <div class="col-xs-12 col-sm-6">                    
+                            <ul>
+                              <li>Research Design for the Biomolecular Sciences</li>
+                              <li>Independent Project in Biomolecular Sciences</li>
+                              <li>Advanced Forensic Science</li>
+                              <li>Forensic Identification</li>
+                            </ul>
+                            <h4>Optional modules (1 from the following):</h4>
+                            <ul>
+                              <li>Clinical Physiology</li>
+                              <li>Medical Microbiology</li>
+                            </ul>
+                            <h4>Optional modules (1 from the following):</h4>
+                            <ul>
+                              <li>Cancer Biology</li>
+                              <li>Applied Human Genetics</li>
+                            </ul>
+                          </div><!-- end of column -->
+                          <div class="col-xs-12 col-sm-6">
+                            <p>In your final year, you can continue the microbiology specialisation by extending the second year module ‘Infection and Immunity’ to the third year module ‘Medical Microbiology’. For human physiology, you would extend the second year specialist module ‘Systemic Physiology’ to the third year module ‘Clinical Physiology’.</p>
+                            <p>You can further customise your degree by selecting either the ‘Cancer Biology’ module or the ‘Applied Human Genetics’ module.</p>
+                          </div><!-- end of column -->
+                        </div> <!-- end of row -->
+                      </div> <!-- end of tab-pane -->
+                      <div class="tab-pane" id="modules-tab4">
+                        <div class="row">
+                          <div class="col-xs-12">
+                            <h4>Optional Year</h4>
+                          </div>
+                          <div class="col-xs-12 col-sm-6">                    
+                            <ul>
+                              <li>Professional Experience Sandwich Year</li>
+                              <li>Study Abroad</li>
+                              <li>Professional Training (placement)</li>
+                            </ul>
+                          </div><!-- end of column -->
+                        </div> <!-- end of row -->
+                      </div> <!-- end of tab-pane --> 
+                    </div> <!-- end of module tab-content-->
+                    <p>Please note that the modules listed above are correct at the time of going to print. However, changes may occur and we strongly advise you to contact us before applying to study at Coventry University and check the most up-to-date position on our website. This document is not intended to form part of any contract between Coventry University and yourself and should not be relied upon when making an application to study here. A compulsory Add+vantage module must also be completed in each year of study, please see below for more information on our Add+vantage scheme.</p>
+                  </div><!-- end of column --> 
+                </div>        
+              </div>              
+              <a class="btn btn-custom btn-text-left hide-reveal" data-target="#benefits" data-toggle="collapse"><span style="text-align:left;">Benefits</span><i style="float:right;" class="fa fa-plus" aria-hidden="true"></i></a>
               <div class="collapse container" id="benefits">
                 <ul>
                   <li>Coventry is rated 19th best in the UK for Biosciences in the Guardian University Guide 2017.</li>
@@ -545,7 +685,7 @@
                   <li>Support applying for short and long-term placements in laboratory and industrial settings to gain the experience employers desire. Past students have taken secondary school students on field trips to the science museum in London and developed forensic science teaching resources.</li>
                 </ul>                
               </div>
-              <a class="btn btn-custom btn-text-left hide-reveal" data-target="#themes" data-toggle="collapse"><span style="text-align:left;">Study themes</span><span style="float:right;">+</span></a>
+              <a class="btn btn-custom btn-text-left hide-reveal" data-target="#themes" data-toggle="collapse"><span style="text-align:left;">Study themes</span><i style="float:right;" class="fa fa-plus" aria-hidden="true"></i></a>
               <div class="collapse container" id="themes">
               <p>Your main study themes are:</p>
                 <ul>
@@ -555,7 +695,7 @@
                   <li><strong>Research Methods</strong>: Critical analysis, reflection, information searching and experimental design in the biological sciences. Data collection, analysis and presentation.</li>
                 </ul>
               </div>
-              <a class="btn btn-custom btn-text-left hide-reveal" data-target="#accreditation" data-toggle="collapse"><span style="text-align:left;">Professional membership and accreditation</span><span style="float:right;">+</span></a>
+              <a class="btn btn-custom btn-text-left hide-reveal" data-target="#accreditation" data-toggle="collapse"><span style="text-align:left;">Professional membership and accreditation</span><i style="float:right;" class="fa fa-plus" aria-hidden="true"></i></a>
               <div class="collapse container" id="accreditation">
                 <div class="row">
                   <div class="col-xs-12 col-sm-6">               
@@ -603,7 +743,7 @@
                   </div><!-- end of column -->
                 </div><!-- end of row --> 
               </div>
-              <a class="btn btn-custom btn-text-left hide-reveal" data-target="#taught" data-toggle="collapse"><span style="text-align:left;">How you'll be taught</span><span style="float:right;">+</span></a>
+              <a class="btn btn-custom btn-text-left hide-reveal" data-target="#taught" data-toggle="collapse"><span style="text-align:left;">How you'll be taught</span><i style="float:right;" class="fa fa-plus" aria-hidden="true"></i></a>
               <div class="collapse container" id="taught">
                 <p>This course is available as a full-time three-year or optional four-year sandwich course, the latter incorporating a work placement or study year in a related field.</p>
                 <p>You will be required to present work based on your experiences during the sandwich year. Previous students have spent a year working as Forensic Intelligence Operators for Maryland Police in the USA.</p>
@@ -613,7 +753,7 @@
                 <p>Each year, the School of Life Sciences organises a trip for students to go to Malawi, the UN identified ‘poorest country in the world’, to carry out charitable work in science education, environmental improvement, medical assessment and development and reconstruction.</p>
                 <p>Throughout the course, you will receive insight from the latest research and input from current practitioners. Recent sessions have included Disaster Victim Identification (DVI), interpretation of mixed DNA profiles and continuity and traceability in the forensic DNA lab.</p>
               </div>               
-              <a class="btn btn-custom btn-text-left hide-reveal" data-target="#assessment" data-toggle="collapse"><span style="text-align:left;">How you'll be assessed</span><span style="float:right;">+</span></a>
+              <a class="btn btn-custom btn-text-left hide-reveal" data-target="#assessment" data-toggle="collapse"><span style="text-align:left;">How you'll be assessed</span><i style="float:right;" class="fa fa-plus" aria-hidden="true"></i></a>
               <div class="collapse container" id="assessment">
                 <p>The learning outcomes of modules, assignments and projects will be clearly stated. Your work will be marked according to how well you achieve these learning outcomes and your final feedback will refer to each outcome, as well as providing an overall percentage grade.</p>
                 <p>Assessment methods vary and include: practical class and project performance, written practical reports, project thesis, oral presentations, tutorial tasks, project proposals and practical tests (laboratory competence and reports).</p>
@@ -629,7 +769,7 @@
                   </li>
                 </ul>
               </div>
-              <a class="btn btn-custom btn-text-left hide-reveal" data-target="#onCompletion" data-toggle="collapse"><span style="text-align:left;">On completion</span><span style="float:right;">+</span></a>
+              <a class="btn btn-custom btn-text-left hide-reveal" data-target="#onCompletion" data-toggle="collapse"><span style="text-align:left;">On completion</span><i style="float:right;" class="fa fa-plus" aria-hidden="true"></i></a>
               <div class="collapse container" id="onCompletion">
               <p>On completion, you will be able to:</p>
                 <ul>
@@ -642,7 +782,7 @@
                 </ul>
                 <ul>
               </div> 
-              <a class="btn btn-custom btn-text-left hide-reveal" data-target="#teaching" data-toggle="collapse"><span style="text-align:left;">Teaching contact hours</span><span style="float:right;">+</span></a>
+              <a class="btn btn-custom btn-text-left hide-reveal" data-target="#teaching" data-toggle="collapse"><span style="text-align:left;">Teaching contact hours</span><i style="float:right;" class="fa fa-plus" aria-hidden="true"></i></a>
               <div class="collapse container" id="teaching">
                 <p>In a typical teaching week, you will have up to 18 ‘contact’ hours of teaching. This generally breaks down as:</p>
                 <ul>
@@ -654,7 +794,7 @@
                   </li>
                 </ul>
               </div>
-              <a class="btn btn-custom btn-text-left hide-reveal" data-target="#experience" data-toggle="collapse"><span style="text-align:left;">International experience opportunities</span><span style="float:right;">+</span></a>
+              <a class="btn btn-custom btn-text-left hide-reveal" data-target="#experience" data-toggle="collapse"><span style="text-align:left;">International experience opportunities</span><i style="float:right;" class="fa fa-plus" aria-hidden="true"></i></a>
               <div class="collapse container" id="experience">
                 <p>Our sandwich degree option allows a full year work placement, which can be taken abroad, or you can undertake a study year abroad. A number of students in our department have been successful in securing places to study in Spain, France, Canada and the US.</p>
                 <p>The Biological and Forensic Sciences course attracts many international students, particularly from Romania, Poland, Switzerland and the Middle East, providing a diverse learning experience. This enhances the discussion of issues such as genetic inheritance, criminal justice and biomedical interventions and provides all students with a global perspective of developments in both human biology and forensic science.</p>
@@ -675,9 +815,14 @@
             <div class="col-xs-12">
               <p>This degree equips students to take up roles in private sector forensic laboratory service providers or as police Crime Scene Investigators (CSIs), although further training would be required, in the form of the CSI Learning Programme at the College of Policing, Harperley Hall. Alternatively, you could pursue roles in fraud, customs and excise or as private investigators.</p>
               <p>The biological modules ensure that you can also access non-forensic careers, including pharmaceutical or food quality testing laboratories, medical and laboratory equipment sales and in more general scientific writing and/or teaching professions. This is an important element of our course design, since employment opportunities in forensics are limited and students need to be well prepared for a wide range of employment options.</p>
+              <img class="img-responsive" src="http://placehold.it/940x313?text=IMAGE" />
+            </div>
+            <div class="col-xs-12">
               <h3>Previous graduates of this course</h3>
               <p>Previous graduates of this course have secured laboratory positions with forensic providers in both Government and private sector organisations, while others have secured posts in biology labs with companies such as The Binding Site and Severn Trent Water.</p>
               <p>Graduates not wishing to work in laboratory based occupations have previously secured posts in scientific equipment and medical sales, where they can apply their scientific training to real-world problem solving. A number have also gone on to work in managerial positions where their numeracy and analytical skills have been of benefit, for example, as a workflow planning manager for a building supplies company in Cambridgeshire or team leader of the DNA reference samples team of Key Forensic Services Ltd.</p>
+            </div>
+            <div class="col-xs-12">
               <h3>Add+Vantage</h3>
               <p>The focus on preparing students for successful futures sets Coventry apart as a university. The key: developing and enhancing students' employability, and delivering a serious competitive advantage in the jobs market. At Coventry, that starts right from the beginning.</p>
               <p>The Add+vantage modules teach a range of work experience and extra-curricular activities that are taken each year, and which broaden students knowledge and skills within a work focused environment. There is a very broad range of Add+vantage free-choice subject areas, and they are arranged in themes.</p>
@@ -731,9 +876,9 @@
         <div class="col-sm-6 col-sm-push-6">
           <h2>What our students say</h2>
           <blockquote>
-            <p>Lorem ipsum dolor sit amet</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis condimentum nisl metus, vitae pulvinar elit molestie vitae. Sed eu ultricies massa. Donec libero nisi, tempor quis faucibus id, ultricies id quam.</p>
             <footer>
-              Someone famous
+              Happy Student 1
             </footer>
           </blockquote>
         </div><!-- end of column -->
@@ -757,8 +902,20 @@
   </div>
 <script>
 $('#myTab').tabCollapse();
+$('.hide-reveal').click(function () {
+  if ( $(':nth-child(2)', this).hasClass('fa-plus') ) {
+  $(':nth-child(2)', this).removeClass('fa-plus');
+  $(':nth-child(2)', this).addClass('fa-minus');
+  }
+  else {
+  $(':nth-child(2)', this).removeClass('fa-minus');
+  $(':nth-child(2)', this).addClass('fa-plus');
+  }
+  });
 </script>
 <script src="vendor/jquery.js"></script>
 <script src="dist/lity.js"></script>
+<script type="text/javascript">
+</script>
 </body>
 </html>
