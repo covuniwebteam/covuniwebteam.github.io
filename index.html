@@ -296,7 +296,7 @@
       <div class="row">
         <nav class="navbar">
               <ul class="nav navbar-nav" id="page-nav-tabs">
-                <li class="active">
+                <li class="active" id="overview-nav-button">
                   <a data-toggle="tab" href="#overview-tab-pane">Overview</a>
                 </li>
                 <li>
@@ -305,7 +305,7 @@
                 <li>
                   <a data-toggle="tab" href="#entry-tab-pane">Entry requirements</a>
                 </li>
-                <li>
+                <li id="fees-nav-button">
                   <a data-toggle="tab" href="#fees-tab-pane">Fees and funding</a>
                 </li>
                 <li>
@@ -360,7 +360,8 @@
                     <div class="col-xs-6 col-sm-4">
                       <div id="keyInfo-uk-cell-fees">
                         <h4>Fees</h4>
-                        <p>£9250</p>
+                        <p>£8950 - 9250</p>
+                        <p><a data-toggle="tab" href="#fees-tab-pane">Find out more</a></p>
                       </div>
                     </div>
                     <div class="clearfix hidden-xs"></div>
@@ -427,7 +428,8 @@
                     <div class="col-xs-6 col-sm-4">
                       <div id="keyInfo-international-cell-fees">
                         <h4>Fees</h4>
-                        <p>£14000</p>
+                        <p>£12000 - £14000</p>
+                        <p><a href="#fees-tab-pane">Find out more</a></p>
                       </div>
                     </div>
                     <div class="clearfix hidden-xs"></div>
@@ -494,10 +496,12 @@
             </div><!-- end of column -->
           </div><!-- end of row -->
           <div class="row">
-            <div class="col-xs-12">
+            <div class="col-sm-6">
               <p>If you are interested in working in the fields of human bioscience or its application to forensic science, this course will prepare you to design, implement and evaluate appropriate investigative techniques. It has been purposefully designed to give you a thorough understanding of both modern human bioscience topics and their application to forensic science. You will cover key study and research skills in the areas of forensic science, genetics, biochemistry, molecular biology, cell biology, microbiology and human physiology.</p>
-              <img class="img-responsive" src="https://placehold.it/940x313?text=IMAGE" />
               <p>Many areas of human bioscience, such as the development of new antimicrobials or the manipulation of stem cells to treat inherited conditions, require graduates with good theoretical and practical knowledge alongside the skills to control, implement and evaluate these new developments. This is a varied, applied course, which recognises the multidisciplinary approach that is needed in modern sciences. Throughout your degree, you will study the details of forensic science, the legal system and investigative practice, demonstrating a capability to maintain auditable records of your investigations.</p>
+            </div>
+            <div class="col-sm-6">
+              <img class="img-responsive" src="https://placehold.it/600x400?text=IMAGE" />
             </div>
           </div><!-- end of row -->
           <div class="row">
@@ -529,152 +533,153 @@
 	                        </li>
 	                      </ul>
 	                    </div>     
-	                    <div class="tab-content" id="modules-body">
-	                      <div class="tab-pane active" id="module-tab1">
-	                        <div class="row">
-	                          <div class="col-xs-12 col-sm-6">
-	                            <div class="row">
-	                              <div class="col-xs-12">
-	                                <h4>Year 1 modules</h4>
-	                              </div>
-	                              <div class="col-xs-12">
-	                                <ul class="module-list">
-	                                  <li><a class="hide-reveal-module fa-plus" data-target="#year1-module-1" data-toggle="collapse">Human Physiology in Health and Disease</a>
-	                                  <div class="collapse" id="year1-module-1">
-	                                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
-	                                  </li>
-	                                  <li><a class="hide-reveal-module fa-plus" data-target="#year1-module-2" data-toggle="collapse">Biochemistry and Microbiology</a>
-	                                  <div class="collapse" id="year1-module-2">
-	                                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
-	                                  </li>
-	                                  <li><a class="hide-reveal-module fa-plus" data-target="#year1-module-3" data-toggle="collapse">Cell and Molecular Biology</a>
-	                                  <div class="collapse" id="year1-module-3">
-	                                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
-	                                  </li>
-	                                  <li><a class="hide-reveal-module fa-plus" data-target="#year1-module-4" data-toggle="collapse">Introduction to Forensic Science</a>
-	                                  <div class="collapse" id="year1-module-4">
-	                                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
-	                                  </li>
-	                                  <li><a class="hide-reveal-module fa-plus" data-target="#year1-module-5" data-toggle="collapse">Skills in Biomolecular Sciences 1 and 2</a>
-	                                  <div class="collapse" id="year1-module-5">
-	                                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
-	                                  </li>
-	                                </ul>
-	                              </div><!-- end of column -->
-	                            </div><!-- end of row -->
-	                          </div><!-- end of column -->
-	                          <div class="col-xs-12 col-sm-6">
-	                            <h4>Overview</h4>
-	                            <p>The first year modules will introduce you to basic scientific principles, such as hypotheses development and testing, laboratory procedures and protocols, health and safety and data presentation and analysis across the range of bioscience disciplines studied. The essential bioscience principles begin from the molecular level building up to cellular processes and extending to organism physiology systems.</p>
-	                          </div><!-- end of column -->
-	                        </div> <!-- end of row -->
-	                      </div> <!-- end of tab-pane --> 
-	                      <div class="tab-pane" id="module-tab2">
-	                        <div class="row">
-	                          <div class="col-xs-12 col-sm-6">
-	                            <div class="row">
-	                              <div class="col-xs-12">
-	                                <h4>Year 2 modules</h4>
-	                              </div>
-	                              <div class="col-xs-12">                    
-	                                <ul class="module-list">
-	                                  <li><a class="hide-reveal-module fa-plus" data-target="#year2-module-1" data-toggle="collapse">Molecular Genetics</a>
-	                                  <div class="collapse" id="year2-module-1">
-	                                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
-	                                  </li>
-	                                  <li><a class="hide-reveal-module fa-plus" data-target="#year2-module-2" data-toggle="collapse">Cell Biology</a>
-	                                  <div class="collapse" id="year2-module-2">
-	                                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
-	                                  </li>
-	                                  <li><a class="hide-reveal-module fa-plus" data-target="#year2-module-3" data-toggle="collapse">Principles of Forensic Science</a>
-	                                  <div class="collapse" id="year2-module-3">
-	                                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
-	                                  </li>
-	                                  <li><a class="hide-reveal-module fa-plus" data-target="#year2-module-4" data-toggle="collapse">Contemporary Skills for Biomolecular Sciences 1 and 2</a>
-	                                  <div class="collapse" id="year2-module-4">
-	                                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div> 
-	                                  </li>
-	                                </ul>
-	                                <h4>Optional modules (1 from the following):</h4>
-	                                <ul class="module-list">
-	                                  <li><a class="hide-reveal-module fa-plus" data-target="#year2-module-5" data-toggle="collapse">Systemic Physiology</a>
-	                                  <div class="collapse" id="year2-module-5">
-	                                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>    
-	                                  </li>
-	                                  <li><a class="hide-reveal-module fa-plus" data-target="#year2-module-6" data-toggle="collapse">Infection and Immunity</a>
-	                                  <div class="collapse" id="year2-module-6">
-	                                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>      
-	                                  </li>
-	                                </ul>
-	                              </div><!-- end of column -->
-	                            </div>
-	                          </div>
-	                          <div class="col-xs-12 col-sm-6">
-	                            <h4>Overview</h4>
-	                            <p>As the course progresses, you have the choice to follow themes of either human physiology or microbiology. You can develop your interest in human physiology – studying whole body systems such as cardio-pulmonary, respiratory, reproductive, neurological and/or renal systems – or follow a more microbiological route, by studying prokaryotic and eukaryotic cells, viruses, phagocytes, immune responses and epidemiology.
-	                            </p>
-	                          </div><!-- end of column -->
-	                        </div> <!-- end of row -->
-	                      </div> <!-- end of tab-pane -->
-	                      <div class="tab-pane" id="module-tab3">
-	                        <div class="row">
-	                          <div class="col-xs-12 col-sm-6">
-	                            <div class="row">
-	                              <div class="col-xs-12">
-	                                <h4>Year 3 modules</h4>
-	                              </div>
-	                              <div class="col-xs-12">                    
-	                                <ul class="module-list">
-	                                  <li><a class="hide-reveal-module fa-plus" data-target="#year3-module-1" data-toggle="collapse">Research Design for the Biomolecular Sciences</a>
-	                                  <div class="collapse" id="year3-module-1">
-	                                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>                                 
-	                                  </li>
-	                                  <li><a class="hide-reveal-module fa-plus" data-target="#year3-module-2" data-toggle="collapse">Independent Project in Biomolecular Sciences</a>
-	                                  <div class="collapse" id="year3-module-2">
-	                                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>  
-	                                  </li>
-	                                  <li><a class="hide-reveal-module fa-plus" data-target="#year3-module-3" data-toggle="collapse">Advanced Forensic Science</a>
-	                                  <div class="collapse" id="year3-module-3">
-	                                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>  
-	                                  </li>
-	                                  <li><a class="hide-reveal-module fa-plus" data-target="#year3-module-4" data-toggle="collapse">Forensic Identification</a>
-	                                  <div class="collapse" id="year3-module-4">
-	                                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>  
-	                                  </li>
-	                                </ul>
-	                                <h4>Optional modules (1 from the following):</h4>
-	                                <ul class="module-list">
-	                                  <li><a class="hide-reveal-module fa-plus" data-target="#year3-module-5" data-toggle="collapse">Clinical Physiology</a>
-	                                  <div class="collapse" id="year3-module-5">
-	                                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>  
-	                                  </li>
-	                                  <li><a class="hide-reveal-module fa-plus" data-target="#year3-module-6" data-toggle="collapse">Medical Microbiology</a>
-	                                  <div class="collapse" id="year3-module-6">
-	                                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>  
-	                                  </li>
-	                                </ul>
-	                                <h4>Optional modules (1 from the following):</h4>
-	                                <ul class="module-list">
-	                                  <li><a class="hide-reveal-module fa-plus" data-target="#year3-module-7" data-toggle="collapse">Cancer Biology</a>
-	                                  <div class="collapse" id="year3-module-7">
-	                                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>  
-	                                  </li>
-	                                  <li><a class="hide-reveal-module fa-plus" data-target="#year3-module-8" data-toggle="collapse">Applied Human Genetics</a>
-	                                  <div class="collapse" id="year3-module-8">
-	                                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>  
-	                                  </li>
-	                                </ul>
-	                              </div><!-- end of column -->
-	                            </div>
-	                          </div>
-	                          <div class="col-xs-12 col-sm-6">
-	                            <h4>Overview</h4>
-	                            <p>In your final year, you can continue the microbiology specialisation by extending the second year module ‘Infection and Immunity’ to the third year module ‘Medical Microbiology’. For human physiology, you would extend the second year specialist module ‘Systemic Physiology’ to the third year module ‘Clinical Physiology’.</p>
-	                            <p>You can further customise your degree by selecting either the ‘Cancer Biology’ module or the ‘Applied Human Genetics’ module.</p>
-	                          </div><!-- end of column -->
-	                        </div> <!-- end of row -->
-	                      </div> <!-- end of tab-pane -->
-	                    </div> <!-- end of module tab-content-->
+                      <div class="tab-content" id="modules-body">
+                        <div class="tab-pane active" id="module-tab1">
+                          <div class="row">
+                            <div class="col-xs-12">
+                              <h4>Overview of year 1</h4>
+                                <p>The first year modules will introduce you to basic scientific principles, such as hypotheses development and testing, laboratory procedures and protocols, health and safety and data presentation and analysis across the range of bioscience disciplines studied. The essential bioscience principles begin from the molecular level building up to cellular processes and extending to organism physiology systems.</p>
+                            </div><!-- end of column -->
+
+                            <div class="col-xs-12 col-sm-6">
+                              <h4>Year 1 modules</h4>
+                              <ul class="module-list">
+                                <li><a class="hide-reveal-module fa-plus" data-target="#year1-module-1" data-toggle="collapse">Human Physiology in Health and Disease</a>
+                                <div class="collapse" id="year1-module-1">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+                                </li>
+                                <li><a class="hide-reveal-module fa-plus" data-target="#year1-module-2" data-toggle="collapse">Biochemistry and Microbiology</a>
+                                <div class="collapse" id="year1-module-2">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+                                </li>
+                                <li><a class="hide-reveal-module fa-plus" data-target="#year1-module-3" data-toggle="collapse">Cell and Molecular Biology</a>
+                                <div class="collapse" id="year1-module-3">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+                                </li>
+                                <li><a class="hide-reveal-module fa-plus" data-target="#year1-module-4" data-toggle="collapse">Introduction to Forensic Science</a>
+                                <div class="collapse" id="year1-module-4">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+                                </li>
+                                <li><a class="hide-reveal-module fa-plus" data-target="#year1-module-5" data-toggle="collapse">Skills in Biomolecular Sciences 1 and 2</a>
+                                <div class="collapse" id="year1-module-5">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+                                </li>
+                              </ul>
+                            </div><!-- end of column -->
+                            <div class="col-xs-12 col-sm-6">
+                             <h4>Add+Vantage</h4>
+                              <p>The focus on preparing students for successful futures sets Coventry apart as a university. The key: developing and enhancing students' employability, and delivering a serious competitive advantage in the jobs market. At Coventry, that starts right from the beginning.</p>
+                              <p>The Add+vantage modules teach a range of work experience and extra-curricular activities that are taken each year, and which broaden students knowledge and skills within a work focused environment. There is a very broad range of Add+vantage free-choice subject areas, and they are arranged in themes.</p>
+                              <p><a href="#">Click here for further details.</a></p>
+                            </div><!-- end of column -->
+                          </div> <!-- end of row -->
+                        </div> <!-- end of tab-pane --> 
+                        <div class="tab-pane" id="module-tab2">
+                          <div class="row">
+                            <div class="col-xs-12">
+                              <h4>Overview of year 2</h4>
+                                <p>As the course progresses, you have the choice to follow themes of either human physiology or microbiology. You can develop your interest in human physiology – studying whole body systems such as cardio-pulmonary, respiratory, reproductive, neurological and/or renal systems – or follow a more microbiological route, by studying prokaryotic and eukaryotic cells, viruses, phagocytes, immune responses and epidemiology.</p>
+                            </div>
+
+                            <div class="col-xs-12 col-sm-6">
+                              <h4>Year 2 modules</h4>
+                              <ul class="module-list">
+                                <li><a class="hide-reveal-module fa-plus" data-target="#year2-module-1" data-toggle="collapse">Molecular Genetics</a>
+                                <div class="collapse" id="year2-module-1">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+                                </li>
+                                <li><a class="hide-reveal-module fa-plus" data-target="#year2-module-2" data-toggle="collapse">Cell Biology</a>
+                                <div class="collapse" id="year2-module-2">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+                                </li>
+                                <li><a class="hide-reveal-module fa-plus" data-target="#year2-module-3" data-toggle="collapse">Principles of Forensic Science</a>
+                                <div class="collapse" id="year2-module-3">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+                                </li>
+                                <li><a class="hide-reveal-module fa-plus" data-target="#year2-module-4" data-toggle="collapse">Contemporary Skills for Biomolecular Sciences 1 and 2</a>
+                                <div class="collapse" id="year2-module-4">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div> 
+                                </li>
+                              </ul>
+                              <h4>Optional modules (1 from the following):</h4>
+                              <ul class="module-list">
+                                <li><a class="hide-reveal-module fa-plus" data-target="#year2-module-5" data-toggle="collapse">Systemic Physiology</a>
+                                <div class="collapse" id="year2-module-5">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>    
+                                </li>
+                                <li><a class="hide-reveal-module fa-plus" data-target="#year2-module-6" data-toggle="collapse">Infection and Immunity</a>
+                                <div class="collapse" id="year2-module-6">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>      
+                                </li>
+                              </ul>
+                            </div><!-- end of column -->
+                            <div class="col-xs-12 col-sm-6">
+                              <h4>Add+Vantage</h4>
+                                <p>The focus on preparing students for successful futures sets Coventry apart as a university. The key: developing and enhancing students' employability, and delivering a serious competitive advantage in the jobs market. At Coventry, that starts right from the beginning.</p>
+                                <p>The Add+vantage modules teach a range of work experience and extra-curricular activities that are taken each year, and which broaden students knowledge and skills within a work focused environment. There is a very broad range of Add+vantage free-choice subject areas, and they are arranged in themes.</p>
+                                <p><a href="#">Click here for further details.</a></p>
+                            </div><!-- end of column -->
+                          </div> <!-- end of row -->
+                        </div> <!-- end of tab-pane -->
+                        <div class="tab-pane" id="module-tab3">
+                          <div class="row">
+                            <div class="col-xs-12">
+                              <h4>Overview of year 3</h4>
+                                <p>In your final year, you can continue the microbiology specialisation by extending the second year module ‘Infection and Immunity’ to the third year module ‘Medical Microbiology’. For human physiology, you would extend the second year specialist module ‘Systemic Physiology’ to the third year module ‘Clinical Physiology’.</p>
+                                <p>You can further customise your degree by selecting either the ‘Cancer Biology’ module or the ‘Applied Human Genetics’ module.</p>
+                              </div>
+                            <div class="col-xs-12 col-sm-6">
+                              <h4>Year 3 modules</h4>
+                              <ul class="module-list">
+                                <li><a class="hide-reveal-module fa-plus" data-target="#year3-module-1" data-toggle="collapse">Research Design for the Biomolecular Sciences</a>
+                                <div class="collapse" id="year3-module-1">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>                                 
+                                </li>
+                                <li><a class="hide-reveal-module fa-plus" data-target="#year3-module-2" data-toggle="collapse">Independent Project in Biomolecular Sciences</a>
+                                <div class="collapse" id="year3-module-2">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>  
+                                </li>
+                                <li><a class="hide-reveal-module fa-plus" data-target="#year3-module-3" data-toggle="collapse">Advanced Forensic Science</a>
+                                <div class="collapse" id="year3-module-3">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>  
+                                </li>
+                                <li><a class="hide-reveal-module fa-plus" data-target="#year3-module-4" data-toggle="collapse">Forensic Identification</a>
+                                <div class="collapse" id="year3-module-4">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>  
+                                </li>
+                              </ul>
+                              <h4>Optional modules (1 from the following):</h4>
+                              <ul class="module-list">
+                                <li><a class="hide-reveal-module fa-plus" data-target="#year3-module-5" data-toggle="collapse">Clinical Physiology</a>
+                                <div class="collapse" id="year3-module-5">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>  
+                                </li>
+                                <li><a class="hide-reveal-module fa-plus" data-target="#year3-module-6" data-toggle="collapse">Medical Microbiology</a>
+                                <div class="collapse" id="year3-module-6">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>  
+                                </li>
+                              </ul>
+                              <h4>Optional modules (1 from the following):</h4>
+                              <ul class="module-list">
+                                <li><a class="hide-reveal-module fa-plus" data-target="#year3-module-7" data-toggle="collapse">Cancer Biology</a>
+                                <div class="collapse" id="year3-module-7">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>  
+                                </li>
+                                <li><a class="hide-reveal-module fa-plus" data-target="#year3-module-8" data-toggle="collapse">Applied Human Genetics</a>
+                                <div class="collapse" id="year3-module-8">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>  
+                                </li>
+                              </ul>
+                            </div><!-- end of column -->
+                            <div class="col-xs-12 col-sm-6">
+                              <h4>Add+Vantage</h4>
+                                <p>The focus on preparing students for successful futures sets Coventry apart as a university. The key: developing and enhancing students' employability, and delivering a serious competitive advantage in the jobs market. At Coventry, that starts right from the beginning.</p>
+                                <p>The Add+vantage modules teach a range of work experience and extra-curricular activities that are taken each year, and which broaden students knowledge and skills within a work focused environment. There is a very broad range of Add+vantage free-choice subject areas, and they are arranged in themes.</p>
+                                <p><a href="#">Click here for further details.</a></p>
+                            </div><!-- end of column -->
+                          </div> <!-- end of row -->
+                        </div> <!-- end of tab-pane -->
+                      </div> <!-- end of module tab-content-->     
 	                    <h4>Optional enhancement year</h4>                
 	                    <ul>
 	                      <li>Professional Experience Sandwich Year</li>
@@ -968,22 +973,25 @@
             <div class="col-xs-12">
               <h2>Career prospects</h2>
             </div><!-- end of #career-tab-pane .row (1), .col-xs-12 (1) -->
-            <div class="col-xs-12">
+            <div class="col-xs-12 col-sm-6">
               <p>This degree equips students to take up roles in private sector forensic laboratory service providers or as police Crime Scene Investigators (CSIs), although further training would be required, in the form of the CSI Learning Programme at the College of Policing, Harperley Hall. Alternatively, you could pursue roles in fraud, customs and excise or as private investigators.</p>
               <p>The biological modules ensure that you can also access non-forensic careers, including pharmaceutical or food quality testing laboratories, medical and laboratory equipment sales and in more general scientific writing and/or teaching professions. This is an important element of our course design, since employment opportunities in forensics are limited and students need to be well prepared for a wide range of employment options.</p>
-              <img class="img-responsive" src="https://placehold.it/940x313?text=IMAGE" />
             </div><!-- end of #career-tab-pane .row (1), .col-xs-12 (2) -->
-            <div class="col-xs-12">
+            <div class="col-xs-12 col-sm-6">
+              <img class="img-responsive" src="https://placehold.it/400x300?text=IMAGE" />
+            </div><!-- end of #career-tab-pane .row (1), .col-xs-12 (2) -->
+            <div class="col-xs-12 col-sm-6">
               <h3>Our alumni</h3>
               <p>Previous graduates of this course have secured laboratory positions with forensic providers in both Government and private sector organisations, while others have secured posts in biology labs with companies such as The Binding Site and Severn Trent Water.</p>
               <p>Graduates not wishing to work in laboratory based occupations have previously secured posts in scientific equipment and medical sales, where they can apply their scientific training to real-world problem solving. A number have also gone on to work in managerial positions where their numeracy and analytical skills have been of benefit, for example, as a workflow planning manager for a building supplies company in Cambridgeshire or team leader of the DNA reference samples team of Key Forensic Services Ltd.</p>
             </div><!-- end of #career-tab-pane .row (1), .col-xs-12 (3) -->
-            <div class="col-xs-12">
-              <h3>Add+Vantage</h3>
-              <p>The focus on preparing students for successful futures sets Coventry apart as a university. The key: developing and enhancing students' employability, and delivering a serious competitive advantage in the jobs market. At Coventry, that starts right from the beginning.</p>
-              <p>The Add+vantage modules teach a range of work experience and extra-curricular activities that are taken each year, and which broaden students knowledge and skills within a work focused environment. There is a very broad range of Add+vantage free-choice subject areas, and they are arranged in themes.</p>
-              <p><a href="#">Click here for further details.</a></p>
-            </div><!-- end of #career-tab-pane .row (1), .col-xs-12 (4) -->
+            <div class="col-xs-12 col-sm-6">
+              <script src="https://platform.linkedin.com/in.js" type="text/javascript">extensions: AlumniFacet@https://www.linkedin.com/edu/alumni-facet-extension-js</script>
+              <script type="IN/AlumniFacet" data-linkedin-schoolid="12581"></script>
+              <div class="li-alumni-widget">
+                <a href="https://www.linkedin.com/edu/coventry-university-12581" target="_li">Visit Coventry University on LinkedIn</a> | <a href="https://www.linkedin.com/edu/" target="_li">LinkedIn for Education</a>
+              </div>
+            </div>
           </div><!-- end of #career-tab-pane .row (1) -->
         </div><!-- end of #career-tab-pane .container -->
       </div><!-- end of #career-tab-pane .section -->
@@ -1044,26 +1052,81 @@
   </div><!-- end of #related-courses-section .section -->
 <script>
 $('#page-nav-tabs').tabCollapse(); //this triggers the tabcollapse plugin, converting tabs to dropdowns buttons on mobile
+
 $('.hide-reveal').click(function () {
-  if ( $(':nth-child(2)', this).hasClass('fa-plus') ) {
-  $(':nth-child(2)', this).removeClass('fa-plus');
-  $(':nth-child(2)', this).addClass('fa-minus');
+  
+  if ( !$(this).next().hasClass('collapsing') ) {
+    
+    if ( $(':nth-child(2)', this).hasClass('fa-plus') ) {
+
+      $(':nth-child(2)', this).removeClass('fa-plus');
+      $(':nth-child(2)', this).addClass('fa-minus');
+
+    }
+    
+    else {
+
+      $(':nth-child(2)', this).removeClass('fa-minus');
+      $(':nth-child(2)', this).addClass('fa-plus');
+    }
+  
   }
-  else {
-  $(':nth-child(2)', this).removeClass('fa-minus');
-  $(':nth-child(2)', this).addClass('fa-plus');
-  }
-  }); // this switches the plus and minus buttons when the hide-reveal tabs are clicked
+
+}); // this switches the plus and minus buttons when the hide-reveal tabs are clicked
+
 $('.module-list a').click(function () {
-  if ($(this).hasClass('fa-plus') ) {
-  $(this).removeClass('fa-plus');
-  $(this).addClass('fa-minus');    
+
+  if ( !$(this).next().hasClass('collapsing') ) {
+
+    if ( $(this).hasClass('fa-plus') ) {
+
+      $(this).removeClass('fa-plus');
+      $(this).addClass('fa-minus');    
+    
+    }
+    
+    else {
+
+      $(this).removeClass('fa-minus');  
+      $(this).addClass('fa-plus');
+    
+    }
+
   }
+
+  }); // this toggles the plus and minus buttons when the hide-reveal module tabs are clicked
+
+$('#keyInfo-uk-cell-fees a, #keyInfo-international-cell-fees a').click(function () {
+
+  if ($(window).width() > 767) {
+  
+    $('#fees-nav-button').addClass('active');
+    $('#overview-nav-button').removeClass('active');
+
+  }
+
+});  // this enables tab toggling from the fees hyperlink in the 'key information' tabbed widget
+
+$('#page-nav-tabs').on('show-accordion.bs.tabcollapse show-tabs.bs.tabcollapse', function() {
+
+  var keyInfoFees = "#keyInfo-uk-cell-fees a, #keyInfo-international-cell-fees a"
+
+  if ( $(keyInfoFees).attr('data-toggle') === 'tab' ) {
+
+    $(keyInfoFees).attr('data-toggle', 'collapse');
+    $(keyInfoFees).attr('href', '#fees-tab-pane-collapse');
+  
+  }
+  
   else {
-  $(this).removeClass('fa-minus');  
-  $(this).addClass('fa-plus');
+
+    $(keyInfoFees).attr('href', '#fees-tab-pane');
+    $(keyInfoFees).attr('data-toggle', 'tab');
+    
   }
-  }); // this switches the plus and minus buttons when the hide-reveal module tabs are clicked
+
+}); // this enables accordion toggling (on mobile) from the fees hyperlinks in the 'key information' tabbed widget
+  
 </script>
 <script src="vendor/jquery.js"></script>
 <script src="dist/lity.js"></script>
