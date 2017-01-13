@@ -6129,37 +6129,39 @@ button.close {
 }
 .carousel-control {
   position: absolute;
-  top: 0;
+  /*top: 0;*/
   left: 0;
-  bottom: 0;
+  /*bottom: 0;*/
+  bottom: -10px;
   width: 15%;
-  opacity: 0.5;
-  filter: alpha(opacity=50);
+  /*opacity: 0.5;
+  filter: alpha(opacity=50);*/
   font-size: 20px;
-  color: #ffffff;
+  /*color: #ffffff;*/
+  color: #337cbb;
   text-align: center;
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
 }
 .carousel-control.left {
-  background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.0001) 100%);
+  /*background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.0001) 100%);
   background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.0001) 100%);
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.0001) 100%);
   background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80000000', endColorstr='#00000000', GradientType=1);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80000000', endColorstr='#00000000', GradientType=1);*/
 }
 .carousel-control.right {
   left: auto;
   right: 0;
-  background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0.5) 100%);
+  /*background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0.5) 100%);
   background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0.5) 100%);
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0.5) 100%);
   background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#80000000', GradientType=1);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#80000000', GradientType=1);*/
 }
 .carousel-control:hover,
 .carousel-control:focus {
   outline: 0;
-  color: #ffffff;
+  /*color: #ffffff;*/
   text-decoration: none;
   opacity: 0.9;
   filter: alpha(opacity=90);
@@ -6199,7 +6201,8 @@ button.close {
 }
 .carousel-indicators {
   position: absolute;
-  bottom: 10px;
+  /*bottom: 10px;*/
+  bottom: -18px;
   left: 50%;
   z-index: 15;
   width: 60%;
@@ -6214,7 +6217,8 @@ button.close {
   height: 10px;
   margin: 1px;
   text-indent: -999px;
-  border: 1px solid #ffffff;
+  /*border: 1px solid #ffffff;*/
+  border: 1px solid #337cbb;
   border-radius: 10px;
   cursor: pointer;
   background-color: #000 \9;
@@ -6224,7 +6228,8 @@ button.close {
   margin: 0;
   width: 12px;
   height: 12px;
-  background-color: #ffffff;
+  /*background-color: #ffffff;*/
+  background-color: #337cbb;
 }
 .carousel-caption {
   position: absolute;
@@ -6599,9 +6604,9 @@ body {
 .jumbotron h1.text-danger {
   color: #d9534f !important;
 }
-.carousel .item img {
+/*.carousel .item img {
   min-width: 100%;
-}
+}*/
 .section {
   position: relative;
   padding: 35px 0;
