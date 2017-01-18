@@ -6787,4 +6787,262 @@ body {
 .cover .cover-image.cover-image-fixed {
   background-attachment: fixed;
 }
-/* PINGENDO COMMENT DO NOT REMOVE */
+/* CUSTOM STUFF */
+
+  .hide-reveal-header {
+    border-bottom: none;
+  }
+  .polarity {
+    background-color: dimgrey;
+    color: white;
+  }
+  .fa-chevron-left .fa-chevron-right {
+    color: black;
+  }
+  .inner {
+    padding: 0 15px;
+    border-left: 1px solid #dddddd;
+    border-right: 1px solid #dddddd;
+    border-bottom: 1px solid #dddddd;
+  }
+  .float-right {
+    float: right !important;
+  }
+  .kis-widget-horizontal {
+    overflow: hidden;
+    border: 0px none transparent;
+    width: 615px;
+    height: 150px;
+  }
+  .kis-widget-vertical {
+    overflow: hidden;
+    border: 0px none transparent;
+    width: 190px;
+    height: 500px;
+  }
+    ul.module-list li {
+    list-style-type: none;
+    }
+    ul.module-list a:before {
+    font-family: 'FontAwesome';
+    margin:0 5px 0 -15px;
+    }
+    .module-list-in a:before {
+    content: '\f067';
+    }
+    .module-list-out a:before {
+    content: '\f068';
+    }
+   .jumbotron {
+      background: none;
+    }
+   .jumbotron h1 {
+    margin: 0;
+    font-size: 40px;
+   }
+   #course-title {
+    position: absolute;
+    bottom: 5%;
+   }
+   #media-button {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    padding-left: 0px;
+    margin: -25px 0 0 -25px;
+   }
+    #call-to-action-buttons {
+    position: absolute;
+    bottom: 5%;
+    right: 3%;
+   }
+   .panel-title > a {
+    display: block;
+    width: 100%;
+   }
+   #header-section {
+   background: url('https://placehold.it/1980?text=IMAGE') no-repeat center;
+   }
+   .section-nav-tabs {
+   padding: 0;
+   border-top: solid 1px lightgrey;
+   border-bottom: solid 1px lightgrey;
+   }
+    .section-key-info {
+   padding-top: 0;
+   padding-bottom: 0;
+   }
+   .col-centered {
+   float: none;
+   margin: 0 auto;
+   text-align: center;
+   width: 100%;
+   }
+   .absolute-wrapper {
+    position: absolute;
+    max-width: 940px;
+    width: 100%;
+    height: 100%;
+   }
+   .container {
+   max-width: 940px;
+   height: 100%;
+   width: 100%;
+   }
+   .hide-reveal {
+   font-size: 24px;
+   }
+   .hide-reveal-module {
+   font-size: 1em;
+   }
+   .icon-adjust {
+   margin-left: 10px;
+   }
+   .btn-group-vertical {
+      padding-top: 54px;
+      padding-bottom: 10px;
+   }
+   .btn-custom {
+   display: block;
+   }
+   .btn-custom:hover {
+   text-decoration: none;
+   }
+   .btn-cta {
+    background-color: dimgrey;
+    color: white;
+   }
+   .section-cta {
+    padding: 15px 0 0 0;
+   }
+   #mobile-tab-header {
+   float: left;
+   margin-top: 4px;
+   padding-right: 15px;
+   }
+   #example-navbar-collapse {
+   float: left;
+   }
+   .panel-group {
+    padding-top: 3px;
+    margin-bottom: 5px;
+    border-radius: 0;
+   }
+   .panel {
+    border: none;
+    border-radius: 0;
+   }
+   .panel-body {
+    border: none;
+    border-radius: 0;
+    padding: 0;
+   }
+   .panel-default {
+    border: none;
+   }
+   .navbar {
+    border: none;
+    border-radius: 0;
+   }
+   .panel-heading {
+    border: none;
+    border-radius: 0;
+   }
+    .no-spacing {
+    margin: 0;
+    padding: 0;
+  }
+    .key-info {
+    padding: 10px;
+    border: solid 1px lightgrey;
+  }
+  .btn:active {
+    -webkit-box-shadow: none;
+  }
+  .btn {
+    margin-bottom: 2px;
+  }
+    #keyInfo-uk > .row, #keyInfo-international > .row {
+    border-left: 1px solid #dddddd;
+    border-right: 1px solid #dddddd;
+    border-bottom: 1px solid #dddddd;
+  }
+  #keyInfo-desktop-nav {
+    padding: 0 15px;
+  }
+  #keyInfo-desktop-body {
+    padding: 0 15px 15px 15px;
+  }
+  #modules-nav {
+    padding: 0 15px;
+  }
+  #modules-body {
+    padding: 0 15px 15px 15px;
+  }
+  #module-tab1 > .row, #module-tab2 > .row, #module-tab3 > .row, #module-tab4 > .row  {
+    border-left: 1px solid #dddddd;
+    border-right: 1px solid #dddddd;
+    border-bottom: 1px solid #dddddd;
+  }
+  .fa-play-circle {
+    font-size: 50px;
+  }
+
+   /* SMALL DEVICES */
+  @media (min-width: 1px){
+    #header-section {
+      min-height: 225px;
+      padding: 0;
+    }
+    h2 {
+      margin-top: 0px;
+    }
+    #kis-widget-nav {
+    width: 190px;
+    }
+    .img-fixed {
+      max-width: 150px;
+      max-height: 75px;
+    }
+  }
+
+  /* MEDIUM DEVICES */
+   @media (min-width: 768px){
+    .navbar-nav {
+        margin: 0 auto;
+        display: table;
+        table-layout: auto;
+        float: none;
+        width: 100%;
+    }
+    .navbar-nav>li {
+        display: table-cell;
+        float: none;
+        text-align: center;
+      }
+    .section-nav-tabs .container {
+     padding-left: 0;
+     padding-bottom: 0;
+     }
+    #header-section {
+      height: 300px;
+    }
+      #kis-widget-nav {
+    width: 615px;
+    }
+    .img-fixed {
+      max-width: 200px;
+      max-height: 100px;
+    }
+  }
+
+  /* LARGE DEVICES */
+
+  @media (min-width: 992px){
+    #header-section {
+      height: 375px;
+    }
+      #kis-widget-nav {
+    width: 615px;
+    }
+  }
