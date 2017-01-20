@@ -6842,8 +6842,13 @@ body {
    }
    #course-title {
     position: absolute;
-    bottom: 5%;
+    top: 5%;
+    color: white;
+    background-color: dimgrey;
    }
+   #course-title h1 {
+    margin: 5px;
+   }   
    #media-button {
     position: absolute;
     left: 50%;
