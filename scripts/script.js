@@ -1,47 +1,26 @@
 $('#page-nav-tabs').tabCollapse(); //this triggers the tabcollapse plugin, converting tabs to dropdowns buttons on mobile
 
-$('.hide-reveal').click(function () {
-  
-  if ( !$(this).next().hasClass('collapsing') ) {
-    
-    if ( $(':nth-child(2)', this).hasClass('fa-plus') ) {
+$('.hide-reveal-header a, .hide-reveal-module').click(function () {
 
-      $(':nth-child(2)', this).removeClass('fa-plus');
-      $(':nth-child(2)', this).addClass('fa-minus');
+  if ( !$(this).next('.collapse').hasClass('collapsing') ) {
 
-    }
-    
-    else {
+    if ( $('i', this).hasClass('fa-plus') ) {
 
-      $(':nth-child(2)', this).removeClass('fa-minus');
-      $(':nth-child(2)', this).addClass('fa-plus');
-    }
-  
-  }
-
-}); // this switches the plus and minus buttons when the hide-reveal tabs are clicked
-
-$('.module-list a').click(function () {
-
-  if ( !$(this).next().hasClass('collapsing') ) {
-
-    if ( $(this).hasClass('fa-plus') ) {
-
-      $(this).removeClass('fa-plus');
-      $(this).addClass('fa-minus');
+      $('i', this).removeClass('fa-plus');
+      $('i', this).addClass('fa-minus');
     
     }
     
     else {
 
-      $(this).removeClass('fa-minus');
-      $(this).addClass('fa-plus');
+      $('i', this).removeClass('fa-minus');
+      $('i', this).addClass('fa-plus');
     
     }
 
   }
 
-  }); // this toggles the plus and minus buttons when the hide-reveal module tabs are clicked
+  }); // this toggles the plus and minus buttons when the hide-reveal tabs are clicked
 
 $('#keyInfo-uk-cell-fees a, #keyInfo-international-cell-fees a').click(function () {
 

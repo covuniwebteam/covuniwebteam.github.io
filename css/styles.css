@@ -14,13 +14,15 @@
 */
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 html {
-  font-family: sans-serif;
+  
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }
 body {
   margin: 0;
+
 }
+
 article,
 aside,
 details,
@@ -1086,7 +1088,7 @@ html {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 body {
-  font-family: Lato;
+  font-family: 'Arimo', sans-serif;
   font-size: 14px;
   line-height: 1.42857143;
   color: #000000;
@@ -1188,8 +1190,8 @@ h6,
 .h4,
 .h5,
 .h6 {
-  font-family: Lato;
-  font-weight: 500;
+  font-family: 'Arimo', sans-serif;
+  font-weight: 700;
   line-height: 1.1;
   color: inherit;
 }
@@ -1473,10 +1475,9 @@ blockquote {
   padding: 10px 20px;
   margin: 0 0 20px;
   font-size: 17.5px;
-  border-left: 5px solid #eeeeee;
 }
 blockquote p:last-child,
-blockquote ul:last-child,
+blockquote ul:last-child,f
 blockquote ol:last-child {
   margin-bottom: 0;
 }
@@ -1491,7 +1492,7 @@ blockquote .small {
 blockquote footer:before,
 blockquote small:before,
 blockquote .small:before {
-  content: '\2014 \00A0';
+  /*content: '\2014 \00A0';*/
 }
 .blockquote-reverse,
 blockquote.pull-right {
@@ -6134,8 +6135,8 @@ button.close {
   /*top: 0;*/
   left: 0;
   /*bottom: 0;*/
-  bottom: -10px;
-  width: 15%;
+  bottom: 38%;
+  /*width: 15%;*/
   /*opacity: 0.5;
   filter: alpha(opacity=50);*/
   font-size: 20px;
@@ -6800,7 +6801,6 @@ body {
     color: black;
   }
   .inner {
-    padding: 0 15px;
     border-left: 1px solid #dddddd;
     border-right: 1px solid #dddddd;
     border-bottom: 1px solid #dddddd;
@@ -6895,7 +6895,7 @@ body {
    width: 100%;
    }
    .hide-reveal {
-   font-size: 24px;
+   font-size: 20px;
    }
    .hide-reveal-module {
    font-size: 1em;
@@ -6975,14 +6975,17 @@ body {
   #keyInfo-desktop-nav {
     padding: 0 15px;
   }
-  #keyInfo-desktop-body {
+  #keyInfo-desktop-body > .tab-pane {
     padding: 0 15px 15px 15px;
   }
   #modules-nav {
     padding: 0 15px;
   }
-  #modules-body {
+  #modules-body > .tab-pane {
     padding: 0 15px 15px 15px;
+  }
+  #feeInfo > .tab-pane {
+    padding: 0 15px 15px 15px;    
   }
   #module-tab1 > .row, #module-tab2 > .row, #module-tab3 > .row, #module-tab4 > .row  {
     border-left: 1px solid #dddddd;
