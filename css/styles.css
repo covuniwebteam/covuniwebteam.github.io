@@ -6980,7 +6980,7 @@ body {
     padding: 0 15px;
   }
   #keyInfo-desktop-body > .tab-pane {
-    padding: 0 15px 15px 15px;
+    padding: 25px 15px 15px 15px;
   }
   #modules-nav {
     padding: 0 15px;
@@ -7021,6 +7021,9 @@ body {
         float: none;
         text-align: center;
       }
+    .navbar-nav>li:not(:last-child) {
+      border-right: 5px solid white;
+    }
     #header-section {
       height: 300px;
     }
