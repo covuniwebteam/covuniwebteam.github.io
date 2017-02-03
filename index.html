@@ -7,6 +7,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js" type="text/javascript"></script>
     <script src="https://netdna.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js" type="text/javascript"></script>
     <script src="scripts/bootstrap-tabcollapse.js" type="text/javascript"></script>
+    <script src="js/modernizr-custom.js" type="text/javascript"></script>
     <link href="https://fonts.googleapis.com/css?family=Arimo" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="css/jcarousel.transitions.css" rel="stylesheet" type="text/css">
@@ -450,28 +451,28 @@
               <div class="jcarousel" role="listbox">
                 <ul>
                   <li>
-                      <img class="" src="https://placehold.it/225x126?text=IMAGE">
+                      <img class="img-responsive" src="https://placehold.it/400x225?text=IMAGE+1">
                   </li>
                   <li>
-                      <img class="" src="https://placehold.it/225x126?text=IMAGE">
+                      <img class="img-responsive" src="https://placehold.it/400x225?text=IMAGE+2">
                   </li>
                   <li>
-                      <img class="" src="https://placehold.it/225x126?text=IMAGE">
+                      <img class="img-responsive" src="https://placehold.it/400x225?text=IMAGE+3">
                   </li>
                   <li>
-                      <img class="" src="https://placehold.it/225x126?text=IMAGE">
+                      <img class="img-responsive" src="https://placehold.it/400x225?text=IMAGE+4">
                   </li>
                   <li>
-                      <img class="" src="https://placehold.it/225x126?text=IMAGE">
+                      <img class="img-responsive" src="https://placehold.it/400x225?text=IMAGE+5">
                   </li>
                   <li>
-                      <img class="" src="https://placehold.it/225x126?text=IMAGE">
+                      <img class="img-responsive" src="https://placehold.it/400x225?text=IMAGE+6">
                   </li>
                   <li>
-                      <img class="" src="https://placehold.it/225x126?text=IMAGE">
+                      <img class="img-responsive" src="https://placehold.it/400x225?text=IMAGE+7">
                   </li>
                   <li>
-                      <img class="" src="https://placehold.it/225x126?text=IMAGE">
+                      <img class="img-responsive" src="https://placehold.it/400x225?text=IMAGE+8">
                   </li>
                 </ul>
               </div><!-- end of .jcarousel -->
@@ -1541,9 +1542,27 @@
     <script src="http://sorgalla.com/jcarousel/dist/jquery.jcarousel.min.js" type="text/javascript"></script>
     <script src="scripts/jcarousel.responsive.js" type="text/javascript"></script>
     <script src="http://sorgalla.com/jcarousel/examples/transitions/jcarousel.transitions.js" type="text/javascript"></script>
-    <script>$(function() {
-    $('.jcarousel').jcarousel();
-    });
+    <script>
+    (function($, Modernizr) {
+        $(function() {
+            $('.jcarousel').jcarousel({
+                wrap: 'circular',
+                transitions: Modernizr.csstransitions ? {
+                    transforms:   Modernizr.csstransforms,
+                    transforms3d: Modernizr.csstransforms3d,
+                    easing:       'ease'
+                } : false
+            });
+
+            $('.jcarousel-control-prev').jcarouselControl({
+                target: '-=1'
+            });
+
+            $('.jcarousel-control-next').jcarouselControl({
+                target: '+=1'
+            });
+        });
+    })(jQuery, Modernizr);
     </script>
   </body>
 </html>
