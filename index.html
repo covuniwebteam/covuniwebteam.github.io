@@ -130,69 +130,87 @@
     background-color: #DD312C;
     padding: 35px;
   }
+  #header-wrapper {
+    opacity: 0;
+    background-color: black
+  }
+
+  #header-section {
+    opacity: 1;
+  }
+
   /*http://www.coventry.ac.uk/Templates/PrimarySite/ui/img/layout/divider.png*/
   </style>
   <body>
     <div class="section" id="header-section">
-      <div class="container">
-        <div class="absolute-wrapper">
-          <div id="course-title">
-            <div class="">
-              <h1>Biological and Forensic Sciences (BSc)</h1>
-            </div>
-          </div>
-          <div id="media-button">
-              <a href="https://www.youtube.com/embed/QYohjO7WZeY" data-lity><i class="fa fa-play-circle" aria-hidden="true"></i></a>
-          </div>
-          <div class="hidden-xs" id="call-to-action-buttons">
-              <div class="btn-group-vertical">
-                <a class="btn btn-cta" href="https://www.coventry.ac.uk/applyforthiscourse-o/">Apply for this course</a>
-                <a class="btn btn-cta" href="https://www.coventry.ac.uk/order-a-prospectus/">Order a prospectus</a>
-                <a class="btn btn-cta" href="#">Open day / virtual tour</a>
+      <div id="header-wrapper">
+        <div class="container">
+          <div class="absolute-wrapper">
+            <div id="course-title">
+              <div class="">
+                <h1>Biological and Forensic Sciences (BSc)</h1>
               </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="section section-cta visible-xs">
-      <div class="container">
-        <div class="row">
-          <div class="col-xs-12">
-            <div class="">
-                <a class="btn btn-cta" href="https://www.coventry.ac.uk/applyforthiscourse-o/">Apply for this course</a>
-                <a class="btn btn-cta" href="https://www.coventry.ac.uk/order-a-prospectus/">Order a prospectus</a>
-                <a class="btn btn-cta" href="#">Open days/virtual tour</a>
+            </div>
+            <!--<div id="media-button">
+                <a href="https://www.youtube.com/embed/QYohjO7WZeY" data-lity><i class="fa fa-play-circle" aria-hidden="true"></i></a>
+            </div>-->
+            <div id="video-embed" style="transition-timing-function: ease; transition-duration: 0.45s; transition-property: all; position: absolute; width: 100%; transform: scale(0,0);">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/QYohjO7WZeY" frameborder="0" allowfullscreen style="display: block; margin: 0 auto;"></iframe>
+            </div>
+            <div id="media-button">
+                <a href="#"><i class="fa fa-play-circle" aria-hidden="true"></i></a>
+            </div>
+            <div class="hidden-xs" id="call-to-action-buttons">
+                <div class="btn-group-vertical">
+                  <a class="btn btn-cta" href="https://www.coventry.ac.uk/applyforthiscourse-o/">Apply for this course</a>
+                  <a class="btn btn-cta" href="https://www.coventry.ac.uk/order-a-prospectus/">Order a prospectus</a>
+                  <a class="btn btn-cta" href="#">Open day / virtual tour</a>
+                </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="section section-nav-tabs">
-      <div class="container">
-<div class="row">
-<div class="col-xs-12">
-        <nav class="navbar">
-          <ul class="nav navbar-nav" id="page-nav-tabs">
-            <li class="active" id="overview-nav-button">
-              <a data-toggle="tab" href="#overview-tab-pane">OVERVIEW</a>
-            </li>
-            <li>
-              <a data-toggle="tab" href="#course-tab-pane">COURSE DETAIL</a>
-            </li>
-            <li>
-              <a data-toggle="tab" href="#entry-tab-pane">ENTRY REQUIREMENTS</a>
-            </li>
-            <li id="fees-nav-button">
-              <a data-toggle="tab" href="#fees-tab-pane">FEES AND FUNDING</a>
-            </li>
-            <li>
-              <a data-toggle="tab" href="#career-tab-pane">CAREERS</a>
-            </li>
-          </ul>
-        </nav>
-</div>
-</div>
+      <div class="section section-cta visible-xs">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12">
+              <div class="">
+                  <a class="btn btn-cta" href="https://www.coventry.ac.uk/applyforthiscourse-o/">Apply for this course</a>
+                  <a class="btn btn-cta" href="https://www.coventry.ac.uk/order-a-prospectus/">Order a prospectus</a>
+                  <a class="btn btn-cta" href="#">Open days/virtual tour</a>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
+      <div class="section section-nav-tabs">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12">
+              <nav class="navbar">
+                <ul class="nav navbar-nav" id="page-nav-tabs">
+                  <li class="active" id="overview-nav-button">
+                    <a data-toggle="tab" href="#overview-tab-pane">OVERVIEW</a>
+                  </li>
+                  <li>
+                    <a data-toggle="tab" href="#course-tab-pane">COURSE DETAIL</a>
+                  </li>
+                  <li>
+                    <a data-toggle="tab" href="#entry-tab-pane">ENTRY REQUIREMENTS</a>
+                  </li>
+                  <li id="fees-nav-button">
+                    <a data-toggle="tab" href="#fees-tab-pane">FEES AND FUNDING</a>
+                  </li>
+                  <li>
+                    <a data-toggle="tab" href="#career-tab-pane">CAREERS</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+
     </div>
     <div class="tab-content" id="page-tab-body">
       <div class="tab-pane active fade in" id="overview-tab-pane">
@@ -1563,6 +1581,25 @@
             });
         });
     })(jQuery, Modernizr);
+    $('#media-button a').click(function () {
+      
+      var videoHeight = $('#header-section').height();
+      $('#video-embed iframe').attr('height', videoHeight);
+      $('#video-embed iframe').attr('width', (videoHeight * 1.78) );
+    
+    if ( !$('#video-embed').hasClass('div-visible') ) {
+      $('#video-embed').addClass('div-visible');
+      $('#header-wrapper').css({"visibility": "visible", "opacity": "1"}).delay(400);     
+      $('#video-embed').css({"transform": "scale(1, 1)"});
+
+    }
+    
+    else {
+      $('#video-embed').removeClass('div-visible');
+      $('#video-embed').css({"visibility": "", "opacity": "", "transform": "scale(0.1, 0.1)", "transition-timing-function": "ease", "transition-duration": "0.45s"});
+    }
+    
+    });
     </script>
   </body>
 </html>
