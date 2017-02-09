@@ -4,15 +4,22 @@
   <head>
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1" name="viewport">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js" type="text/javascript"></script>
-    <script src="https://netdna.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js" type="text/javascript"></script>
+    <!-- *jQuery* -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <!-- *Bootstrap JavaScript* -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" type="text/javascript"></script>
+    <!-- *Convert tabs to stacked hide-reveal toggles on mobile* -->
     <script src="scripts/bootstrap-tabcollapse.js" type="text/javascript"></script>
+    <!-- *Modernizr script for IE legacy support* -->
     <script src="js/modernizr-custom.js" type="text/javascript"></script>
+    <!-- *free Helvetica font replacement* -->
     <link href="https://fonts.googleapis.com/css?family=Arimo" rel="stylesheet">
+    <!-- *Font Awesome* -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <!-- *css for Jcarousel image gallery animations* -->
     <link href="css/jcarousel.transitions.css" rel="stylesheet" type="text/css">
+    <!-- *main stylesheet* -->
     <link href="css/styles.css" rel="stylesheet" type="text/css">
-    <link href="dist/lity.css" rel="stylesheet">
     <title></title>
   </head>
   <style>
@@ -27,29 +34,6 @@
       font-size: 60px;
       padding-top: 10px;
     }
-    /*#page-tab-body .section,
-    #student-quote-section,
-    #kis-widget-section,
-    #related-courses-section {
-      padding-bottom: 0;
-      border: none;
-    }
-
-  .container-with-border {
-   max-width: 940px;
-   height: 100%;
-   width: 100%;
-   border-top: none;
-      border-left: none;
-      border-right: none;
-      border-bottom-width: 1px;
-      border-bottom-style: dashed;
-      border-bottom-color: dimgrey;
-      padding-bottom: 35px;
-   }
-   .hide-reveal-header .container {
-      padding-top: 5px;
-   }*/
    .btn-custom {
       padding: 10px;
       background-color: #F2F3F5;
@@ -131,41 +115,90 @@
     padding: 35px;
   }
   #header-wrapper {
-    opacity: 0;
-    background-color: black
+    background-color: rgba(0,0,0,0);
+    height: 100%;
   }
-
-  #header-section {
-    opacity: 1;
+  .transition {
+    transition-timing-function: ease; 
+    transition-duration: 0.65s; 
+    transition-property: all; 
   }
-
-  /*http://www.coventry.ac.uk/Templates/PrimarySite/ui/img/layout/divider.png*/
+  #video-embed iframe {
+    display: block;
+    margin: 0 auto;
+  }
   </style>
   <body>
     <div class="section" id="header-section">
-      <div id="header-wrapper">
+      <div id="header-wrapper" class="transition">
         <div class="container">
-          <div class="absolute-wrapper">
-            <div id="course-title">
-              <div class="">
-                <h1>Biological and Forensic Sciences (BSc)</h1>
+          <div class="row">
+            <div class="col-sm-8 col-md-9">
+              <div id="course-title" class="transition">
+                <div class="">
+                  <h1>Biological and Forensic Sciences (BSc)</h1>
+                </div>
               </div>
             </div>
-            <!--<div id="media-button">
-                <a href="https://www.youtube.com/embed/QYohjO7WZeY" data-lity><i class="fa fa-play-circle" aria-hidden="true"></i></a>
-            </div>-->
-            <div id="video-embed" style="transition-timing-function: ease; transition-duration: 0.45s; transition-property: all; position: absolute; width: 100%; transform: scale(0,0);">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/QYohjO7WZeY" frameborder="0" allowfullscreen style="display: block; margin: 0 auto;"></iframe>
+            <div id="video-embed" style="transition-timing-function: ease; transition-duration: 0.45s; transition-property: all; position: absolute; width: 100%; height: 100%; transform: scale(0,0);">
+            <!--<iframe width="560" height="315" src="http://www.youtube.com/emebed/QYohjO7WZeY?version=3&enablejsapi=1" frameborder="0" allowfullscreen style="display: block; margin: 0 auto;"></iframe>-->
+
+            <div id="player"></div>
+            <script>
+              // 2. This code loads the IFrame Player API code asynchronously.
+              var tag = document.createElement('script');
+
+              tag.src = "https://www.youtube.com/iframe_api";
+              var firstScriptTag = document.getElementsByTagName('script')[0];
+              firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+              // 3. This function creates an <iframe> (and YouTube player)
+              //    after the API code downloads.
+              var player;
+              function onYouTubeIframeAPIReady() {
+                player = new YT.Player('player', {
+                  height: '315',
+                  width: '560',
+                  videoId: 'QYohjO7WZeY',
+                  playerVars: { 'autoplay': 0, 'controls': 1 },
+                  events: {
+                    'onReady': onPlayerReady,
+                    'onStateChange': onPlayerStateChange
+                  }
+                });
+              }
+
+              // 4. The API will call this function when the video player is ready.
+              function onPlayerReady(event) {
+                event.target.cueVideo();
+              }
+
+              // 5. The API calls this function when the player's state changes.
+              //    The function indicates that when playing a video (state=1),
+              //    the player should play for six seconds and then stop.
+              var done = false;
+              function onPlayerStateChange(event) {
+                if (event.data == YT.PlayerState.PLAYING && !done) {
+                  setTimeout(stopVideo, 6000);
+                  done = true;
+                }
+              }
+              function stopVideo() {
+                player.stopVideo();
+              }
+            </script>
             </div>
             <div id="media-button">
                 <a href="#"><i class="fa fa-play-circle" aria-hidden="true"></i></a>
             </div>
-            <div class="hidden-xs" id="call-to-action-buttons">
-                <div class="btn-group-vertical">
-                  <a class="btn btn-cta" href="https://www.coventry.ac.uk/applyforthiscourse-o/">Apply for this course</a>
-                  <a class="btn btn-cta" href="https://www.coventry.ac.uk/order-a-prospectus/">Order a prospectus</a>
-                  <a class="btn btn-cta" href="#">Open day / virtual tour</a>
-                </div>
+            <div class="col-sm-4 col-md-3">
+              <div class="hidden-xs transition" id="call-to-action-buttons">
+                  <div class="btn-group-vertical">
+                    <a class="btn btn-cta" href="https://www.coventry.ac.uk/applyforthiscourse-o/">Apply for this course</a>
+                    <a class="btn btn-cta" href="https://www.coventry.ac.uk/order-a-prospectus/">Order a prospectus</a>
+                    <a class="btn btn-cta" href="#">Open day / virtual tour</a>
+                  </div>
+              </div>
             </div>
           </div>
         </div>
@@ -184,6 +217,7 @@
           </div>
         </div>
       </div>
+      <div id="main-content" class="transition">
       <div class="section section-nav-tabs">
         <div class="container">
           <div class="row">
@@ -1554,12 +1588,13 @@
         </div><!-- end of .container -->
       </div><!-- end of .section -->
     </div>
+    </div>
     <script src="scripts/script.js" type="text/javascript"></script>
     <script src="vendor/jquery.js" type="text/javascript"></script>
     <script src="dist/lity.js" type="text/javascript"></script>
-    <script src="http://sorgalla.com/jcarousel/dist/jquery.jcarousel.min.js" type="text/javascript"></script>
+    <script src="scripts/jquery.jcarousel.min.js" type="text/javascript"></script>
     <script src="scripts/jcarousel.responsive.js" type="text/javascript"></script>
-    <script src="http://sorgalla.com/jcarousel/examples/transitions/jcarousel.transitions.js" type="text/javascript"></script>
+    <script src="scripts/jcarousel.transitions.js" type="text/javascript"></script>
     <script>
     (function($, Modernizr) {
         $(function() {
@@ -1582,23 +1617,36 @@
         });
     })(jQuery, Modernizr);
     $('#media-button a').click(function () {
-      
+      $('#call-to-action-buttons .btn-group-vertical').css({"padding-top": "0px"});      
       var videoHeight = $('#header-section').height();
+      var spaceVacatedByTabMenu = $('#call-to-action-buttons').height();
+      var CourseTitleHeight = $('#course-title').height();
+      var CTAButtonsHeight = $('#call-to-action-buttons .btn-group-vertical').height();
+      var CourseTitleTravelDistance = videoHeight - $('#course-title').offset().top + 10;
+      var CTAButtonsTravelDistance = videoHeight - $('#call-to-action-buttons .btn-group-vertical').offset().top + 10;
       $('#video-embed iframe').attr('height', videoHeight);
       $('#video-embed iframe').attr('width', (videoHeight * 1.78) );
     
     if ( !$('#video-embed').hasClass('div-visible') ) {
-      $('#video-embed').addClass('div-visible');
-      $('#header-wrapper').css({"visibility": "visible", "opacity": "1"}).delay(400);     
+      $('#video-embed').addClass('div-visible');   
       $('#video-embed').css({"transform": "scale(1, 1)"});
+      $('#main-content').css({"transform": "translate(0px, " + spaceVacatedByTabMenu + "px)"});
+      $('#call-to-action-buttons').css({"transform": "translate(0px, " + CTAButtonsTravelDistance + "px)"});
+      $('#course-title').css({"transform": "translate(0px, " + CourseTitleTravelDistance + "px)"});
+      $('#header-wrapper').css({"background-color": "rgba(0,0,0,0.8)"});
+      $('#media-button').css({"opacity": "0"});
+      $("#course-title").bind("transitionend webkitTransitionEnd oTransitionEnd MSTransitionEnd", function(){ player.playVideo();
+      });      
 
     }
-    
     else {
       $('#video-embed').removeClass('div-visible');
       $('#video-embed').css({"visibility": "", "opacity": "", "transform": "scale(0.1, 0.1)", "transition-timing-function": "ease", "transition-duration": "0.45s"});
+      $('#main-content').css({"transform": "translate(0px, 0px)"});
+      $('#call-to-action-buttons').css({"transform": "translate(0px, 0px)"});
+      $('#course-title').css({"transform": "translate(0px, 0px)"});
+      $('#header-wrapper').css({"background-color": "rgba(0,0,0,0)"});
     }
-    
     });
     </script>
   </body>
