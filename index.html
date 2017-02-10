@@ -8,8 +8,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <!-- *Bootstrap JavaScript* -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" type="text/javascript"></script>
-    <!-- *Convert tabs to stacked hide-reveal toggles on mobile* -->
-    <script src="scripts/bootstrap-tabcollapse.js" type="text/javascript"></script>
     <!-- *Modernizr script for IE legacy support* -->
     <script src="js/modernizr-custom.js" type="text/javascript"></script>
     <!-- *free Helvetica font replacement* -->
@@ -129,68 +127,22 @@
   }
   </style>
   <body>            
+    <!-- this course title appears on phones only -->
     <div class="col-sm-8 col-md-9 visible-xs">
       <div id="course-title" class="transition">
         <h1>Biological and Forensic Sciences (BSc)</h1>
       </div>
-    </div>
+    </div><!-- end of mobile course title -->
     <div class="section" id="header-section">
       <div id="header-wrapper" class="transition">
         <div class="container">
           <div class="row">
+            <!-- this course title appears on desktop/tablet only -->
             <div class="col-sm-8 col-md-9 hidden-xs">
               <div id="course-title" class="transition">
                   <h1>Biological and Forensic Sciences (BSc)</h1>
               </div>
-            </div>
-            <div id="video-embed" style="transition-timing-function: ease; transition-duration: 0.45s; transition-property: all; position: absolute; width: 100%; height: 100%; transform: scale(0,0);">
-            <!--<iframe width="560" height="315" src="http://www.youtube.com/emebed/QYohjO7WZeY?version=3&enablejsapi=1" frameborder="0" allowfullscreen style="display: block; margin: 0 auto;"></iframe>-->
-
-            <div id="player"></div>
-            <script>
-              // 2. This code loads the IFrame Player API code asynchronously.
-              var tag = document.createElement('script');
-
-              tag.src = "https://www.youtube.com/iframe_api";
-              var firstScriptTag = document.getElementsByTagName('script')[0];
-              firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-
-              // 3. This function creates an <iframe> (and YouTube player)
-              //    after the API code downloads.
-              var player;
-              function onYouTubeIframeAPIReady() {
-                player = new YT.Player('player', {
-                  height: '315',
-                  width: '560',
-                  videoId: 'QYohjO7WZeY',
-                  playerVars: { 'autoplay': 0, 'controls': 1 },
-                  events: {
-                    'onReady': onPlayerReady,
-                    'onStateChange': onPlayerStateChange
-                  }
-                });
-              }
-
-              // 4. The API will call this function when the video player is ready.
-              function onPlayerReady(event) {
-                event.target.cueVideo();
-              }
-
-              // 5. The API calls this function when the player's state changes.
-              //    The function indicates that when playing a video (state=1),
-              //    the player should play for six seconds and then stop.
-              var done = false;
-              function onPlayerStateChange(event) {
-                if (event.data == YT.PlayerState.PLAYING && !done) {
-                  setTimeout(stopVideo, 6000);
-                  done = true;
-                }
-              }
-              function stopVideo() {
-                player.stopVideo();
-              }
-            </script>
-            </div>
+            </div><!-- end of desktop/tablet course title -->
             <div id="media-button">
                 <a href="#"><i class="fa fa-play-circle" aria-hidden="true"></i></a>
             </div>
@@ -925,7 +877,7 @@
               </div><!-- end of .row -->
             </div><!-- end of .container -->
           </div><!-- end of .section -->
-        </div>
+        </div><!-- end of .section-divider-outer -->
         <div class="section">
           <div class="container">
             <h2>In more detail...</h2>
@@ -959,18 +911,6 @@
               </div><!-- end of .row -->
             </div><!-- end of .container -->
           </div><!-- end of .section -->
-        <div class="section polarity">
-          <div class="container">
-            <div class="row">
-              <div class="col-sm-2">
-                <img class="img-responsive" src="https://placehold.it/400x300?text=STAT">
-              </div><!-- end of .col -->
-              <div class="col-sm-10">
-                <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis condimentum nisl metus, vitae pulvinar elit molestie vitae.</p>
-              </div><!-- end of .col -->
-            </div><!-- end of .row -->
-          </div><!-- end of .container -->
-        </div><!-- end of .section -->
         </div><!-- end of .collapse -->
         <div class="hide-reveal-header">
           <div class="container">
@@ -997,19 +937,7 @@
               </ul>
             </div><!-- end of .container-->
           </div><!-- end of .section -->
-          <div class="section polarity">
-            <div class="container">
-              <div class="row">
-                <div class="col-sm-2">
-                  <img class="img-responsive" src="https://placehold.it/400x300?text=STAT">
-                </div><!-- end of .col -->
-                <div class="col-sm-10">
-                  <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis condimentum nisl metus, vitae pulvinar elit molestie vitae.</p>
-                </div><!-- end of .col -->
-              </div><!-- end of .row -->
-            </div><!-- end of .container -->
-          </div><!-- end of .section -->
-        </div><!-- end of .collapse -->
+        </div>
         <div class="hide-reveal-header">
           <div class="container">        
             <a class="btn-custom text-left hide-reveal" data-target="#themes-hide-reveal" data-toggle="collapse">
@@ -1051,18 +979,6 @@
                 <p>Throughout the course, you will receive insight from the latest research and input from current practitioners. Recent sessions have included Disaster Victim Identification (DVI), interpretation of mixed DNA profiles and continuity and traceability in the forensic DNA lab.</p>
             </div>
           </div>
-          <div class="section polarity">
-            <div class="container">
-              <div class="row">
-                <div class="col-sm-2">
-                  <img class="img-responsive" src="https://placehold.it/400x300?text=STAT">
-                </div><!-- end of .col -->
-                <div class="col-sm-10">
-                  <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis condimentum nisl metus, vitae pulvinar elit molestie vitae.</p>
-                </div><!-- end of .col -->
-              </div><!-- end of .row -->
-            </div><!-- end of .container -->
-          </div><!-- end of .section -->
         </div><!-- end of .collapse -->
         <div class="hide-reveal-header">
           <div class="container"> 
@@ -1191,16 +1107,49 @@
                 <h2>Entry requirements</h2>
               </div><!-- end of .col -->
               <div class="col-xs-12">
-                <h3>Essential</h3>
-                <p>5 GCSEs at grade A*-C including English Language, Mathematics and Science, or specified equivalents.</p>
-                <p>For details of acceptable equivalent qualifications for this course please visit www.coventry.ac.uk/ug2016/qualifications</p>
                 <h3>Typical offers</h3>
-                <p>A-Levels: BCC to include Biology. Excludes General Studies</p>
-                <p>BTEC Level 3 Extended Diploma: DMM in a Biological Science subject</p>
-                <p>Access: The Access Diploma to include 30 Level 3 credits at Merit of which 15 must be in specified subject units * e.g. Biology, plus GCSE English Language and Mathematics at grade A*-C, or specified equivalents.</p>
-                <p>International Baccalaureate Diploma: 27 points to include Biology at Higher level</p>
-                <p>English as a Foreign Language: an IELTS of 6.0 overall, with no component lower than 5.5. Pre-sessional English is available if required.</p>
-                <p>Find out more about acceptable equivalent qualifications here.</p>
+                <table class="table table-responsive">
+                  <tr>
+                    <th colspan="4">University Course Code: HLSU013</th>
+                  </tr>
+                  <tr>
+                    <td>A Level</td>
+                    <td>BTEC</td>
+                    <td>IB Diploma</td>
+                    <td>GCSE requirement</td>
+                  </tr>
+                  <tr>
+                    <td>BCC to include Biology. Excludes General Studies.</td>
+                    <td>DMM in a Biological Science subject</td>
+                    <td>27 to include a minimym of 5 points in a Biology at Higher level.</td>
+                    <td>Minimum 5 GCSEs at A*-C including English, Maths and Science</td>
+                  </tr>
+                </table>
+                <div class="hide-reveal-header">
+                  <div class="container">
+                    <a class="btn-custom text-left hide-reveal" data-target="#acceptable-qualifications" data-toggle="collapse">
+                      <i class="fa fa-plus float-left" aria-hidden="true"></i>
+                      <span class="text-left">View more detail on acceptable qualifications</span>
+                    </a>
+                  </div>
+                </div>
+                <div class="collapse" id="acceptable-qualifications">
+                  <div class="section">
+                    <div class="container">
+                      <div class="row">
+                        <div class="col-xs-12">
+                          <h3>A-Levels</h3>
+                          <p>A-Level applicants are required to have three  A2 Levels. Coventry University may include AS grades within an offer but we are not able to accept two AS Levels in place of one A2 Level. In some courses it may be necessary for entrants to have passed specific A2 Levels in nominated subjects. Please see the course pages for more information.</p>
+                          <h3>Access Diplomas</h3>
+                          <p>Coventry University welcomes applicants who have completed, or who are studying, the Access to HE Diploma developed by the Quality Assurance Agency for Higher Education (QAA). Successful completion of the course will require you to gain 60 credits with at least 45 to be achieved at Level 3 (with the remainder at Level 2). In some cases we will require you to have gained Merit or Distinction grades in a number of units or in nominated subjects. For more information on the entry requirements for your chosen course please see the relevant course pages. </p>
+                          <h3>BTEC Level 3 Diplomas</h3>
+                          <p>The University will accept the BTEC Level 3 Extended Diploma for entry to most courses. In some cases we will require applicants to have studied either certain named modules or a specific named Diploma. The appropriate course page will have full information on the entry requirements.</p>
+                          <p>The University also accepts the BTEC Level 3 Subsidiary Diploma and BTEC Level 3 Diploma for entry to degree programmes, provided that they are studied in combination with other qualifications that provide a total volume of study that is equivalent to three A2 Levels. For example, you could be studying a BTEC Level 3 Diploma plus an A2 Level, or a BTEC Level 3 Subsidiary Diploma plus two A2 Levels. Where a specific A2 or BTEC subject is required for entry then you must be offering this as part of your combination of qualifications.</p>
+                        </div>
+                      </div>
+                    </div><!-- end of .container -->
+                  </div><!-- end of .section -->
+                </div><!-- end of .collapse -->
               </div><!-- end of .col -->
             </div><!-- end of .row -->
           </div><!-- end of .container -->
@@ -1592,9 +1541,6 @@
       </div><!-- end of .section -->
     </div>
     </div>
-    <script src="scripts/script.js" type="text/javascript"></script>
-    <script src="vendor/jquery.js" type="text/javascript"></script>
-    <script src="dist/lity.js" type="text/javascript"></script>
     <script src="scripts/jquery.jcarousel.min.js" type="text/javascript"></script>
     <script src="scripts/jcarousel.responsive.js" type="text/javascript"></script>
     <script src="scripts/jcarousel.transitions.js" type="text/javascript"></script>
@@ -1619,38 +1565,9 @@
             });
         });
     })(jQuery, Modernizr);
-    /*$('#media-button a').click(function () {
-      $('#call-to-action-buttons .btn-group-vertical').css({"padding-top": "0px"});      
-      var videoHeight = $('#header-section').height();
-      var spaceVacatedByTabMenu = $('#call-to-action-buttons').height();
-      var CourseTitleHeight = $('#course-title').height();
-      var CTAButtonsHeight = $('#call-to-action-buttons .btn-group-vertical').height();
-      var CourseTitleTravelDistance = videoHeight - $('#course-title').offset().top + 10;
-      var CTAButtonsTravelDistance = videoHeight - $('#call-to-action-buttons .btn-group-vertical').offset().top + 10;
-      $('#video-embed iframe').attr('height', videoHeight);
-      $('#video-embed iframe').attr('width', (videoHeight * 1.78) );
-    
-    if ( !$('#video-embed').hasClass('div-visible') ) {
-      $('#video-embed').addClass('div-visible');   
-      $('#video-embed').css({"transform": "scale(1, 1)"});
-      $('#main-content').css({"transform": "translate(0px, " + spaceVacatedByTabMenu + "px)"});
-      $('#call-to-action-buttons').css({"transform": "translate(0px, " + CTAButtonsTravelDistance + "px)"});
-      $('#course-title').css({"transform": "translate(0px, " + CourseTitleTravelDistance + "px)"});
-      $('#header-wrapper').css({"background-color": "rgba(0,0,0,0.8)"});
-      $('#media-button').css({"opacity": "0"});
-      $("#course-title").bind("transitionend webkitTransitionEnd oTransitionEnd MSTransitionEnd", function(){ player.playVideo();
-      });      
-
-    }
-    else {
-      $('#video-embed').removeClass('div-visible');
-      $('#video-embed').css({"visibility": "", "opacity": "", "transform": "scale(0.1, 0.1)", "transition-timing-function": "ease", "transition-duration": "0.45s"});
-      $('#main-content').css({"transform": "translate(0px, 0px)"});
-      $('#call-to-action-buttons').css({"transform": "translate(0px, 0px)"});
-      $('#course-title').css({"transform": "translate(0px, 0px)"});
-      $('#header-wrapper').css({"background-color": "rgba(0,0,0,0)"});
-    }
-    });*/
     </script>
+    <!-- *Convert tabs to stacked hide-reveal toggles on mobile* -->
+    <script src="scripts/bootstrap-tabcollapse.js" type="text/javascript"></script>
+    <script src="scripts/script.js" type="text/javascript"></script>
   </body>
 </html>
