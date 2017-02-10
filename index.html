@@ -128,16 +128,19 @@
     margin: 0 auto;
   }
   </style>
-  <body>
+  <body>            
+    <div class="col-sm-8 col-md-9 visible-xs">
+      <div id="course-title" class="transition">
+        <h1>Biological and Forensic Sciences (BSc)</h1>
+      </div>
+    </div>
     <div class="section" id="header-section">
       <div id="header-wrapper" class="transition">
         <div class="container">
           <div class="row">
-            <div class="col-sm-8 col-md-9">
+            <div class="col-sm-8 col-md-9 hidden-xs">
               <div id="course-title" class="transition">
-                <div class="">
                   <h1>Biological and Forensic Sciences (BSc)</h1>
-                </div>
               </div>
             </div>
             <div id="video-embed" style="transition-timing-function: ease; transition-duration: 0.45s; transition-property: all; position: absolute; width: 100%; height: 100%; transform: scale(0,0);">
@@ -191,8 +194,8 @@
             <div id="media-button">
                 <a href="#"><i class="fa fa-play-circle" aria-hidden="true"></i></a>
             </div>
-            <div class="col-sm-4 col-md-3">
-              <div class="hidden-xs transition" id="call-to-action-buttons">
+            <div class="col-sm-4 col-md-3 display-table">
+              <div class="hidden-xs transition display-table-cell bottom" id="call-to-action-buttons">
                   <div class="btn-group-vertical">
                     <a class="btn btn-cta" href="https://www.coventry.ac.uk/applyforthiscourse-o/">Apply for this course</a>
                     <a class="btn btn-cta" href="https://www.coventry.ac.uk/order-a-prospectus/">Order a prospectus</a>
@@ -209,9 +212,9 @@
           <div class="row">
             <div class="col-xs-12">
               <div class="">
-                  <a class="btn btn-cta" href="https://www.coventry.ac.uk/applyforthiscourse-o/">Apply for this course</a>
-                  <a class="btn btn-cta" href="https://www.coventry.ac.uk/order-a-prospectus/">Order a prospectus</a>
-                  <a class="btn btn-cta" href="#">Open days/virtual tour</a>
+                  <a class="btn btn-cta btn-block" href="https://www.coventry.ac.uk/applyforthiscourse-o/">Apply for this course</a>
+                  <a class="btn btn-cta btn-block" href="https://www.coventry.ac.uk/order-a-prospectus/">Order a prospectus</a>
+                  <a class="btn btn-cta btn-block" href="#">Open days/virtual tour</a>
               </div>
             </div>
           </div>
@@ -250,19 +253,19 @@
       <div class="tab-pane active fade in" id="overview-tab-pane">
         <div class="section">
           <div class="container">
-            <div class="row" id="keyInfo-desktop-nav">
-              <ul class="nav nav-tabs">
-                <li class="active">
-                  <a data-toggle="tab" href="#keyInfo-uk">
-                    UK or EU students
-                  </a>
-                </li>
-                <li>
-                  <a data-toggle="tab" href="#keyInfo-international">
-                    International students
-                  </a>
-                </li>
-              </ul>
+            <div class="row" id="keyInfo-desktop-nav">     
+                <ul class="nav nav-tabs">
+                  <li class="active">
+                    <a data-toggle="tab" href="#keyInfo-uk">
+                      UK or EU students
+                    </a>
+                  </li>
+                  <li>
+                    <a data-toggle="tab" href="#keyInfo-international">
+                      International students
+                    </a>
+                  </li>
+                </ul>
             </div>
             <div class="tab-content" id="keyInfo-desktop-body">
               <div class="tab-pane active fade in" id="keyInfo-uk">
@@ -1616,7 +1619,7 @@
             });
         });
     })(jQuery, Modernizr);
-    $('#media-button a').click(function () {
+    /*$('#media-button a').click(function () {
       $('#call-to-action-buttons .btn-group-vertical').css({"padding-top": "0px"});      
       var videoHeight = $('#header-section').height();
       var spaceVacatedByTabMenu = $('#call-to-action-buttons').height();
@@ -1647,7 +1650,7 @@
       $('#course-title').css({"transform": "translate(0px, 0px)"});
       $('#header-wrapper').css({"background-color": "rgba(0,0,0,0)"});
     }
-    });
+    });*/
     </script>
   </body>
 </html>
