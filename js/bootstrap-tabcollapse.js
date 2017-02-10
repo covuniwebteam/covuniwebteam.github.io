@@ -29,7 +29,8 @@
         accordionTemplate: function(heading, groupId, parentId, active) {
             return  '<div class="panel panel-default">' +
                     '   <div class="panel-heading">' +
-                    '      <h4 class="panel-title">' +
+                    '      <h4 class="panel-title plus">' +
+                    '      <i class="fa fa-plus"></i>' +                    
                     '      </h4>' +
                     '   </div>' +
                     '   <div id="' + groupId + '" class="panel-collapse collapse ' + (active ? 'in' : '') + '">' +
