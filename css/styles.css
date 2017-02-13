@@ -162,7 +162,7 @@ text-decoration: underline;
 /*HEADER */
 
 #header-section {
-background: url(file:///D:/Documents/Github/covuniwebteam.github.io/image/red-panda.jpg) no-repeat center center; 
+background: url(../image/red-panda.jpg) no-repeat center center; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
