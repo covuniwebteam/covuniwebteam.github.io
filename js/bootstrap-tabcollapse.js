@@ -29,8 +29,7 @@
         accordionTemplate: function(heading, groupId, parentId, active) {
             return  '<div class="panel panel-default">' +
                     '   <div class="panel-heading">' +
-                    '      <h4 class="panel-title plus">' +
-                    '      <i class="fa fa-plus"></i>' +                    
+                    '      <h4 class="panel-title">' +
                     '      </h4>' +
                     '   </div>' +
                     '   <div id="' + groupId + '" class="panel-collapse collapse ' + (active ? 'in' : '') + '">' +
@@ -211,6 +210,7 @@
             groupId = $tabPane.attr('id') + '-collapse',
             $panel = $(this.options.accordionTemplate($heading, groupId, parentId, active));
         $panel.find('.panel-heading > .panel-title').append(this._tabHeadingToPanelHeading($heading, groupId, parentId, active));
+        //$panel.find('.panel-heading > .panel-title > a').prepend('<i class="fa fa-plus"></i>');    
         $panel.find('.panel-body').append($tabPane.contents().detach())
             .data('bs.tabcollapse.tabpane', $tabPane);
 

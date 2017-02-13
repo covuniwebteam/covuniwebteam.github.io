@@ -1,7 +1,7 @@
 .jcarousel-wrapper {
     margin: 20px auto;
     position: relative;
-    /*border: 5px solid transparent;*/
+    visibility: hidden;
     width: 100%;
     height: 50%;
 }
@@ -46,18 +46,14 @@
 .jcarousel-control-prev,
 .jcarousel-control-next {
     position: absolute;
-    top: 40%;
-    width: 20px;
-    height: 30px;
+    top: 33%;
+    width: 25px;
+    height: 40px;
     text-align: center;
-    background: #337cbb;
+    background: #0097CD;
     color: white;
     text-decoration: none;
-    text-shadow: 0 0 1px #000;
-    font: 24px/27px Arial, sans-serif;
-    /*-webkit-box-shadow: 0 0 2px #999;
-       -moz-box-shadow: 0 0 2px #999;
-            box-shadow: 0 0 2px #999;*/
+    font: 22px/42px Arial, sans-serif;
 }
 
 .jcarousel-control-prev {
@@ -67,7 +63,6 @@
 .jcarousel-control-next {
     right: 0px;
 }
-
 .jcarousel-control-prev:hover span,
 .jcarousel-control-next:hover span {
     display: block;

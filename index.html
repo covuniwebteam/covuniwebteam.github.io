@@ -2,210 +2,156 @@
 <!DOCTYPE html>
 <html>
   <head>
+    
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1" name="viewport">
-    <!-- *jQuery* -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <!-- *Bootstrap JavaScript* -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" type="text/javascript"></script>
-    <!-- *Modernizr script for IE legacy support* -->
-    <script src="js/modernizr-custom.js" type="text/javascript"></script>
-    <!-- *free Helvetica font replacement* -->
-    <link href="https://fonts.googleapis.com/css?family=Arimo" rel="stylesheet">
-    <!-- *Font Awesome* -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <!-- *css for Jcarousel image gallery animations* -->
-    <link href="css/jcarousel.transitions.css" rel="stylesheet" type="text/css">
-    <!-- *main stylesheet* -->
-    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    
+    <!-- *JAVSCRIPT (HEADER)* -->
+    
+      <!-- *jQuery* -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+      <!-- *Bootstrap JavaScript* -->
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" type="text/javascript"></script>
+    
+    <!-- *CSS* -->
+
+      <!-- *base Bootstrap styles* -->
+      <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+      <!-- *custom styles* -->
+      <link href="css/styles.css" rel="stylesheet" type="text/css">
+      <!-- *Helvetica font replacement* -->
+      <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900" rel="stylesheet">
+      <!-- *Font Awesome* -->
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+      <!-- *Jcarousel image gallery styles* -->
+      <link href="css/jcarousel.transitions.css" rel="stylesheet" type="text/css">
+      <!-- Lity lightbox plusing styles-->
+      <link href="dist/lity.css" rel="stylesheet">
+    
     <title></title>
+  
   </head>
-  <style>
-    .btn-social-icon {
-      background-color: #337cbb;
-      color: white;
-      width: 25px;
-      height: 25px;
-      padding: 2px;
-    }
-    .fa-quote-left {
-      font-size: 60px;
-      padding-top: 10px;
-    }
-   .btn-custom {
-      padding: 10px;
-      background-color: #F2F3F5;
-   }
-  #modules-nav ul a,
-  #fees-nav a,
-  #keyInfo-desktop-nav ul a {
-    background-color: #E4E4E4 !important;
-    color: black;
-  }
-  #modules-nav .active a,
-  #fees-nav .active a,
-  #keyInfo-desktop-nav .active a {
-    background-color: #F2F3F5 !important;
-  }
-
-  #keyInfo-desktop-body .active,
-  #feeInfo .active,
-  #modules-body .active
-   {
-    background-color: #F2F3F5 !important;    
-  }
-
-  .module-list {
-    -webkit-padding-start: 0px;
-  }
-  .module-list a {
-      display: inline-block;
-    width: 100%;
-    padding: 5px 0;
-    border-bottom: 1px solid dimgrey;
-  }
-  .btn-custom > .fa {
-    font-size: 14px;
-    margin-right: 10px;
-    margin-left: 5px;
-  }
-
-  .row-neutral {
-    margin-left: 0;
-    margin-right: 0;
-    padding-left: 0;
-    padding-right: 0;
-  }
-  .col-neutral {
-    margin-left: 0;
-    margin-right: 0;
-    padding-left: 0;
-    padding-right: 0;
-  }
-  .section-divider-outer {
-    padding-left: 15px;
-    padding-right: 15px;
-    max-width: 940px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: -20px;
-  }
-  .section-divider-inner {
-    width: 100%;
-    height: 13px;
-    background-image: url("http://www.coventry.ac.uk/Templates/PrimarySite/ui/img/layout/divider.png");
-  }
-  .fa-plus, .fa-minus {
-    color: white;
-    background-color: #337cbb;
-    padding: 3px;
-    border-radius: 3px;
-  }
-  .border {
-    border: 1px solid silver;
-  }
-  #kis-widget-nav .active a {
-    background-color: #DD312C;
-    color: white;
-  }
-  #kis-widget-tab-content {
-    background-color: #DD312C;
-    padding: 35px;
-  }
-  #header-wrapper {
-    background-color: rgba(0,0,0,0);
-    height: 100%;
-  }
-  .transition {
-    transition-timing-function: ease; 
-    transition-duration: 0.65s; 
-    transition-property: all; 
-  }
-  #video-embed iframe {
-    display: block;
-    margin: 0 auto;
-  }
-  </style>
   <body>            
     <!-- this course title appears on phones only -->
     <div class="col-sm-8 col-md-9 visible-xs">
-      <div id="course-title" class="transition">
-        <h1>Biological and Forensic Sciences (BSc)</h1>
+      <div id="course-title-mobile" class="transition-opacity">
+        <h1>Biological and Forensic Sciences (BSc)<span class="small"> 2017&#8209;2018&nbsp;entry</span></h1>
       </div>
-    </div><!-- end of mobile course title -->
+    </div>
     <div class="section" id="header-section">
-      <div id="header-wrapper" class="transition">
+      <div id="header-wrapper" class="transition-background-color">
+        <!-- *Code for YouTube player* -->
+        <iframe id="player" type="text/html" src="https://www.youtube.com/embed/LcyLfrzN7L8?enablejsapi=1" class="transition-opacity" frameborder="0" allowfullscreen></iframe>
+        <script>
+
+          var tag = document.createElement('script');
+
+          tag.src = "https://www.youtube.com/iframe_api";
+          var firstScriptTag = document.getElementsByTagName('script')[0];
+          firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+          var player;
+
+          function onYouTubeIframeAPIReady() {
+            player = new YT.Player('player', {
+              events: {
+                'onReady': onPlayerReady,
+                'onStateChange': onPlayerStateChange
+              }
+            });
+          }
+          
+          function onPlayerReady(event) {
+            $(prepareVideo);
+          }
+
+          var done = false;
+          function onPlayerStateChange(event) {
+            if (event.data == YT.PlayerState.PLAYING && !done) {
+              setTimeout(stopVideo, 6000);
+              done = true;
+            }
+          }
+
+          function playVideo() {
+            player.playVideo();
+          }
+          function stopVideo() {
+            player.stopVideo();
+          }
+
+        </script><!-- *End of code for YouTube player* -->
         <div class="container">
           <div class="row">
             <!-- this course title appears on desktop/tablet only -->
             <div class="col-sm-8 col-md-9 hidden-xs">
-              <div id="course-title" class="transition">
-                  <h1>Biological and Forensic Sciences (BSc)</h1>
+              <div id="course-title-desktop" class="transition">
+                  <h1>Biological and Forensic Sciences (BSc)<br><span class="small">2017&#8209;2018&nbsp;entry</span>
+                  </h1>
               </div>
-            </div><!-- end of desktop/tablet course title -->
-            <div id="media-button">
-                <a href="#"><i class="fa fa-play-circle" aria-hidden="true"></i></a>
             </div>
+            <div id="media-button" class="transition-opacity">
+                <a href="#"><i class="fa fa-play-circle-o" aria-hidden="true"></i></a>
+            </div>
+
             <div class="col-sm-4 col-md-3 display-table">
-              <div class="hidden-xs transition display-table-cell bottom" id="call-to-action-buttons">
-                  <div class="btn-group-vertical">
-                    <a class="btn btn-cta" href="https://www.coventry.ac.uk/applyforthiscourse-o/">Apply for this course</a>
-                    <a class="btn btn-cta" href="https://www.coventry.ac.uk/order-a-prospectus/">Order a prospectus</a>
-                    <a class="btn btn-cta" href="#">Open day / virtual tour</a>
-                  </div>
+              <div class="hidden-xs display-table-cell bottom transition">
+                <div class="cta-button-group">
+                  <a class="btn btn-cta-apply" href="https://www.coventry.ac.uk/applyforthiscourse-o/">Apply for this course</a>
+                  <a class="btn btn-cta" href="https://www.coventry.ac.uk/order-a-prospectus/">Order a prospectus</a>
+                  <a class="btn btn-cta" href="#">Open day tour</a>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-      <div class="section section-cta visible-xs">
-        <div class="container">
-          <div class="row">
-            <div class="col-xs-12">
-              <div class="">
-                  <a class="btn btn-cta btn-block" href="https://www.coventry.ac.uk/applyforthiscourse-o/">Apply for this course</a>
-                  <a class="btn btn-cta btn-block" href="https://www.coventry.ac.uk/order-a-prospectus/">Order a prospectus</a>
-                  <a class="btn btn-cta btn-block" href="#">Open days/virtual tour</a>
-              </div>
+    <div class="section section-cta visible-xs">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12">
+            <div class="cta-button-group">
+              <a class="btn btn-cta-apply" href="https://www.coventry.ac.uk/applyforthiscourse-o/">Apply for this course</a>
+              <a class="btn btn-cta" href="https://www.coventry.ac.uk/order-a-prospectus/">Order a prospectus</a>
+              <a class="btn btn-cta" href="#">Open day tour</a>
             </div>
           </div>
         </div>
       </div>
-      <div id="main-content" class="transition">
-      <div class="section section-nav-tabs">
-        <div class="container">
-          <div class="row">
-            <div class="col-xs-12">
-              <nav class="navbar">
-                <ul class="nav navbar-nav" id="page-nav-tabs">
-                  <li class="active" id="overview-nav-button">
-                    <a data-toggle="tab" href="#overview-tab-pane">OVERVIEW</a>
-                  </li>
-                  <li>
-                    <a data-toggle="tab" href="#course-tab-pane">COURSE DETAIL</a>
-                  </li>
-                  <li>
-                    <a data-toggle="tab" href="#entry-tab-pane">ENTRY REQUIREMENTS</a>
-                  </li>
-                  <li id="fees-nav-button">
-                    <a data-toggle="tab" href="#fees-tab-pane">FEES AND FUNDING</a>
-                  </li>
-                  <li>
-                    <a data-toggle="tab" href="#career-tab-pane">CAREERS</a>
-                  </li>
-                </ul>
-              </nav>
-            </div>
-          </div>
+    </div>
+    <div id="main-content" class="transition-opacity">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <nav class="navbar">
+            <ul class="nav navbar-nav" id="page-nav-tabs">
+              <li class="active" id="overview-nav-button">
+                <a data-toggle="tab" href="#overview-tab-pane"><i class="fa fa-minus"></i>OVERVIEW</a>
+              </li>
+              <li>
+                <a data-toggle="tab" href="#course-tab-pane"><i class="fa fa-plus"></i>COURSE DETAIL</a>
+              </li>
+              <li>
+                <a data-toggle="tab" href="#entry-tab-pane"><i class="fa fa-plus"></i>ENTRY REQUIREMENTS</a>
+              </li>
+              <li id="fees-nav-button">
+                <a data-toggle="tab" href="#fees-tab-pane"><i class="fa fa-plus"></i>FEES &amp; FUNDING</a>
+              </li>
+              <li>
+                <a data-toggle="tab" href="#career-tab-pane"><i class="fa fa-plus"></i>EMPLOYABILITY</a>
+              </li>
+            </ul>
+          </nav>
         </div>
-
+      </div>
     </div>
     <div class="tab-content" id="page-tab-body">
-      <div class="tab-pane active fade in" id="overview-tab-pane">
+      <div class="tab-pane active" id="overview-tab-pane">
         <div class="section">
           <div class="container">
-            <div class="row" id="keyInfo-desktop-nav">     
+            <div class="row tabbed-widget-header" id="keyInfo-desktop-nav">  
+              <div class="col-xs-12">
                 <ul class="nav nav-tabs">
                   <li class="active">
                     <a data-toggle="tab" href="#keyInfo-uk">
@@ -218,45 +164,47 @@
                     </a>
                   </li>
                 </ul>
+              </div>
             </div>
             <div class="tab-content" id="keyInfo-desktop-body">
-              <div class="tab-pane active fade in" id="keyInfo-uk">
+              <div class="tab-pane active tabbed-widget-body" id="keyInfo-uk">
                 <div class="row">
                   <div class="col-xs-12 col-sm-8">
                     <div class="row">
                       <div class="col-xs-12">
                         <div class="row">
-                          <div class="col-xs-6">
+                          <div class="col-xs-6 vertical-border">
                             <div class="row">
                               <div class="col-xs-6 col-sm-5">
-                                <p><strong>Course code:</strong></p>
+                                <h5>Course code:</h5>
                               </div>
                               <div class="col-xs-6 col-sm-7">
                                 <p>12345</p>
                               </div>
                               <div class="clearfix"></div>
                               <div class="col-xs-6 col-sm-5">
-                                <p><strong>Study options:</strong></p>
+                                <h5>Study options:</h5>
                               </div>
                               <div class="col-xs-6 col-sm-7">
                                 <p>
                                 3 years (full time)<br>
                                 4 years (full time)<br>
+                                <i class="fa fa-caret-right" aria-hidden="true"></i> including placement year<br>
                                 5 years (full time)<br>
                                 </p>
                               </div>
                               <div class="col-xs-6 col-sm-5">
-                                <p><strong>Location:</strong></p>
+                                <h5>Location:</h5>
                               </div>
                               <div class="col-xs-6 col-sm-7">
                                 <p>Coventry</p>
                               </div>
                             </div>
                           </div>
-                          <div class="col-xs-6">
+                          <div class="col-xs-6 vertical-border">
                             <div class="row">
                               <div class="col-xs-6 col-sm-5">
-                                <p><strong>Starting:</strong></p>
+                                <h5>Starting:</h5>
                               </div>
                               <div class="col-xs-6 col-sm-7">
                                 <p>
@@ -265,18 +213,18 @@
                                 </p>
                               </div>
                               <div class="col-xs-6 col-sm-5">
-                                <p><strong>Fees:</strong></p>
+                                <h5>Fees:</h5>
                               </div>
                               <div class="col-xs-6 col-sm-7">
                                 <p>
                                 £9000 - £9250
                                 </p>
                                 <p>
-                                <a href="#">Find out more <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
+                                <a href="#" class="lead"><strong>Find out more <i class="fa fa-angle-double-right" aria-hidden="true"></i></strong></a>
                                 </p>
                               </div>
                               <div class="col-xs-6 col-sm-5">
-                                <p><strong>Faculty:</strong></p>
+                                <h5>Faculty:</h5>
                               </div>
                               <div class="col-xs-6 col-sm-7">
                                 <p>Faculty of Health and Life Sciences</p>
@@ -294,8 +242,9 @@
                         <p>For questions regarding study and admissions please contact us:</p>
                       </div>
                       <div class="col-xs-12">
-                        <p class="lead"><strong>+44 (0) 24 7765 2222</strong></p>
-                        <p class="lead"><a href="mailto:studentenquiries@coventry.ac.uk"><strong>studentenquiries@coventry.ac.uk</strong></a></p>
+                        <p class="lead"><strong>+44 (0) 24 7765 2222</strong>
+                        <br>
+                        <a href="mailto:studentenquiries@coventry.ac.uk"><strong>studentenquiries@coventry.ac.uk</strong></a></p>
                         <a class="btn btn-social-icon btn-facebook">
                           <span class="fa fa-facebook"></span>
                         </a>
@@ -307,23 +256,23 @@
                   </div> <!-- end of .col -->
                 </div> <!-- end of .row -->
               </div> <!-- end of .tab-pane -->
-              <div class="tab-pane  fade" id="keyInfo-international">
+              <div class="tab-pane tabbed-widget-body" id="keyInfo-international">
                 <div class="row">
                   <div class="col-xs-12 col-sm-8">
                     <div class="row">
                       <div class="col-xs-12">
                         <div class="row">
-                          <div class="col-xs-6">
+                          <div class="col-xs-6 vertical-border">
                             <div class="row">
                               <div class="col-xs-6 col-sm-5">
-                                <p><strong>Course code:</strong></p>
+                                <h5>Course code:</strong></p>
                               </div>
                               <div class="col-xs-6 col-sm-7">
                                 <p>56789</p>
                               </div>
                               <div class="clearfix"></div>
                               <div class="col-xs-6 col-sm-5">
-                                <p><strong>Study options:</strong></p>
+                                <h5>Study options:</strong></p>
                               </div>
                               <div class="col-xs-6 col-sm-7">
                                 <p>
@@ -333,17 +282,17 @@
                                 </p>
                               </div>
                               <div class="col-xs-6 col-sm-5">
-                                <p><strong>Location:</strong></p>
+                                <h5>Location:</strong></p>
                               </div>
                               <div class="col-xs-6 col-sm-7">
                                 <p>Coventry</p>
                               </div>
                             </div>
                           </div>
-                          <div class="col-xs-6">
+                          <div class="col-xs-6 vertical-border">
                             <div class="row">
                               <div class="col-xs-6 col-sm-5">
-                                <p><strong>Starting:</strong></p>
+                                <h5>Starting:</strong></p>
                               </div>
                               <div class="col-xs-6 col-sm-7">
                                 <p>
@@ -352,18 +301,18 @@
                                 </p>
                               </div>
                               <div class="col-xs-6 col-sm-5">
-                                <p><strong>Fees:</strong></p>
+                                <h5>Fees:</strong></p>
                               </div>
                               <div class="col-xs-6 col-sm-7">
                                 <p>
                                 £14000 - £14500
                                 </p>
                                 <p>
-                                <a href="#">Find out more <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
+                                <a href="#" class="lead"><strong>Find out more <i class="fa fa-angle-double-right" aria-hidden="true"></i></strong></a>
                                 </p>
                               </div>
                               <div class="col-xs-6 col-sm-5">
-                                <p><strong>Faculty:</strong></p>
+                                <h5>Faculty:</strong></p>
                               </div>
                               <div class="col-xs-6 col-sm-7">
                                 <p>Faculty of Health and Life Sciences</p>
@@ -381,8 +330,9 @@
                         <p>For questions regarding study and admissions please contact us:</p>
                       </div>
                       <div class="col-xs-12">
-                        <p>+44 (0) 24 7765 2222</p>
-                        <p><a href="mailto:studentenquiries@coventry.ac.uk">studentenquiries@coventry.ac.uk</a></p>
+                        <p class="lead"><strong>+44 (0) 24 7765 2222</strong>
+                        <br>
+                        <a href="mailto:studentenquiries@coventry.ac.uk"><strong>studentenquiries@coventry.ac.uk</strong></a></p>
                         <a class="btn btn-social-icon btn-facebook">
                           <span class="fa fa-facebook"></span>
                         </a>
@@ -401,10 +351,13 @@
               </div><!-- end of .col -->
             </div><!-- end of .row -->
             <div class="row">
-              <div class="col-xs-12">
-                <a type="button" class="btn btn-primary float-right"><strong>Take a virtual tour</strong><br />Science and Health Building</a>
+              <div class="col-xs-12 col-sm-8 col-md-9">
                 <p class="lead float-left">This exciting course blends the study of human biology with the rigorous techniques used in forensic laboratories, including analysis of blood, fibres, fingerprints, drugs, documents, DNA and fire/explosives residue. Ideal if you are fascinated by the scientific investigation of crime.</p>
-
+              </div>
+              <div class="col-xs-12 col-sm-4 col-md-3">
+                <a type="button" class="btn btn-primary">Take our virtual tour</a>
+              </div>
+              <div class="col-xs-12">
                 <p>We adopt a ‘Crime Scene to Court’ approach to their teaching, which really helps you to understand forensics, in particular the need to methodically collect samples, analyse them and present the results to the standard required by the courts.</p>
                 <p>You can also engage in multiple placement opportunities, the chance to conduct research alongside our experienced staff or the many professional organisations we have links with – such as Leicester Royal Infirmary, Key Forensic Services Ltd, Nemaura Pharmaceuticals Ltd and West Midlands Police.</p>
               </div><!-- end of .col -->
@@ -427,18 +380,41 @@
             cillum dolore eu fugiat nulla pariatur.</p>
               </div>
             </div>
-            <div class="row row-neutral">
-              <div class="col-xs-6 col-sm-3 col-neutral">
-                <img class="img-responsive" src="https://placehold.it/400x300?text=STAT+1">
+            <div class="row purple-graphics">
+              <div class="col-xs-12 col-sm-3">
+              <i class="fa fa-globe" aria-hidden="true"></i>
+              <h4>Global ready</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
               </div>
-              <div class="col-xs-6 col-sm-3 col-neutral">
-                <img class="img-responsive" src="https://placehold.it/400x300?text=STAT+2">
+              <div class="row visible-xs">
+                <div class="col-xs-12">
+                  <hr>
+                </div>
               </div>
-              <div class="col-xs-6 col-sm-3 col-neutral">
-                <img class="img-responsive" src="https://placehold.it/400x300?text=STAT+3">
+              <div class="col-xs-12 col-sm-3">
+              <i class="fa fa-suitcase" aria-hidden="true"></i>
+              <h4>Employability</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
               </div>
-              <div class="col-xs-6 col-sm-3 col-neutral">
-                <img class="img-responsive" src="https://placehold.it/400x300?text=STAT+4">
+              <div class="row visible-xs">
+                <div class="col-xs-12">
+                  <hr>
+                </div>
+              </div>
+              <div class="col-xs-12 col-sm-3">
+              <i class="fa fa-user" aria-hidden="true"></i>
+              <h4>Student experience</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+              </div>
+              <div class="row visible-xs">
+                <div class="col-xs-12">
+                  <hr>
+                </div>
+              </div>
+              <div class="col-xs-12 col-sm-3">
+              <i class="fa fa-times" aria-hidden="true"></i>
+              <h4>No hidden extras</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
               </div>
             </div>
           </div><!-- end of .container -->
@@ -458,33 +434,49 @@
               <div class="jcarousel" role="listbox">
                 <ul>
                   <li>
-                      <img class="img-responsive" src="https://placehold.it/400x225?text=IMAGE+1">
+                      <a href="image/placeimg_1000_562_animals-1.jpg" data-lity>
+                      <img class="img-responsive" src="image/placeimg_1000_562_animals-1.jpg">
+                      </a>
                   </li>
                   <li>
-                      <img class="img-responsive" src="https://placehold.it/400x225?text=IMAGE+2">
+                      <a href="image/placeimg_1000_562_animals-2.jpg" data-lity>
+                      <img class="img-responsive" src="image/placeimg_1000_562_animals-2.jpg">
+                      </a>
                   </li>
                   <li>
-                      <img class="img-responsive" src="https://placehold.it/400x225?text=IMAGE+3">
+                      <a href="image/placeimg_1000_562_animals-3.jpg" data-lity>
+                      <img class="img-responsive" src="image/placeimg_1000_562_animals-3.jpg">
+                      </a>
                   </li>
                   <li>
-                      <img class="img-responsive" src="https://placehold.it/400x225?text=IMAGE+4">
+                      <a href="image/placeimg_1000_562_animals-4.jpg" data-lity>
+                      <img class="img-responsive" src="image/placeimg_1000_562_animals-4.jpg">
+                      </a>
                   </li>
                   <li>
-                      <img class="img-responsive" src="https://placehold.it/400x225?text=IMAGE+5">
+                      <a href="image/placeimg_1000_562_animals-5.jpg" data-lity>
+                      <img class="img-responsive" src="image/placeimg_1000_562_animals-5.jpg">
+                      </a>
                   </li>
                   <li>
-                      <img class="img-responsive" src="https://placehold.it/400x225?text=IMAGE+6">
+                      <a href="image/placeimg_1000_562_animals-6.jpg" data-lity>
+                      <img class="img-responsive" src="image/placeimg_1000_562_animals-6.jpg">
+                      </a>
                   </li>
                   <li>
-                      <img class="img-responsive" src="https://placehold.it/400x225?text=IMAGE+7">
+                      <a href="image/placeimg_1000_562_animals-7.jpg" data-lity>
+                      <img class="img-responsive" src="image/placeimg_1000_562_animals-7.jpg">
+                      </a>
                   </li>
                   <li>
-                      <img class="img-responsive" src="https://placehold.it/400x225?text=IMAGE+8">
+                      <a href="image/placeimg_1000_562_animals-8.jpg" data-lity>
+                      <img class="img-responsive" src="image/placeimg_1000_562_animals-8.jpg">
+                      </a>
                   </li>
                 </ul>
               </div><!-- end of .jcarousel -->
-              <a href="#" class="jcarousel-control-prev">&lsaquo;</a>
-              <a href="#" class="jcarousel-control-next">&rsaquo;</a>
+              <a href="#" class="jcarousel-control-prev"><i class="fa fa-chevron-left"></i></a>
+              <a href="#" class="jcarousel-control-next"><i class="fa fa-chevron-right"></i></a>
           </div><!-- end of .jcarousel-wrapper -->
         </div><!-- end of .container -->
       </div><!-- end of .section -->
@@ -501,10 +493,12 @@
               </div>
             </div>
             <div class="row">
-              <div class="col-xs-3 col-sm-2">
-                <img class="img-responsive" src="https://placehold.it/125x100" />
+              <div class="col-xs-12 col-sm-3 col-md-2">
+                <div class="col-centered">
+                <img src="https://placehold.it/125x100" />
+                </div>
               </div>
-              <div class="col-xs-9 col-sm-10">
+              <div class="col-xs-12 col-sm-9 col-md-10">
                 <h4>Name of organisation &#x3C;h4&#x3E;</h4>
                 <p>55 words: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
             tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -519,10 +513,12 @@
               </div>
             </div>
             <div class="row">
-              <div class="col-xs-3 col-sm-2">
-                <img class="img-responsive" src="https://placehold.it/125x100" />
+              <div class="col-xs-12 col-sm-3 col-md-2">
+                <div class="col-centered">
+                <img src="https://placehold.it/125x100" />
+                </div>
               </div>
-              <div class="col-xs-9 col-sm-10">
+              <div class="col-xs-12 col-sm-9 col-md-10">
                 <h4>Name of organisation &#x3C;h4&#x3E;</h4>
                 <p>55 words: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
             tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -531,89 +527,100 @@
             cillum dolore eu fugiat nulla pariatur.</p>
               </div>
             </div>
+            <div class="row">
+              <div class="col-xs-12">
+                <hr style="visibility: hidden">
+              </div>
+            </div>
           </div><!-- end of .container -->
+          <div class="hide-reveal-header">
+            <div class="container">
+              <a class="btn-custom text-left hide-reveal" data-target="#partners-in-learning" data-toggle="collapse">
+                <i class="fa fa-plus float-left" aria-hidden="true"></i>
+                <span class="text-left">Partners in learning</span>
+              </a>
+            </div>
+          </div>
+          <div class="collapse" id="partners-in-learning">
+            <div class="section">
+              <div class="container">
+                <div class="row">
+                  <div class="col-xs-12 col-sm-3 col-md-2">
+                    <div class="col-centered">
+                    <img src="https://placehold.it/125x100" />
+                    </div>
+                  </div>
+                  <div class="col-xs-12 col-sm-9 col-md-100">
+                    <h4>Name of organisation &#x3C;h4&#x3E;</h4>
+                    <p>55 words: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur.</p>
+                  </div>
+                </div>
+              </div><!-- end of .container -->
+            </div><!-- end of .section -->
+          </div><!-- end of .collapse -->
+          <div class="hide-reveal-header">
+            <div class="container">
+              <a class="btn-custom text-left hide-reveal" data-target="#memberships" data-toggle="collapse">
+                <i class="fa fa-plus float-left" aria-hidden="true"></i>
+                <span class="text-left">Memberships</span>
+              </a>
+            </div>
+          </div>
+          <div class="collapse" id="memberships">
+            <div class="section">
+              <div class="container">
+                <div class="row">
+                  <div class="col-xs-12 col-sm-3 col-md-2">
+                    <div class="col-centered">
+                    <img src="https://placehold.it/125x100" />
+                    </div>
+                  </div>
+                  <div class="col-xs-12 col-sm-9 col-md-10">
+                    <h4>Name of organisation &#x3C;h4&#x3E;</h4>
+                    <p>55 words: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur.</p>
+                  </div>
+                </div>
+              </div><!-- end of .container -->
+            </div><!-- end of .section -->
+          </div><!-- end of .collapse -->
+          <div class="hide-reveal-header">
+            <div class="container">
+              <a class="btn-custom text-left hide-reveal" data-target="#exemptions" data-toggle="collapse">
+                <i class="fa fa-plus float-left" aria-hidden="true"></i>
+                <span class="text-left">Exemptions</span>
+              </a>
+            </div>
+          </div>
+          <div class="collapse" id="exemptions">
+            <div class="section">
+              <div class="container">
+                <div class="row">
+                  <div class="col-xs-12 col-sm-3 col-md-2">
+                    <div class="col-centered">
+                    <img src="https://placehold.it/125x100" />
+                    </div>
+                  </div>
+                  <div class="col-xs-12 col-sm-9 col-md-10">
+                    <h4>Name of organisation &#x3C;h4&#x3E;</h4>
+                    <p>55 words: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur.</p>
+                  </div>
+                </div>
+              </div><!-- end of .container -->
+            </div><!-- end of .section -->
+          </div><!-- end of .collapse -->
         </div><!-- end of .section -->
-        <div class="hide-reveal-header">
-          <div class="container">
-            <a class="btn-custom text-left hide-reveal" data-target="#partners-in-learning" data-toggle="collapse">
-              <i class="fa fa-plus float-left" aria-hidden="true"></i>
-              <span class="text-left">Partners in learning</span>
-            </a>
-          </div>
-        </div>
-        <div class="collapse" id="partners-in-learning">
-          <div class="section">
-            <div class="container">
-              <div class="row">
-                <div class="col-xs-3 col-sm-2">
-                  <img class="img-responsive" src="https://placehold.it/125x100" />
-                </div>
-                <div class="col-xs-9 col-sm-10">
-                  <h4>Name of organisation &#x3C;h4&#x3E;</h4>
-                  <p>55 words: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-              consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-              cillum dolore eu fugiat nulla pariatur.</p>
-                </div>
-              </div>
-            </div><!-- end of .container -->
-          </div><!-- end of .section -->
-        </div><!-- end of .collapse -->
-        <div class="hide-reveal-header">
-          <div class="container">
-            <a class="btn-custom text-left hide-reveal" data-target="#memberships" data-toggle="collapse">
-              <i class="fa fa-plus float-left" aria-hidden="true"></i>
-              <span class="text-left">Memberships</span>
-            </a>
-          </div>
-        </div>
-        <div class="collapse" id="memberships">
-          <div class="section">
-            <div class="container">
-              <div class="row">
-                <div class="col-xs-3 col-sm-2">
-                  <img class="img-responsive" src="https://placehold.it/125x100" />
-                </div>
-                <div class="col-xs-9 col-sm-10">
-                  <h4>Name of organisation &#x3C;h4&#x3E;</h4>
-                  <p>55 words: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-              consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-              cillum dolore eu fugiat nulla pariatur.</p>
-                </div>
-              </div>
-            </div><!-- end of .container -->
-          </div><!-- end of .section -->
-        </div><!-- end of .collapse -->
-        <div class="hide-reveal-header">
-          <div class="container">
-            <a class="btn-custom text-left hide-reveal" data-target="#exemptions" data-toggle="collapse">
-              <i class="fa fa-plus float-left" aria-hidden="true"></i>
-              <span class="text-left">Exemptions</span>
-            </a>
-          </div>
-        </div>
-        <div class="collapse" id="exemptions">
-          <div class="section">
-            <div class="container">
-              <div class="row">
-                <div class="col-xs-3 col-sm-2">
-                  <img class="img-responsive" src="https://placehold.it/125x100" />
-                </div>
-                <div class="col-xs-9 col-sm-10">
-                  <h4>Name of organisation &#x3C;h4&#x3E;</h4>
-                  <p>55 words: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-              consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-              cillum dolore eu fugiat nulla pariatur.</p>
-                </div>
-              </div>
-            </div><!-- end of .container -->
-          </div><!-- end of .section -->
-        </div><!-- end of .collapse -->
       <div class="section-divider-outer">
         <div class="section-divider-inner">
         </div>
@@ -633,52 +640,69 @@
                 <p>You will cover key study and research skills in the areas of forensic science, genetics, biochemistry, molecular biology, cell biology, microbiology and human physiology.</p>
                 <p>Many areas of human bioscience, such as the development of new antimicrobials or the manipulation of stem cells to treat inherited conditions, require graduates with good theoretical and practical knowledge alongside the skills to control, implement and evaluate these new developments. This is a varied, applied course, which recognises the multidisciplinary approach that is needed in modern sciences. Throughout your degree, you will study the details of forensic science, the legal system and investigative practice, demonstrating a capability to maintain auditable records of your investigations.</p>
               </div>
-              <div class="col-sm-3">
-                <h4>Course specification</h4>
-                <a href="#">Download PDF (500KB)</a>
+              <div class="col-sm-3 course-specification">
+                <div class="row">
+                  <div class="col-xs-2">
+                    <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+                  </div>
+                  <div class="col-xs-10">
+                    <p class="lead margin-reset"><strong>Course specification</strong></p>
+                    <p class="lead"><a href="#">Download PDF (500KB)</a></p>
+                  </div>
+                </div>
               </div>
               <div class="col-sm-3">
-                <img class="img-responsive" src="https://placehold.it/150x200?text=IMAGE" />
+                <div class="pull-out-fact-small">
+                  <p class="pof-number-small">100%</p>
+                  <p class="pof-statement-small">This course has 100% satisfaction among students.</p>
+                  <p class="pof-source-small">Source of statistic</p>
+                </div>
               </div>
             </div><!-- end of .row -->
           </div><!-- end of .container -->
         </div><!-- end of .section -->
+        <div class="section-divider-outer">
+          <div class="section-divider-inner">
+          </div>
+        </div>
         <div class="section">
           <div class="container">
             <div class="row">
               <div class="col-xs-12">
                 <h2>Modules</h2>
-                <div class="row" id="modules-nav">
-                  <ul class="nav nav-tabs">
-                    <li class="active">
-                      <a data-toggle="tab" href="#module-tab1">
-                        Year one
-                      </a>
-                    </li>
-                    <li>
-                      <a data-toggle="tab" href="#module-tab2">
-                        Year two
-                      </a>
-                    </li>
-                    <li>
-                      <a data-toggle="tab" href="#module-tab2-5">
-                        Enhancement year
-                      </a>
-                    </li>
-                    <li>
-                      <a data-toggle="tab" href="#module-tab3">
-                        Final year
-                      </a>
-                    </li>
-                    <li>
-                      <a data-toggle="tab" href="#module-tab4">
-                        Disclaimer
-                      </a>
-                    </li>
-                  </ul>
+                <div class="row tabbed-widget-header" id="modules-nav">
+                  <div class="col-xs-12">
+                    <ul class="nav nav-tabs">
+                      <li class="active">
+                        <a data-toggle="tab" href="#module-tab1">
+                          Year one
+                        </a>
+                      </li>
+                      <li>
+                        <a data-toggle="tab" href="#module-tab2">
+                          Year two
+                        </a>
+                      </li>
+                      <li>
+                        <a data-toggle="tab" href="#module-tab2-5">
+                          Enhancement year
+                        </a>
+                      </li>
+                      <li>
+                        <a data-toggle="tab" href="#module-tab3">
+                          Final year
+                        </a>
+                      </li>
+                      <li>
+                        <a data-toggle="tab" href="#module-tab4">
+                          Disclaimer
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
                 </div>
                 <div class="tab-content" id="modules-body">
-                  <div class="tab-pane active fade in" id="module-tab1">
+                  <div class="tab-pane active tabbed-widget-body" id="module-tab1">
                     <div class="row">
                       <div class="col-xs-12">
                         <h4>Overview</h4>
@@ -713,11 +737,13 @@
                        <h4>Add+Vantage</h4>
                         <p>The focus on preparing students for successful futures sets Coventry apart as a university.</p>
                         <p>The Add+vantage modules teach a range of work experience and extra-curricular activities that are taken each year, and broaden students knowledge and skills within a work focused environment. There is a very wide range of Add+vantage free-choice subject areas, and they are arranged in themes.</p>
+                      </div>
+                      <div class="col-xs-12 col-sm-4 col-md-3">
                         <a href="#" type="button" class="btn btn-primary">Find out more</a>
                       </div><!-- end of .col -->
                     </div> <!-- end of .row -->
                   </div> <!-- end of .tab-pane -->
-                  <div class="tab-pane fade" id="module-tab2">
+                  <div class="tab-pane tabbed-widget-body" id="module-tab2">
                     <div class="row">
                       <div class="col-xs-12">
                         <h4>Overview</h4>
@@ -759,11 +785,13 @@
                         <h4>Add+Vantage</h4>
                           <p>The focus on preparing students for successful futures sets Coventry apart as a university. The key: developing and enhancing students' employability, and delivering a serious competitive advantage in the jobs market. At Coventry, that starts right from the beginning.</p>
                           <p>The Add+vantage modules teach a range of work experience and extra-curricular activities that are taken each year, and which broaden students knowledge and skills within a work focused environment. There is a very broad range of Add+vantage free-choice subject areas, and they are arranged in themes.</p>
-                          <a href="#" type="button" class="btn btn-primary">Find out more</a>
+                      </div>
+                      <div class="col-xs-12 col-sm-4 col-md-3">
+                        <a href="#" type="button" class="btn btn-primary">Find out more</a>
                       </div><!-- end of .col -->
                     </div> <!-- end of .row -->
                   </div> <!-- end of .tab-pane -->
-                  <div class="tab-pane fade" id="module-tab2-5">
+                  <div class="tab-pane tabbed-widget-body" id="module-tab2-5">
                     <div class="row">
                       <div class="col-xs-12">
                         <h4>Overview</h4>
@@ -790,11 +818,13 @@
                         <h4>Add+Vantage</h4>
                           <p>The focus on preparing students for successful futures sets Coventry apart as a university. The key: developing and enhancing students' employability, and delivering a serious competitive advantage in the jobs market. At Coventry, that starts right from the beginning.</p>
                           <p>The Add+vantage modules teach a range of work experience and extra-curricular activities that are taken each year, and which broaden students knowledge and skills within a work focused environment. There is a very broad range of Add+vantage free-choice subject areas, and they are arranged in themes.</p>
-                          <a href="#" type="button" class="btn btn-primary">Find out more</a>
+                      </div>
+                      <div class="col-xs-12 col-sm-4 col-md-3">
+                        <a href="#" type="button" class="btn btn-primary">Find out more</a>
                       </div><!-- end of .col -->
                     </div> <!-- end of .row -->
                   </div> <!-- end of .tab-pane -->
-                  <div class="tab-pane fade" id="module-tab3">
+                  <div class="tab-pane tabbed-widget-body" id="module-tab3">
                     <div class="row">
                       <div class="col-xs-12">
                         <h4>Overview</h4>
@@ -848,11 +878,13 @@
                         <h4>Add+Vantage</h4>
                           <p>The focus on preparing students for successful futures sets Coventry apart as a university. The key: developing and enhancing students' employability, and delivering a serious competitive advantage in the jobs market. At Coventry, that starts right from the beginning.</p>
                           <p>The Add+vantage modules teach a range of work experience and extra-curricular activities that are taken each year, and which broaden students knowledge and skills within a work focused environment. There is a very broad range of Add+vantage free-choice subject areas, and they are arranged in themes.</p>
-                          <a href="#" type="button" class="btn btn-primary">Find out more</a>
+                      </div>
+                      <div class="col-xs-12 col-sm-4 col-md-3">
+                        <a href="#" type="button" class="btn btn-primary">Find out more</a>
                       </div><!-- end of .col -->
                     </div> <!-- end of .row -->
                   </div> <!-- end of .tab-pane -->
-                  <div class="tab-pane fade" id="module-tab4">
+                  <div class="tab-pane tabbed-widget-body" id="module-tab4">
                     <div class="row">
                       <div class="col-xs-12">
                         <p><em>Please note that the modules listed above are correct at the time of going to print. However, changes may occur and we strongly advise you to contact us before applying to study at Coventry University and check the most up-to-date position on our website. This document is not intended to form part of any contract between Coventry University and yourself and should not be relied upon when making an application to study here. A compulsory Add+vantage module must also be completed in each year of study, please see the <a href="#">Career prospects tab</a> for more information on our Add+vantage scheme.</em></p>
@@ -864,23 +896,23 @@
             </div><!-- end of .row -->
           </div>
         </div>
-        <div class="section-divider-outer">
-          <div class="section polarity">
-            <div class="container">
-              <div class="row">
+        <div class="section padding-reset">
+          <div class="container">
+            <div class="section-inner">
+              <div class="row border">
                 <div class="col-sm-2">
-                  <img class="img-responsive" src="https://placehold.it/400x300?text=STAT">
+                  <p class="pof-number-large-style-1">19th</p>
                 </div><!-- end of .col -->
                 <div class="col-sm-10">
-                  <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis condimentum nisl metus, vitae pulvinar elit molestie vitae.</p>
+                  <p class="pof-statement-large-style-1">Coventry is rated 19th best in the UK for <strong>Biosciences in the Guardian University Guide 2017</strong></p>
                 </div><!-- end of .col -->
               </div><!-- end of .row -->
-            </div><!-- end of .container -->
-          </div><!-- end of .section -->
-        </div><!-- end of .section-divider-outer -->
+            </div>
+          </div><!-- end of .container -->
+        </div><!-- end of .section -->
         <div class="section">
           <div class="container">
-            <h2>In more detail...</h2>
+            <h2 class="margin-reset">In more detail...</h2>
           </div>
         </div>
         <div class="hide-reveal-header">
@@ -936,6 +968,17 @@
                 <li>Support applying for short and long-term placements in laboratory and industrial settings to gain the experience employers desire. Past students have taken secondary school students on field trips to the science museum in London and developed forensic science teaching resources.</li>
               </ul>
             </div><!-- end of .container-->
+          </div><!-- end of .section -->
+          <div class="section padding-reset">
+            <div class="container">
+              <div class="section-inner">
+                <div class="row border">
+                  <div class="col-xs-12">
+                    <p class="pof-statement-large-style-1 text-center">Gain experience with world-leading brands like <mark>Lorem ipsum</mark>, <mark>Lorem ipsum</mark>, <mark>Lorem ipsum ipsum</mark> and <mark>Lorem</mark>.</p>
+                  </div><!-- end of .col -->
+                </div><!-- end of .row -->
+              </div>
+            </div><!-- end of .container -->
           </div><!-- end of .section -->
         </div>
         <div class="hide-reveal-header">
@@ -1080,18 +1123,26 @@
                   <a href="#" type="button" class="btn btn-primary">Explore our Global Leaders Programme</a>
                 </div><!-- end of .col -->
                 <div class="col-sm-6">
-                  <div class="row row-neutral">
-                    <div class="col-xs-6 col-neutral">
-                      <img class="img-responsive" src="https://placehold.it/300x300?text=STAT+1">
+                  <div class="row row-neutral purple-graphics">
+                    <div class="col-xs-12 col-sm-6 col-neutral">
+                    <p class="purple-number">1st</p>
+                    <h4>International experience</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
                     </div>
-                    <div class="col-xs-6 col-neutral">
-                      <img class="img-responsive" src="https://placehold.it/300x300?text=STAT+2">
+                    <div class="col-xs-12 col-sm-6 col-neutral">
+                    <p class="purple-number">2,264</p>
+                    <h4>Student experiences</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
                     </div>
-                    <div class="col-xs-6 col-neutral">
-                      <img class="img-responsive" src="https://placehold.it/300x300?text=STAT+3">
+                    <div class="col-xs-12 col-sm-6 col-neutral">
+                    <p class="purple-number">27%</p>
+                    <h4>Postgraduate</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
                     </div>
-                    <div class="col-xs-6 col-neutral">
-                      <img class="img-responsive" src="https://placehold.it/300x300?text=STAT+4">
+                    <div class="col-xs-12 col-sm-6 col-neutral">
+                    <p class="purple-number">5,000</p>
+                    <h4>Helping students</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
                     </div>
                   </div>
                 </div><!-- end of .col -->
@@ -1108,11 +1159,11 @@
               </div><!-- end of .col -->
               <div class="col-xs-12">
                 <h3>Typical offers</h3>
-                <table class="table table-responsive">
-                  <tr>
+                <table class="table table-responsive entry-table">
+                  <tr class="first-row">
                     <th colspan="4">University Course Code: HLSU013</th>
                   </tr>
-                  <tr>
+                  <tr class="second-row">
                     <td>A Level</td>
                     <td>BTEC</td>
                     <td>IB Diploma</td>
@@ -1125,35 +1176,181 @@
                     <td>Minimum 5 GCSEs at A*-C including English, Maths and Science</td>
                   </tr>
                 </table>
-                <div class="hide-reveal-header">
-                  <div class="container">
-                    <a class="btn-custom text-left hide-reveal" data-target="#acceptable-qualifications" data-toggle="collapse">
-                      <i class="fa fa-plus float-left" aria-hidden="true"></i>
-                      <span class="text-left">View more detail on acceptable qualifications</span>
-                    </a>
-                  </div>
-                </div>
-                <div class="collapse" id="acceptable-qualifications">
-                  <div class="section">
-                    <div class="container">
-                      <div class="row">
-                        <div class="col-xs-12">
-                          <h3>A-Levels</h3>
-                          <p>A-Level applicants are required to have three  A2 Levels. Coventry University may include AS grades within an offer but we are not able to accept two AS Levels in place of one A2 Level. In some courses it may be necessary for entrants to have passed specific A2 Levels in nominated subjects. Please see the course pages for more information.</p>
-                          <h3>Access Diplomas</h3>
-                          <p>Coventry University welcomes applicants who have completed, or who are studying, the Access to HE Diploma developed by the Quality Assurance Agency for Higher Education (QAA). Successful completion of the course will require you to gain 60 credits with at least 45 to be achieved at Level 3 (with the remainder at Level 2). In some cases we will require you to have gained Merit or Distinction grades in a number of units or in nominated subjects. For more information on the entry requirements for your chosen course please see the relevant course pages. </p>
-                          <h3>BTEC Level 3 Diplomas</h3>
-                          <p>The University will accept the BTEC Level 3 Extended Diploma for entry to most courses. In some cases we will require applicants to have studied either certain named modules or a specific named Diploma. The appropriate course page will have full information on the entry requirements.</p>
-                          <p>The University also accepts the BTEC Level 3 Subsidiary Diploma and BTEC Level 3 Diploma for entry to degree programmes, provided that they are studied in combination with other qualifications that provide a total volume of study that is equivalent to three A2 Levels. For example, you could be studying a BTEC Level 3 Diploma plus an A2 Level, or a BTEC Level 3 Subsidiary Diploma plus two A2 Levels. Where a specific A2 or BTEC subject is required for entry then you must be offering this as part of your combination of qualifications.</p>
-                        </div>
-                      </div>
-                    </div><!-- end of .container -->
-                  </div><!-- end of .section -->
-                </div><!-- end of .collapse -->
               </div><!-- end of .col -->
             </div><!-- end of .row -->
           </div><!-- end of .container -->
+            <div class="container">
+              <div class="section-inner">
+              <div class="row notice">
+                <div class="col-xs-2 col-sm-1">
+                  <i class="fa fa-info-circle" aria-hidden="true"></i>
+                </div>
+                <div class="col-xs-10 col-sm-8">
+                  <p class="lead"><strong>English as a Foreign Language:</strong> an IELTS of 6.0 overall, with no component lower than 5.5. Pre-sessional English is available if required.</p>
+                </div>
+                <div class="col-xs-12 col-sm-3">
+                  <a href="#" type="button" class="btn btn-primary">Pre-sessional English</a>
+                </div>
+              </div>
+              </div>
+            </div>
         </div><!-- end of .section -->
+        <div class="hide-reveal-header">
+          <div class="container">
+            <a class="btn-custom text-left hide-reveal" data-target="#acceptable-qualifications" data-toggle="collapse">
+              <i class="fa fa-plus float-left" aria-hidden="true"></i>
+              <span class="text-left">View more detail on acceptable qualifications</span>
+            </a>
+          </div>
+        </div>
+        <div class="collapse" id="acceptable-qualifications">
+          <div class="section">
+            <div class="container">
+              <div class="row">
+                <div class="col-xs-12">
+                  <h3>A-Levels</h3>
+                  <p>A-Level applicants are required to have three  A2 Levels. Coventry University may include AS grades within an offer but we are not able to accept two AS Levels in place of one A2 Level. In some courses it may be necessary for entrants to have passed specific A2 Levels in nominated subjects. Please see the course pages for more information.</p>
+                  <h3>Access Diplomas</h3>
+                  <p>Coventry University welcomes applicants who have completed, or who are studying, the Access to HE Diploma developed by the Quality Assurance Agency for Higher Education (QAA). Successful completion of the course will require you to gain 60 credits with at least 45 to be achieved at Level 3 (with the remainder at Level 2). In some cases we will require you to have gained Merit or Distinction grades in a number of units or in nominated subjects. For more information on the entry requirements for your chosen course please see the relevant course pages. </p>
+                  <h3>BTEC Level 3 Diplomas</h3>
+                  <p>The University will accept the BTEC Level 3 Extended Diploma for entry to most courses. In some cases we will require applicants to have studied either certain named modules or a specific named Diploma. The appropriate course page will have full information on the entry requirements.</p>
+                  <p>The University also accepts the BTEC Level 3 Subsidiary Diploma and BTEC Level 3 Diploma for entry to degree programmes, provided that they are studied in combination with other qualifications that provide a total volume of study that is equivalent to three A2 Levels. For example, you could be studying a BTEC Level 3 Diploma plus an A2 Level, or a BTEC Level 3 Subsidiary Diploma plus two A2 Levels. Where a specific A2 or BTEC subject is required for entry then you must be offering this as part of your combination of qualifications.</p>
+                </div>
+              </div>
+            </div><!-- end of .container -->
+          </div><!-- end of .section -->
+        </div><!-- end of .collapse -->
+        <div class="hide-reveal-header">
+          <div class="container">
+            <a class="btn-custom text-left hide-reveal" data-target="#equivalent-gcse" data-toggle="collapse">
+              <i class="fa fa-plus float-left" aria-hidden="true"></i>
+              <span class="text-left">View equivalent GCSE qualifications</span>
+            </a>
+          </div>
+        </div>
+        <div class="collapse" id="equivalent-gcse">
+          <div class="section">
+            <div class="container">
+              <div class="row">
+                <div class="col-xs-12">
+                <table class="table table-responsive entry-table">
+                  <tr class="first-row">
+                    <th colspan="4">Table of qualifications</th>
+                    <th>UCAS</th>
+                    <th>BTEC</th>
+                    <th>IB</th>
+                  </tr>
+                  <tr class="second-row">
+                    <td colspan="4">GCE A2 Level</td>
+                    <td>Tariff points</td>
+                    <td>L3 Extended Diploma</td>
+                    <td>Diploma</td>
+                  </tr>
+                  <tr>
+                    <td>A*A*A*</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>420</td>
+                    <td>D*D*D*</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>A*A*A</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>400</td>
+                    <td>D*D*D*</td>
+                    <td>31</td>
+                  </tr>
+                  <tr>
+                    <td>A*A*B</td>
+                    <td>A*A*A*</td>
+                    <td></td>
+                    <td></td>
+                    <td>380</td>
+                    <td>D*D*D</td>
+                    <td>30</td>
+                  </tr>
+                  <tr>
+                    <td>A*A*C</td>
+                    <td>AAA</td>
+                    <td></td>
+                    <td></td>
+                    <td>360</td>
+                    <td>DDD</td>
+                    <td>29</td>
+                  </tr>
+                  <tr>
+                    <td>A*A*D</td>
+                    <td>AAB</td>
+                    <td>BBA*</td>
+                    <td></td>
+                    <td>340</td>
+                    <td></td>
+                    <td>28</td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td>AAC</td>
+                    <td>BBA</td>
+                    <td></td>
+                    <td>320</td>
+                    <td>DDM</td>
+                    <td>27</td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td>AAD</td>
+                    <td>BBB</td>
+                    <td>CCA*</td>
+                    <td>300</td>
+                    <td></td>
+                    <td>26</td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td>AAE</td>
+                    <td>BBC</td>
+                    <td>CCA</td>
+                    <td>280</td>
+                    <td>DMM</td>
+                    <td>25</td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td></td>
+                    <td>BBD</td>
+                    <td>CCB</td>
+                    <td>260</td>
+                    <td></td>
+                    <td>24</td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>CCC</td>
+                    <td>240</td>
+                    <td>MMM</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>CCD</td>
+                    <td>220</td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                </table>
+                </div>
+              </div>
+            </div><!-- end of .container -->
+          </div><!-- end of .section -->
+        </div><!-- end of .collapse -->
         <div class="section">
           <div class="container">
             <div class="row">
@@ -1167,6 +1364,101 @@
             </div><!-- end of .row -->
           </div><!-- end of .container -->
         </div><!-- end of .section -->
+        <div class="hide-reveal-header">
+          <div class="container">
+            <a class="btn-custom text-left hide-reveal" data-target="#firm-choice" data-toggle="collapse">
+              <i class="fa fa-plus float-left" aria-hidden="true"></i>
+              <span class="text-left">Why do I have to choose you as 'firm' choice?</span>
+            </a>
+          </div>
+        </div>
+        <div class="collapse" id="firm-choice">
+          <div class="section">
+            <div class="container">
+              <div class="row">
+                <div class="col-xs-12">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+              </div>
+            </div><!-- end of .container -->
+          </div><!-- end of .section -->
+        </div><!-- end of .collapse -->
+        <div class="hide-reveal-header">
+          <div class="container">
+            <a class="btn-custom text-left hide-reveal" data-target="#taking-a-levels" data-toggle="collapse">
+              <i class="fa fa-plus float-left" aria-hidden="true"></i>
+              <span class="text-left">What if I'm not taking A-levels?</span>
+            </a>
+          </div>
+        </div>
+        <div class="collapse" id="taking-a-levels">
+          <div class="section">
+            <div class="container">
+              <div class="row">
+                <div class="col-xs-12">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+              </div>
+            </div><!-- end of .container -->
+          </div><!-- end of .section -->
+        </div><!-- end of .collapse -->
+        <div class="hide-reveal-header">
+          <div class="container">
+            <a class="btn-custom text-left hide-reveal" data-target="#dont-predicted-grades" data-toggle="collapse">
+              <i class="fa fa-plus float-left" aria-hidden="true"></i>
+              <span class="text-left">What if I don't get the predicted grades?</span>
+            </a>
+          </div>
+        </div>
+        <div class="collapse" id="dont-predicted-grades">
+          <div class="section">
+            <div class="container">
+              <div class="row">
+                <div class="col-xs-12">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+              </div>
+            </div><!-- end of .container -->
+          </div><!-- end of .section -->
+        </div><!-- end of .collapse -->
+        <div class="hide-reveal-header">
+          <div class="container">
+            <a class="btn-custom text-left hide-reveal" data-target="#achieve-predicted-grades" data-toggle="collapse">
+              <i class="fa fa-plus float-left" aria-hidden="true"></i>
+              <span class="text-left">How can you be sure that I will achieve my predicted grades?</span>
+            </a>
+          </div>
+        </div>
+        <div class="collapse" id="achieve-predicted-grades">
+          <div class="section">
+            <div class="container">
+              <div class="row">
+                <div class="col-xs-12">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+              </div>
+            </div><!-- end of .container -->
+          </div><!-- end of .section -->
+        </div><!-- end of .collapse -->
+        <div class="hide-reveal-header">
+          <div class="container">
+            <a class="btn-custom text-left hide-reveal" data-target="#defer-offer" data-toggle="collapse">
+              <i class="fa fa-plus float-left" aria-hidden="true"></i>
+              <span class="text-left">Am I able to defer my unconditional offer?</span>
+            </a>
+          </div>
+        </div>
+        <div class="collapse" id="defer-offer">
+          <div class="section">
+            <div class="container">
+              <div class="row">
+                <div class="col-xs-12">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+              </div>
+            </div><!-- end of .container -->
+          </div><!-- end of .section -->
+        </div><!-- end of .collapse -->
       </div><!-- end of .tab-pane -->
       <div class="tab-pane fade" id="fees-tab-pane">
         <div class="section">
@@ -1178,7 +1470,7 @@
                 <p>Course fees are calculated on the basis of what it costs to teach each course and we aim for total financial transparency.
                 </p>
               </div><!-- end of .col -->
-              <div class="col-xs-12">
+              <div class="col-xs-12 tabbed-widget-header">
               <ul class="nav nav-tabs" id="fees-nav">
                 <li class="active">
                   <a data-toggle="tab" href="#feeInfo-uk" class="fade in">
@@ -1199,9 +1491,9 @@
               </div><!-- end of column -->
               <div class="col-xs-12">
                 <div class="tab-content inner" id="feeInfo">
-                  <div class="tab-pane active fade in" id="feeInfo-uk">
+                  <div class="tab-pane active tabbed-widget-body" id="feeInfo-uk">
                     <div class="row">
-                      <div class="col-sm-6">
+                      <div class="col-sm-6 vertical-border">
                         <div class="row">
                           <div class="col-xs-6">
                             <h3>Starts</h3>
@@ -1242,15 +1534,17 @@
                           </div>
                           <div class="col-xs-12">
                             <p>If you're a truly outstanding undergraduate candidate we may be able to offer you a Coventry University Scholarship. Coventry University Scholarships are awarded to recognise truly exceptional sports achievement and academic excellence.</p>
-                            <a href="#" type="button" class="btn btn-primary">Find out more</a>
                           </div>
+                          <div class="col-xs-12 col-sm-6">
+                            <a href="#" type="button" class="btn btn-primary">Find out more</a>
+                          </div><!-- end of .col -->
                         </div>
                       </div> <!-- end of .col -->
                     </div> <!-- end of .row -->
                   </div> <!-- end of .tab-pane -->
-                  <div class="tab-pane fade in" id="feeInfo-eu">
+                  <div class="tab-pane tabbed-widget-body" id="feeInfo-eu">
                     <div class="row">
-                      <div class="col-sm-6">
+                      <div class="col-sm-6 vertical-border">
                         <div class="row">
                           <div class="col-xs-6">
                             <h3>Starts</h3>
@@ -1292,15 +1586,17 @@
                           <div class="col-xs-12">
                             <p>We have invested £1.5m in scholarships for high achieving and enterprising students.</p>
                             <p>For the May and September 2017 intakes we have a wide range of scholarships available, each worth up to £5,000.</p>
-                            <a href="#" type="button" class="btn btn-primary">Find out more</a>
                           </div>
+                          <div class="col-xs-12 col-sm-6">
+                            <a href="#" type="button" class="btn btn-primary">Find out more</a>
+                          </div><!-- end of .col -->
                         </div>
                       </div> <!-- end of .col -->
                     </div> <!-- end of .row -->
                   </div> <!-- end of .tab-pane -->
-                  <div class="tab-pane fade" id="feeInfo-international">
+                  <div class="tab-pane tabbed-widget-body" id="feeInfo-international">
                     <div class="row">
-                      <div class="col-sm-6">
+                      <div class="col-sm-6 vertical-border">
                         <div class="row">
                           <div class="col-xs-6">
                             <h3>Starts</h3>
@@ -1342,6 +1638,8 @@
                           <div class="col-xs-12">
                              <p>We have invested £1.5m in scholarships for high achieving and enterprising students.</p>
                             <p>For the May and September 2017 intakes we have a wide range of scholarships available, each worth up to £5,000.</p>
+                          </div>
+                          <div class="col-xs-12 col-sm-6">
                             <a href="#" type="button" class="btn btn-primary">Find out more</a>
                           </div>
                         </div>
@@ -1365,30 +1663,60 @@
               </div><!-- end of .col -->
             </div>
             <div class="row">
+              <div class="col-xs-12">
+                <hr style="visibility: hidden">
+              </div>
+            </div>
+            <div class="row purple-graphics">
               <div class="col-xs-12 col-sm-4">
-                <img class="img-responsive" src="https://placehold.it/400x300?text=IMAGE" />
-              </div><!-- end of .col -->
+              <i class="fa fa-file" aria-hidden="true"></i>
+              <h4>Global ready</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+              </div>
+              <div class="row visible-xs">
+                <div class="col-xs-12">
+                  <hr>
+                </div>
+              </div>
               <div class="col-xs-12 col-sm-4">
-                <img class="img-responsive" src="https://placehold.it/400x300?text=IMAGE" />
-              </div><!-- end of .col -->
+              <i class="fa fa-book" aria-hidden="true"></i>
+              <h4>Reading material</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+              </div>
+              <div class="row visible-xs">
+                <div class="col-xs-12">
+                  <hr>
+                </div>
+              </div>
               <div class="col-xs-12 col-sm-4">
-                <img class="img-responsive" src="https://placehold.it/400x300?text=IMAGE" />
-              </div><!-- end of .col -->
+              <i class="fa fa-suitcase" aria-hidden="true"></i>
+              <h4>UK field trips</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xs-12">
+                <hr style="visibility: hidden">
+              </div>
             </div>
             <div class="row">
               <div class="col-xs-12 col-sm-6">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
               </div>
               <div class="col-xs-12 col-sm-6">
-                <h4>Additional costs not included in the fees</h4>
-                <ul>
-                    <li>Refundable deposit for turning point handset;</li>
-                    <li>Any optional overseas field trips or visits: £400+ per trip.</li>
+                <h4 class="margin-reset">Additional costs not included in the fees</h4>
+                <ul class="no-bullets">
+                    <li><i class="fa fa-angle-right" aria-hidden="true">&nbsp;&nbsp;</i>Refundable deposit for turning point handset;</li>
+                    <li><i class="fa fa-angle-right" aria-hidden="true">&nbsp;&nbsp;</i>Any optional overseas field trips or visits: £400+ per trip.</li>
                 </ul>
               </div>
             </div>
           </div><!-- end of container -->
         </div><!-- end of .section -->
+        <div class="section-divider-outer">
+          <div class="section-divider-inner">
+          </div>
+        </div>
       </div><!-- end of .tab-pane -->
       <div class="tab-pane fade" id="career-tab-pane">
         <div class="section">
@@ -1396,21 +1724,29 @@
             <div class="row">
               <div class="col-xs-12">
                 <h2>Career prospects</h2>
-              </div><!-- end of .col -->
-              <div class="col-sm-6">
-                <img class="img-responsive" src="https://placehold.it/400x300?text=IMAGE" />
-              </div><!-- end of .col -->
-              <div class="col-sm-6">
-                <p>This degree equips students to take up roles in private sector forensic laboratory service providers or as police Crime Scene Investigators (CSIs), although further training would be required, in the form of the CSI Learning Programme at the College of Policing, Harperley Hall. Alternatively, you could pursue roles in fraud, customs and excise or as private investigators.</p>
+              </div>
+              <div class="col-xs-12 col-sm-9">
+                <p class="lead">This degree equips students to take up roles in private sector forensic laboratory service providers or as police Crime Scene Investigators (CSIs), although further training would be required, in the form of the CSI Learning Programme at the College of Policing, Harperley Hall. Alternatively, you could pursue roles in fraud, customs and excise or as private investigators.</p>
                 <p>The biological modules ensure that you can also access non-forensic careers, including pharmaceutical or food quality testing laboratories, medical and laboratory equipment sales and in more general scientific writing and/or teaching professions. This is an important element of our course design, since employment opportunities in forensics are limited and students need to be well prepared for a wide range of employment options.</p>
+              </div><!-- end of .col -->
+              <div class="col-xs-12 col-sm-3">
+                <div class="pull-out-fact-small">
+                  <p class="pof-number-small text-center">85%</p>
+                  <p class="pof-statement-small">Students in work / study six months after finishing.</p>
+                  <p class="pof-source-small">Source of statistic</p>
+                </div>
               </div><!-- end of .col -->
             </div><!-- end of .row -->
           </div><!-- end of .container -->
         </div><!-- end of .section -->
+        <div class="section-divider-outer">
+          <div class="section-divider-inner">
+          </div>
+        </div>
         <div class="section">
           <div class="container">
             <div class="col-xs-12">
-              <h2>Our alumni</h2>
+              <h2>Where our graduates work</h2>
             </div>
             <div class="col-sm-6">
               <p>Previous graduates of this course have secured laboratory positions with forensic providers in both Government and private sector organisations, while others have secured posts in biology labs with companies such as The Binding Site and Severn Trent Water.</p>
@@ -1425,6 +1761,24 @@
             </div>
           </div>
         </div>
+        <div class="section">
+          <div class="container">
+            <div class="section-inner">
+              <div class="row border">
+                <div class="col-sm-2">
+                  <p class="pof-number-large-style-1 text-center">60%</p>
+                </div><!-- end of .col -->
+                <div class="col-sm-10">
+                  <p class="pof-statement-large-style-1">Students are in a <strong>professional/managerial job</strong> at six months after graduating.</p>
+                </div><!-- end of .col -->
+              </div><!-- end of .row -->
+            </div>
+          </div><!-- end of .container -->
+        </div><!-- end of .section -->
+        <div class="section-divider-outer">
+          <div class="section-divider-inner">
+          </div>
+        </div>
       </div><!-- end of .tab-pane -->
     </div><!-- end of .tab-content -->
     <div class="section" id="student-quote-section">
@@ -1435,12 +1789,12 @@
           </div>
         </div>
         <div class="row">
-          <div class="col-xs-2 col-sm-1 vcenter">
-            <div class="col-centered">
+          <div class="col-xs-12 col-sm-1">
+            <div class="student-quote text-left">
               <i class="fa fa-quote-left" aria-hidden="true"></i>
             </div>
           </div><!-- end of .col -->
-          <div class="col-xs-10 col-sm-11">
+          <div class="col-xs-12 col-sm-11">
             <blockquote>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis condimentum nisl metus, vitae pulvinar elit molestie vitae. Sed eu ultricies massa. Donec libero nisi, tempor quis faucibus id, ultricies id quam.</p>
               <footer>
@@ -1462,40 +1816,40 @@
             <h2>Related courses</h2>
           </div>
           <div class="col-xs-12 col-sm-4">
-            <h4><a href="#">Course title 1</a></h4>
+            <h5 class="underline"><a href="#">Course title 1</a></h5>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
           </div>
           <div class="col-xs-12 col-sm-4">
-            <h4><a href="#">Course title 2</a></h4>
+            <h5 class="underline"><a href="#">Course title 2</a></h5>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
           </div>
           <div class="col-xs-12 col-sm-4">
-            <h4><a href="#">Course title 3</a></h4>
+            <h5 class="underline"><a href="#">Course title 3</a></h5>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
           </div>
         </div><!-- end of .row -->
       </div><!-- end of .container-->
     </div><!-- end of .section -->
     <div class="section" id="kis-widget-section">
-      <div class="container">
-        <div class="row">
+      <div class="container tabbed-widget-header">
+        <div class="row ">
           <div class="col-xs-12">
             <ul class="nav nav-tabs col-centered" id="kis-widget-nav">
               <li class="active">
                 <a data-toggle="tab" href="#kis-widget-pane-full-time">
-                  BSc full-time
+                  Full-time
                 </a>
               </li>
               <li>
                 <a data-toggle="tab" href="#kis-widget-pane-part-time">
-                  BSc part-time
+                  Part-time
                 </a>
               </li>
             </ul>
           </div>
           <div class="col-xs-12">
-            <div class="tab-content" id="kis-widget-tab-content">
-              <div class="tab-pane active fade in" id="kis-widget-pane-full-time">
+            <div class="tab-content tabbed-widget-body" id="kis-widget-tab-content">
+              <div class="tab-pane active " id="kis-widget-pane-full-time">
                 <div class="row">
                   <div class="col-lg-8 col-centered">
                     <div class="hidden-xs">
@@ -1507,7 +1861,7 @@
                   </div><!-- end of .col -->
                 </div><!-- end of .row -->
               </div><!-- end of .tab-pane -->
-              <div class="tab-pane fade" id="kis-widget-pane-part-time">
+              <div class="tab-pane tabbed-widget-body" id="kis-widget-pane-part-time">
                 <div class="row">
                   <div class="col-lg-8 col-centered">
                     <div class="hidden-xs">
@@ -1528,46 +1882,31 @@
       <div class="section-divider-inner">
       </div>
     </div>
-    <div class="section-divider-outer">
-      <div class="section" id="disclaimer-section">
-        <div class="container border">
-          <div class="row">
+    <div class="section" id="disclaimer-section">
+      <div class="container">
+        <div class="section-inner">
+          <div class="row border">
             <div class="col-xs-12">
               <h5>Disclaimer</h5>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             </div>
           </div><!-- end of .row -->
-        </div><!-- end of .container -->
-      </div><!-- end of .section -->
+        </div>
+      </div><!-- end of .container -->
+    </div><!-- end of .section -->
     </div>
-    </div>
-    <script src="scripts/jquery.jcarousel.min.js" type="text/javascript"></script>
-    <script src="scripts/jcarousel.responsive.js" type="text/javascript"></script>
-    <script src="scripts/jcarousel.transitions.js" type="text/javascript"></script>
-    <script>
-    (function($, Modernizr) {
-        $(function() {
-            $('.jcarousel').jcarousel({
-                wrap: 'circular',
-                transitions: Modernizr.csstransitions ? {
-                    transforms:   Modernizr.csstransforms,
-                    transforms3d: Modernizr.csstransforms3d,
-                    easing:       'ease'
-                } : false
-            });
+    
+    <!-- *JAVSCRIPT (FOOTER)* -->
 
-            $('.jcarousel-control-prev').jcarouselControl({
-                target: '-=1'
-            });
-
-            $('.jcarousel-control-next').jcarouselControl({
-                target: '+=1'
-            });
-        });
-    })(jQuery, Modernizr);
-    </script>
-    <!-- *Convert tabs to stacked hide-reveal toggles on mobile* -->
-    <script src="scripts/bootstrap-tabcollapse.js" type="text/javascript"></script>
-    <script src="scripts/script.js" type="text/javascript"></script>
+    <!-- *Jcarousel image gallery plugin* -->
+    <script src="js/jquery.jcarousel.js" type="text/javascript"></script>
+    <!-- *Jcarousel responsive plugin* -->
+    <script src="js/jcarousel.responsive.js" type="text/javascript"></script>
+    <!-- *Lity lightbox plugin* -->
+    <script src="dist/lity.js"></script>
+    <!-- *Bootstrap Tabcollapse plugin (converts tabs to hide-reveal toggles on mobile* -->
+    <script src="js/bootstrap-tabcollapse.js" type="text/javascript"></script>
+    <!-- *custom script* -->
+    <script src="js/script.js" type="text/javascript"></script>
   </body>
 </html>
